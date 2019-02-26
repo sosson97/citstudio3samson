@@ -4,6 +4,7 @@
 from abc import ABC, abstractmethod
 
 #from pyspark.sql import SparkSession
+import time
 
 #class: FeatureExtractor
 #abstract class
@@ -18,6 +19,10 @@ class FeatureExtractor(ABC):
 	@abstractmethod
 	def raw_to_df(self):
 		print("Converting raw data into structured format...")
+		time.sleep(2)
+		print(". . .")
+		time.sleep(2)
+		print(". . .")
 	
 	@abstractmethod
 	def dump_output(self, dirname_output):
@@ -32,9 +37,10 @@ class OutputType():
 
 class FeatureExtractorDemo(FeatureExtractor):
 	def raw_to_df(self):
-		pass
+		super().raw_to_df()
 
 	def dump_output(self,dirname_output):
+		super().dump_output(dirname_output)
 		infile = open(self.filepath_input, "r")
 		outfile = open(dirname_output + "/structured_data.txt", "w")
 		outfile.write(infile.read())

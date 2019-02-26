@@ -2,7 +2,7 @@
 
 #Abstract Implementation
 from abc import ABC, abstractmethod
-
+import time
 #import selemnium
 
 
@@ -22,17 +22,23 @@ class Crawler(ABC):
 	#API
 	@abstractmethod
 	def crawl(self):
-		print("crwaling starts")
+		print("crawling starts")
+		time.sleep(1.5)
+		print(". . .")
+		time.sleep(1.5)
+		print("crawling done")
 	
 	@abstractmethod
 	def dump_output(self, dirname_output):
 		print("Dumped crwaled result in " + dirname_output)
+		time.sleep(1.0)
 
 class CrawlerDemo(Crawler):
 	def crawl(self):
-		pass
+		super().crawl()
 
 	def dump_output(self, dirname_output):
+		super().dump_output(dirname_output)
 		infile = open(self.filename_player_info, "r")
 		outfile = open(dirname_output + "/crawled_data.txt", "w")
 		outfile.write(infile.read())

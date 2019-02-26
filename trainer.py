@@ -3,7 +3,7 @@
 #Abstract Implementation
 from abc import ABC, abstractmethod
 import pickle
-
+import time
 #from torch import nn
 
 #class: Trainer
@@ -20,8 +20,16 @@ class Trainer(ABC):
 	#API
 	@abstractmethod
 	def train(self, dirname_input):
-		print(model.__class__.__name__ + " model testing starts...")
-	
+		print(self.model.__class__.__name__ + " model testing starts...")
+		time.sleep(2.0)
+		print(". . .")
+		time.sleep(2.0)
+		print(". . .")
+		time.sleep(2.0)
+		print(". . .")
+		time.sleep(1.5)
+		print("testing done!")
+
 	def dump_model(self, dirname_output, model_name):
 		print("Dumped trained model in " + dirname_output)
 		f = open(dirname_output + "/" + model_name, "wb")
@@ -29,5 +37,5 @@ class Trainer(ABC):
 
 class TrainerDemo(Trainer):
 	def train(self, dirname_input):
-		pass
+		super().train(dirname_input)
 	

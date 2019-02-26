@@ -3,7 +3,7 @@
 #Abstract Implementation
 from abc import ABC, abstractmethod
 import pickle
-
+import time
 #from torch import nn
 
 #class: Tester
@@ -18,10 +18,23 @@ class Tester(ABC):
 	#API
 	@abstractmethod
 	def test(self, dirname_input):
-		print(model.__class__.__name__ + " model testing starts...")
+		print(self.model.__class__.__name__ + " model testing starts...")
+		time.sleep(0.5)
+		print(". . .")
+		time.sleep(0.5)
+		print(". . .")
+		time.sleep(0.5)
+		print("testing done!")
 
 	def load_model(self, path_model):
 		print("loading trained model")
+		time.sleep(0.5)
+		print(". . .")
+		time.sleep(0.5)
+		print(". . .")
+		time.sleep(0.5)
+		print(". . .")
+		print("loaded!")
 		f = open(path_model, "rb")
 		self.model = pickle.load(f)
 		print(path_model + " is loaded")
@@ -32,6 +45,7 @@ class Tester(ABC):
 
 class TesterDemo(Tester):
 	def test(self, dirname_input):
+		super().test(dirname_input)
 		f = open(dirname_input + "/toy_test_input.txt", "r")
 		test_input = []
 		l = f.read().split('\n')[1:-1]
@@ -44,6 +58,7 @@ class TesterDemo(Tester):
 		f.close()
 		
 	def dump_output(self, dirname_output):
+		super().dump_output(dirname_output)
 		f = open(dirname_output + "/output.txt", "w")
 		for line in self.result:
 			f.write(line + '\n')

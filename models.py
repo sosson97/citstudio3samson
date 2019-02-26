@@ -13,18 +13,18 @@ from torch import nn
 #class: CNN
 #abstract class
 class CNN(ABC):
-	#Internal
+	#Internal		
 	def __init__(self, parameters):
-		super.__init__()
-		init_model_(parameters)
+		#super.__init__()
+		self.init_model_(parameters)
 
-	def init_model_(parameters):
+	
+	def init_model_(self, parameters):
 		print("CNN model initiated")
-
 
 	#API
 	@abstractmethod
-	def forward():
+	def forward(self, x):
 		print("forwarding CNN model...")
 
 #class: LSTM
@@ -58,13 +58,25 @@ class XGBoost(ABC):
 	
 	#API
 	@abstractmethod
-	train(train_parameters, dirname_input):
+	def train(train_parameters, dirname_input):
 		print("XGBoost training starts")
+
 	
 	@abstractmethod
-	test(test_parameters, dirname_input):
+	def test(test_parameters, dirname_input):
 		print("XGBoost testing starts")
 	
-	dump_output(dirname_output):
+	def dump_output(dirname_output):
 		print("Dumped result of testing in " + dirname_output)
+
+
+
+class CNNDemo(CNN):
+	def forward(self, x):
+		avg = 0;
+		for val in x:
+			avg += val
+		return avg/len(x)
+
+
 

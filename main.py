@@ -3,12 +3,20 @@
 #This code contains simple demo and implementaion of abstract classes in this directory.
 
 
-from raw_crawl import Crawler
-from feature import FeatureExtractor, OutputType
-from models import CNN
-from trainer import Trainer
-from tester import Tester
+from raw_crawl import CrawlerDemo
+from feature import FeatureExtractorDemo, OutputType
+from models import CNNDemo
+from trainer import TrainerDemo
+#from tester import TesterDemo
 
 
-if __name__ == "__manin__":
+if __name__ == "__main__":
+	crd = CrawlerDemo("fake_web.txt", "fangraph")
+	crd.crawl()
+	crd.dump_output("raw")
+	
+	
+#model = CNNDemo(None)
+#model.forward()
+	
 	

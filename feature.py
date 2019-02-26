@@ -16,7 +16,7 @@ class FeatureExtractor(ABC):
 
 	#API
 	@abstractmethod
-	def raw_to_df(self, dirname_input):
+	def raw_to_df(self):
 		print("Converting raw data into structured format...")
 	
 	@abstractmethod
@@ -31,7 +31,7 @@ class OutputType():
 		self.expected_WAR = expected_WAR
 
 class FeatureExtractorDemo(FeatureExtractor):
-	def raw_to_df(self, dirname_input):
+	def raw_to_df(self):
 		pass
 
 	def dump_output(self,dirname_output):

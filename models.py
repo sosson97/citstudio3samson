@@ -27,6 +27,7 @@ class CNN(ABC):
 	def forward(self, x):
 		print("forwarding CNN model...")
 
+
 #class: LSTM
 #abstract class
 class LSTM(ABC):

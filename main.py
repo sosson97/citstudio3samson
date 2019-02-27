@@ -5,17 +5,19 @@
 
 from raw_crawl import CrawlerDemo
 from feature import FeatureExtractorDemo, OutputType
+from feature import WAR2014to2016
 from models import CNNDemo
 from trainer import TrainerDemo
 from tester import TesterDemo
 
 import time
 
+
 if __name__ == "__main__":
 	#1. crwaling
 	print("\033[31m" + "#1. Crwaling")
 	print("-------------" + "\033[0m")
-	crd = CrawlerDemo("fake_web.txt", "fangraph")
+	crd = CrawlerDemo("FanGraphs_Leaderboard_2014-2016_Pitcher_Leader_Board_IP_GE_30_plus_Age.csv", "fangraph")
 	crd.crawl()
 	crd.dump_output("raw")
 	print("\033[31m" + "-------------\n" + "\033[0m")
@@ -26,6 +28,7 @@ if __name__ == "__main__":
 	print("-------------" + "\033[0m")
 	fed = FeatureExtractorDemo("simple schema", "raw/crawled_data.txt")
 	fed.raw_to_df()
+	fed.df_update(WAR2014to2016)
 	fed.dump_output("train_input")
 	print("\033[31m" + "-------------\n" + "\033[0m")
 

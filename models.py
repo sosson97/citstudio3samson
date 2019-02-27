@@ -4,11 +4,9 @@
 from abc import ABC, abstractmethod
 
 from torch import nn
-#import xgboost as xgb
+import xgboost as xgb
 
 
-#class: CNN
-#abstract class
 
 #class: CNN
 #abstract class
@@ -46,8 +44,10 @@ class LSTM(ABC):
 
 #class: XGBoost
 #abstract class
+#Note: train, test API should work without knowing schema of input data as long as both have same format and label at last column.
 class XGBoost(ABC):
 	#Internal
+	#self.output contatins the result line by line
 	def __init__(self, parameters):
 		super.__init__()
 		self.model = None
@@ -59,16 +59,21 @@ class XGBoost(ABC):
 	
 	#API
 	@abstractmethod
-	def train(train_parameters, dirname_input):
+	def train(train_parameters, path_train_input):
 		print("XGBoost training starts")
 
 	
 	@abstractmethod
-	def test(test_parameters, dirname_input):
+	def test(test_parameters, path_test_input):
 		print("XGBoost testing starts")
 	
 	def dump_output(dirname_output):
-		print("Dumped result of testing in " + dirname_output)
+		f = open(dirname_output + "/output.txt", "w")
+		for line in self.result:
+			f.write(line + '\n')
+		f.close()
+
+		print("XGBoost dumped testing reuslt in " + dirname_output + "/output.txt")
 
 
 

@@ -5,10 +5,10 @@
 
 from raw_crawl import CrawlerDemo
 from feature import FeatureExtractorDemo, OutputType
-from feature import WAR2014to2016
-from models import CNNDemo
-from trainer import TrainerDemo
-from tester import TesterDemo
+from feature import WAR2014to2016, join_with_2017
+from models import CNN
+from trainer import Trainer
+#from tester import TesterDemo
 
 import time
 
@@ -29,14 +29,15 @@ if __name__ == "__main__":
 	fed = FeatureExtractorDemo("simple schema", "raw/crawled_data.txt")
 	fed.raw_to_df()
 	fed.df_update(WAR2014to2016)
-	fed.dump_output("train_input")
+	fed.df_update(join_with_2017)
+	fed.dump_output("train_input", "test_input")
 	print("\033[31m" + "-------------\n" + "\033[0m")
 
 	#3. creating model
 	print("\033[31m" + "#3. Creating Model")
 	print("-------------" + "\033[0m")
 	
-	cnn = CNNDemo("parameters")
+	cnn = CNN("parameters")
 
 	print("\033[31m" + "-------------\n" + "\033[0m")
 	time.sleep(1)
@@ -45,12 +46,12 @@ if __name__ == "__main__":
 	print("\033[31m" + "#4. Training Model")
 	print("-------------" + "\033[0m")	
 	
-	trainer = TrainerDemo("parameters", "adam", "abs_diff", cnn)
-	trainer.train("train_input")
+	trainer = Trainer("parameters", "adam", "abs_diff", cnn)
+	trainer.train("train_input", 50)
 	trainer.dump_model("model", "cnn_toy_model")
 	print("\033[31m" + "-------------\n" + "\033[0m")
 	time.sleep(1)
-
+"""
 	#5. testing and get result
 	print("\033[31m" + "#5. Testing Model")
 	print("-------------" + "\033[0m")	
@@ -61,3 +62,4 @@ if __name__ == "__main__":
 	tester.dump_output("output")
 	
 	print("\033[31m" + "-------------\n" + "\033[0m")	
+"""

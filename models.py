@@ -3,27 +3,27 @@
 #Abstract Implementation
 from abc import ABC, abstractmethod
 
-from torch import nn
+import torch.nn as nn
 import xgboost as xgb
 
 
 
 #class: CNN
-#abstract class
-class CNN(ABC):
+class CNN(nn.Module):
 	#Internal		
 	def __init__(self, parameters):
-		#super.__init__()
+		super(CNN, self).__init__()
 		self.init_model_(parameters)
+		self.linear1 = nn.Linear(4, 8)
+		self.linear2 = nn.Linear(8, 1)
+		self.activ = nn.Sigmoid()
 
-	
 	def init_model_(self, parameters):
 		print("CNN model initiated")
 
-	#API
-	@abstractmethod
 	def forward(self, x):
 		print("forwarding CNN model...")
+		return self.linear2(self.activ(self.linear1(x)))
 
 
 #class: LSTM
@@ -76,13 +76,13 @@ class XGBoost(ABC):
 		print("XGBoost dumped testing reuslt in " + dirname_output + "/output.txt")
 
 
-
+"""
 class CNNDemo(CNN):
 	def forward(self, x):
 		avg = 0;
 		for val in x:
 			avg += val
 		return avg/len(x)
-
+"""
 
 

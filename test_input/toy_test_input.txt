@@ -1,3 +1,0 @@
-PlayerName 2014 2015 2016
-ClaytonKershaw 7.6 8.5 6.5
-RyuHyunJin 3.8 0.0 0.0

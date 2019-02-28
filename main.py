@@ -8,7 +8,7 @@ from feature import FeatureExtractorDemo, OutputType
 from feature import WAR2014to2016, join_with_2017
 from models import CNN
 from trainer import Trainer
-#from tester import TesterDemo
+from tester import Tester
 
 import time
 
@@ -47,19 +47,18 @@ if __name__ == "__main__":
 	print("-------------" + "\033[0m")	
 	
 	trainer = Trainer("parameters", "adam", "abs_diff", cnn)
-	trainer.train("train_input", 50)
+	trainer.train("train_input", 200)
 	trainer.dump_model("model", "cnn_toy_model")
 	print("\033[31m" + "-------------\n" + "\033[0m")
 	time.sleep(1)
-"""
+
 	#5. testing and get result
 	print("\033[31m" + "#5. Testing Model")
 	print("-------------" + "\033[0m")	
 	
-	tester = TesterDemo("parameters", None)
+	tester = Tester("parameters", None)
 	tester.load_model("model/cnn_toy_model")
 	tester.test("test_input")
-	tester.dump_output("output")
+	#tester.dump_output("output")
 	
 	print("\033[31m" + "-------------\n" + "\033[0m")	
-"""

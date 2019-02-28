@@ -47,16 +47,14 @@ class Trainer():
 		print(self.model.__class__.__name__ + " model training starts...")
 		
 		dtype = torch.FloatTensor
-
+		costs = []
 		for epoch in range(num_epochs):
 			cost = 0.0
 			for t, (x, y) in enumerate(self.loader_data):
 				x_var = x.type(dtype)
 				y_var = y.type(dtype)
-				scores = self.model(x_var)
+				scores = self.model(x_var).view(-1)
 				
-				print(scores)
-				print(y_var)
 				loss = self.loss_function(scores, y_var)
 				cost += loss.data[0]
 				self.optimizer.zero_grad()

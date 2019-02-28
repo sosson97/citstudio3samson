@@ -22,7 +22,7 @@ class CNN(nn.Module):
 		print("CNN model initiated")
 
 	def forward(self, x):
-		print("forwarding CNN model...")
+		#print("forwarding CNN model...")
 		return self.linear2(self.activ(self.linear1(x)))
 
 

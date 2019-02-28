@@ -30,7 +30,7 @@ class FeatureExtractor(ABC):
 		train_df, test_df = self.df.randomSplit([0.9, 0.1], seed = 42)
 		
 		train_df.toPandas().to_csv("train_input/input.csv", header=True)
-		train_df.toPandas().to_csv("test_input/input.csv", header=True)
+		test_df.toPandas().to_csv("test_input/input.csv", header=True)
 		#train_df.coalesce(1).write.format("com.databricks.spark.csv").option("header", "true").csv(dirname_train + "/input")
 		#test_df.coalesce(1).write.format("com.databricks.spark.csv").option("header", "true").csv(dirname_test + "/input")
 		print("Dumped processed train data in " + dirname_train)

@@ -17,7 +17,7 @@ class Trainer():
 		self.parameters = parameters
 		self.model = model
 		self.optimizer = optim.Adam(self.model.parameters(), lr=1e-3, weight_decay=0.1)
-		self.loss_function = nn.L1Loss()
+		self.loss_function = nn.MSELoss()
 		self.loader_data = self.train_data_load_()
 
 	def train_data_load_(self):

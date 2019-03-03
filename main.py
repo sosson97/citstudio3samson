@@ -6,12 +6,14 @@
 from raw_crawl import CrawlerDemo
 from feature import FeatureExtractorDemo, OutputType
 from feature import WAR2014to2016, join_with_2017
-from models import CNN
+from models import CNN, XGBoostModel
 from trainer import Trainer
 from tester import Tester
 
 import time
 
+
+test_model = "CNN"
 
 if __name__ == "__main__":
 	#1. crwaling
@@ -33,32 +35,54 @@ if __name__ == "__main__":
 	fed.dump_output("train_input", "test_input")
 	print("\033[31m" + "-------------\n" + "\033[0m")
 
-	#3. creating model
-	print("\033[31m" + "#3. Creating Model")
-	print("-------------" + "\033[0m")
-	
-	cnn = CNN("parameters")
+	#model by model
 
-	print("\033[31m" + "-------------\n" + "\033[0m")
-	time.sleep(1)
+	if(test_model == "CNN"):
+		#3. creating model
+		print("\033[31m" + "#3. Creating Model")
+		print("-------------" + "\033[0m")
+		
+		cnn = CNN("parameters")
 
-	#4. training
-	print("\033[31m" + "#4. Training Model")
-	print("-------------" + "\033[0m")	
-	
-	trainer = Trainer("parameters", "adam", "abs_diff", cnn)
-	trainer.train("train_input", 200)
-	trainer.dump_model("model", "cnn_toy_model")
-	print("\033[31m" + "-------------\n" + "\033[0m")
-	time.sleep(1)
+		print("\033[31m" + "-------------\n" + "\033[0m")
+		time.sleep(1)
 
-	#5. testing and get result
-	print("\033[31m" + "#5. Testing Model")
-	print("-------------" + "\033[0m")	
-	
-	tester = Tester("parameters", None)
-	tester.load_model("model/cnn_toy_model")
-	tester.test("test_input")
-	#tester.dump_output("output")
-	
-	print("\033[31m" + "-------------\n" + "\033[0m")	
+		#4. training
+		print("\033[31m" + "#4. Training Model")
+		print("-------------" + "\033[0m")	
+		
+		trainer = Trainer("parameters", "adam", "abs_diff", cnn)
+		trainer.train("train_input", 1000)
+		trainer.dump_model("model", "cnn_toy_model")
+		print("\033[31m" + "-------------\n" + "\033[0m")
+		time.sleep(1)
+
+		#5. testing and get result
+		print("\033[31m" + "#5. Testing Model")
+		print("-------------" + "\033[0m")	
+		
+		tester = Tester("parameters", None)
+		tester.load_model("model/cnn_toy_model")
+		tester.test("test_input")
+		#tester.dump_output("output")
+		
+		print("\033[31m" + "-------------\n" + "\033[0m")	
+
+	if(test_model == "XGB"):
+		#3. creating model
+		#4. training
+		print("\033[31m" + "#4. Training Model")
+		print("-------------" + "\033[0m")	
+		xgbm = XGBoostModel("parameters")	
+		xgbm.train("parameters", 1000)
+		print("\033[31m" + "-------------\n" + "\033[0m")
+		time.sleep(1)
+
+		#5. testing and get result
+		print("\033[31m" + "#5. Testing Model")
+		print("-------------" + "\033[0m")	
+		xgbm.test("paramerters", " ")	
+		
+		print("\033[31m" + "-------------\n" + "\033[0m")	
+
+

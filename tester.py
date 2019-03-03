@@ -63,15 +63,22 @@ class Tester():
 			pred = np.concatenate((pred, score_numpy))
 		
 		self.result = np.array(list(zip(true,pred)))
-		print(self.result)
+		for tr, pr in self.result:
+			print("%.2f" % tr + " " + "%.2f" % pr)
+			
 		absdiff = 0
+		squmean = 0
 		for line in self.result:
 			if line[0]-line[1] > 0:
 				absdiff += line[0]-line[1]
+				squmean += (line[0]-line[1])*(line[0]-line[1])
 			else:
 				absdiff += line[1]-line[0]
+				squmean += (line[1]-line[0])*(line[1]-line[0])
 		absdiff = absdiff/len(self.result)
+		squmean = squmean/len(self.result)
 		print("average abs diff = " + str(absdiff))
+		print("square mean of diff = " + str(squmean))
 		print("testing done!")
 
 	def load_model(self, path_model):

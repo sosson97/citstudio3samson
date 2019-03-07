@@ -8,6 +8,7 @@ import torch
 import torch.nn as nn
 import torch.optim as optim
 from torch.utils.data import Dataset, DataLoader
+import env
 
 #class: Trainer
 class Trainer():
@@ -23,9 +24,9 @@ class Trainer():
 	def train_data_load_(self):
 		import numpy as np
 		from numpy import genfromtxt
-		train_data_np = genfromtxt("train_input/input.csv", delimiter=',')	
-		train_feature_np = np.array([l[1:5] for l in train_data_np][1:])
-		train_label_np = np.array([l[5] for l in train_data_np][1:])
+		train_data_np = genfromtxt(env.train_input_name, delimiter=',')	
+		train_feature_np = np.array([l[env.feature_start_index:env.feature_start_index + env.features_num] for l in train_data_np][1:])
+		train_label_np = np.array([l[env.feature_start_index + env.features_num] for l in train_data_np][1:])
 
 		class training(Dataset):
 			def __init__(self):

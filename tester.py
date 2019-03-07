@@ -7,6 +7,7 @@ import time
 import torch
 from torch.utils.data import Dataset, DataLoader
 import numpy as np
+import env
 
 #class: Tester
 class Tester():
@@ -21,9 +22,9 @@ class Tester():
 	def test_data_load_(self):
 		import numpy as np
 		from numpy import genfromtxt
-		test_data_np = genfromtxt("test_input/input.csv", delimiter=',')	
-		test_feature_np = np.array([l[1:5] for l in test_data_np][1:])
-		test_label_np = np.array([l[5] for l in test_data_np][1:])
+		test_data_np = genfromtxt(env.test_input_name, delimiter=',')	
+		test_feature_np = np.array([l[env.feature_start_index:env.feature_start_index + env.features_num] for l in test_data_np][1:])
+		test_label_np = np.array([l[env.feature_start_index + env.features_num] for l in test_data_np][1:])
 
 		class testing(Dataset):
 			def __init__(self):

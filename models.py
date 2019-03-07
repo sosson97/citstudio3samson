@@ -5,27 +5,32 @@ from abc import ABC, abstractmethod
 
 import torch.nn as nn
 import xgboost as xgb
+import env
 
 
-
-#class: CNN
-class CNN(nn.Module):
+#class: NN
+class NN(nn.Module):
 	#Internal		
 	def __init__(self, parameters):
-		super(CNN, self).__init__()
+		super(NN, self).__init__()
 		self.init_model_(parameters)
-		self.linear1 = nn.Linear(4, 10)
-		self.linear2 = nn.Linear(10, 5)
-		self.linear3 = nn.Linear(5, 1)
-		#self.activ = nn.ReLU()
-		self.activ = nn.Tanhshrink()
-
+		self.net = nn.Sequential(
+			nn.Linear(env.features_num, 512),	
+			nn.LeakyReLU(),
+			nn.Linear(512,50),
+			nn.Dropout(0.9),
+			nn.LeakyReLU(),
+			nn.Linear(50,5),
+			nn.LeakyReLU(),
+			nn.Linear(5,1)
+    )	
+	
 	def init_model_(self, parameters):
-		print("CNN model initiated")
+		print("NN model initiated")
 
 	def forward(self, x):
 		#print("forwarding CNN model...")
-		return self.linear3(self.activ(self.linear2(self.activ(self.linear1(x)))))
+		return self.net(x)
 
 
 #class: LSTM
@@ -63,36 +68,38 @@ class XGBoostModel():
 		print("XGBoost training starts")
 		import numpy as np
 		from numpy import genfromtxt
-		train_data_np = genfromtxt("train_input/input.csv", delimiter=',')	
-		train_feature_np = np.array([l[1:-1] for l in train_data_np][1:])
-		train_label_np = np.array([l[-1] for l in train_data_np][1:])
+		train_data_np = genfromtxt(env.train_input_name, delimiter=',')	
+		train_feature_np = np.array([l[env.feature_start_index:env.feature_start_index + env.features_num] for l in train_data_np][1:])
+		train_label_np = np.array([l[env.feature_start_index + env.features_num] for l in train_data_np][1:])
 		
 		dtrain = xgb.DMatrix(train_feature_np, label=train_label_np)
 
 		#dtest = xgb.DMatrix(test_feature, label=ytrue)
 
-		num_round = 1000
+		num_round = 3000
 		evallist = [(dtrain, 'train')]
 		param = {'objective':'reg:linear',
-							'eval_metric':'mae',
+							'eval_metric':'rmse',
 							'learning_rate':0.01,
-							'max_depth':5,
+							'max_depth':15,
 							'min_child_weight':1,
 							'subsample':0.8,
 							'colsample_bytree':0.6,
-       				'gamma':1,
-        			'reg_alpha':0,
+       				'gamma':0.5,
+        			'reg_alpha':0.5,
         			'reg_lambda':1,
         			'seed':42}
 		self.model = xgb.train(param, dtrain, num_round,evals=evallist)
-	
+		
+		print(self.model.get_score(importance_type='gain'))
+		print(self.model.get_score(importance_type='weight'))
 	def test(self, test_parameters, path_test_input):
 		print("XGBoost testing starts")
 		import numpy as np
 		from numpy import genfromtxt
-		test_data_np = genfromtxt("test_input/input.csv", delimiter=',')	
-		test_feature_np = np.array([l[1:-1] for l in test_data_np][1:])	
-		test_label_np = np.array([l[-1] for l in test_data_np][1:])	
+		test_data_np = genfromtxt(env.test_input_name, delimiter=',')	
+		test_feature_np = np.array([l[env.feature_start_index:env.feature_start_index + env.features_num] for l in test_data_np][1:])	
+		test_label_np = np.array([l[env.feature_start_index + env.features_num] for l in test_data_np][1:])	
 		dtest = xgb.DMatrix(test_feature_np, label=test_label_np)
 
 

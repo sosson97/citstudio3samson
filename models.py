@@ -64,7 +64,7 @@ class XGBoostModel():
 		print("XGBoost model initiated")
 	
 	#API
-	def train(self, train_parameter, num_round):
+	def train(self, train_parameter, num_round, seed):
 		print("XGBoost training starts")
 		import numpy as np
 		from numpy import genfromtxt
@@ -88,7 +88,7 @@ class XGBoostModel():
        				'gamma':0.5,
         			'reg_alpha':0.5,
         			'reg_lambda':1,
-        			'seed':42}
+        			'seed':seed}
 		self.model = xgb.train(param, dtrain, num_round,evals=evallist)
 		
 		print(self.model.get_score(importance_type='gain'))
@@ -111,14 +111,27 @@ class XGBoostModel():
 		for tr, pr in self.result:
 			print("%.2f" % tr + " " + "%.2f" % pr)
 		absdiff = 0
+		absdiff_bg2 = 0
+		num_bg2 = 0
 		for line in self.result:
 			if line[0]-line[1] > 0:
 				absdiff += line[0]-line[1]
+				if line[0] >= 2:
+					absdiff_bg2 += line[0]-line[1]
+					num_bg2 += 1
 			else:
 				absdiff += line[1]-line[0]
+				if line[0] >= 2:
+					absdiff_bg2 += line[1]-line[0]
+					num_bg2 += 1
 		absdiff = absdiff/len(self.result)
+		absdiff_bg2 = absdiff_bg2/num_bg2
 		print("average abs diff = " + str(absdiff))
-		
+		print("average abs diff in >2 = " + str(absdiff_bg2))  
+		f = open("xgb_result.txt", "a+")
+		f.write("average abs diff = " + str(absdiff) + "\n")
+		f.write("average abs diff in >2 = " + str(absdiff_bg2) + "\n")
+		f.close()
 	
 	def dump_output(self, dirname_output):
 		f = open(dirname_output + "/output.txt", "w")

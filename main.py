@@ -13,7 +13,7 @@ from tester import Tester
 import time
 
 
-test_model = "NN"
+test_model = "XGB"
 
 if __name__ == "__main__":
 	"""
@@ -39,6 +39,7 @@ if __name__ == "__main__":
 	#model by model
 
 	if(test_model == "NN"):
+		"""
 		#3. creating model
 		print("\033[31m" + "#3. Creating Model")
 		print("-------------" + "\033[0m")
@@ -57,6 +58,8 @@ if __name__ == "__main__":
 		trainer.dump_model("model", "nn_model")
 		print("\033[31m" + "-------------\n" + "\033[0m")
 		time.sleep(1)
+		"""
+
 		#5. testing and get result
 		print("\033[31m" + "#5. Testing Model")
 		print("-------------" + "\033[0m")	
@@ -71,18 +74,20 @@ if __name__ == "__main__":
 	if(test_model == "XGB"):
 		#3. creating model
 		#4. training
-		print("\033[31m" + "#4. Training Model")
-		print("-------------" + "\033[0m")	
-		xgbm = XGBoostModel("parameters")	
-		xgbm.train("parameters", 1000)
-		print("\033[31m" + "-------------\n" + "\033[0m")
-		time.sleep(1)
+		seed_list = [42, 56, 100, 3, 15]
+		for seed in seed_list:
+			print("\033[31m" + "#4. Training Model")
+			print("-------------" + "\033[0m")	
+			xgbm = XGBoostModel("parameters")	
+			xgbm.train("parameters", 1000, seed)
+			print("\033[31m" + "-------------\n" + "\033[0m")
+			time.sleep(1)
 
-		#5. testing and get result
-		print("\033[31m" + "#5. Testing Model")
-		print("-------------" + "\033[0m")	
-		xgbm.test("paramerters", " ")	
-		
-		print("\033[31m" + "-------------\n" + "\033[0m")	
+			#5. testing and get result
+			print("\033[31m" + "#5. Testing Model")
+			print("-------------" + "\033[0m")	
+			xgbm.test("paramerters", " ")	
+			
+			print("\033[31m" + "-------------\n" + "\033[0m")	
 
 

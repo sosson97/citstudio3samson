@@ -1,0 +1,91 @@
+last4 201903101430
+average abs diff = 0.8796037003565373
+average abs diff = 0.8895094987381713
+average abs diff = 0.8823717814483004
+average abs diff = 0.8866115721423977
+average abs diff = 0.880341285500634
+last3 201903101443
+average abs diff = 0.9120389689814367
+average abs diff = 0.9177206538758184
+average abs diff = 0.9088106939533971
+average abs diff = 0.9097082877496501
+average abs diff = 0.9123896113544137
+last2 201903101447
+average abs diff = 0.8767716081412327
+average abs diff = 0.8843587251654207
+average abs diff = 0.8863912062824891
+average abs diff = 0.8853079583734831
+average abs diff = 0.8853530215317341
+last1 201903101451
+average abs diff = 0.8616859510033495
+average abs diff = 0.8672791455921375
+average abs diff = 0.8683968014392327
+average abs diff = 0.8652443798702939
+average abs diff = 0.8549983958157226
+last5
+average abs diff = 0.9204448767762256
+average abs diff = 0.9021728553201843
+average abs diff = 0.9102306324934615
+average abs diff = 0.9041644209536956
+average abs diff = 0.9020670449820121
+last1
+average abs diff = 0.8616859510033495
+average abs diff = 0.8672791455921375
+average abs diff = 0.8683968014392327
+average abs diff = 0.8652443798702939
+average abs diff = 0.8549983958157226
+last1 201903101517
+average abs diff = 0.8616859510033495
+average abs diff in >2 = 1.2615507562703725
+average abs diff = 0.8672791455921375
+average abs diff in >2 = 1.2705847773370864
+average abs diff = 0.8683968014392327
+average abs diff in >2 = 1.264868101892592
+average abs diff = 0.8652443798702939
+average abs diff in >2 = 1.292652129221566
+average abs diff = 0.8549983958157226
+average abs diff in >2 = 1.2486250042915346
+last5 201903101524
+average abs diff = 0.9204448767762256
+average abs diff in >2 = 1.3842456451484135
+average abs diff = 0.9021728553201843
+average abs diff in >2 = 1.3599187059061868
+average abs diff = 0.9102306324934615
+average abs diff in >2 = 1.389475006716592
+average abs diff = 0.9041644209536956
+average abs diff in >2 = 1.3740728531564985
+average abs diff = 0.9020670449820121
+average abs diff in >2 = 1.3534225387232641
+last4 201903101532
+average abs diff = 0.8796037003565373
+average abs diff in >2 = 1.260722813755274
+average abs diff = 0.8895094987381713
+average abs diff in >2 = 1.2617287687957288
+average abs diff = 0.8823717814483004
+average abs diff in >2 = 1.2393828483919302
+average abs diff = 0.8866115721423977
+average abs diff in >2 = 1.2388716692725819
+average abs diff = 0.880341285500634
+average abs diff in >2 = 1.234043187648058
+last3 201903101534
+average abs diff = 0.9120389689814367
+average abs diff in >2 = 1.3244485638264953
+average abs diff = 0.9177206538758184
+average abs diff in >2 = 1.341762465033038
+average abs diff = 0.9088106939533971
+average abs diff in >2 = 1.3113062647909954
+average abs diff = 0.9097082877496501
+average abs diff in >2 = 1.304061089507465
+average abs diff = 0.9123896113544137
+average abs diff in >2 = 1.306084387055759
+last2 201903101538
+average abs diff = 0.8767716081412327
+average abs diff in >2 = 1.301449634071807
+average abs diff = 0.8843587251654207
+average abs diff in >2 = 1.2939772741055826
+average abs diff = 0.8863912062824891
+average abs diff in >2 = 1.3056932027910797
+average abs diff = 0.8853079583734831
+average abs diff in >2 = 1.3032726109867365
+average abs diff = 0.8853530215317341
+average abs diff in >2 = 1.3058844338840163

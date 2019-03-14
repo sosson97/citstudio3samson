@@ -89,3 +89,268 @@ average abs diff = 0.8853079583734831
 average abs diff in >2 = 1.3032726109867365
 average abs diff = 0.8853530215317341
 average abs diff in >2 = 1.3058844338840163
+average abs diff = 0.8767716081412327
+average abs diff in >2 = 1.301449634071807
+average abs diff = 0.8843587251654207
+average abs diff in >2 = 1.2939772741055826
+average abs diff = 0.8863912062824891
+average abs diff in >2 = 1.3056932027910797
+average abs diff = 0.8853079583734831
+average abs diff in >2 = 1.3032726109867365
+average abs diff = 0.8853530215317341
+average abs diff in >2 = 1.3058844338840163
+lastbase
+
+average abs diff = 0.9069707949095103
+average abs diff in >2 = 1.5137274059313763
+average abs diff = 0.9067979929247882
+average abs diff in >2 = 1.5117546178117585
+average abs diff = 0.9070055379587066
+average abs diff in >2 = 1.5161608587337447
+average abs diff = 0.907042253589483
+average abs diff in >2 = 1.5125165228602255
+average abs diff = 0.9063085181978839
+average abs diff in >2 = 1.5130568170849283
+last3base
+average abs diff = 0.9591860493399059
+average abs diff in >2 = 1.5204487663918531
+average abs diff = 0.9605879632369524
+average abs diff in >2 = 1.5292108444304304
+average abs diff = 0.9600133445184182
+average abs diff in >2 = 1.5284716959657343
+average abs diff = 0.9610710729124406
+average abs diff in >2 = 1.5298757640452223
+average abs diff = 0.9599532385760879
+average abs diff in >2 = 1.5291601455417174
+test_input/highcor_last1year_test.csv testing result, Tue Mar 12 17:14:37 2019
+average abs diff = 0.8791773799956769
+average abs diff in >2 = 1.4467489164841325
+average abs diff = 0.8781394442906693
+average abs diff in >2 = 1.4626543291761904
+average abs diff = 0.8817630224921761
+average abs diff in >2 = 1.455757938231094
+average abs diff = 0.8783391961556841
+average abs diff in >2 = 1.4466244551954388
+average abs diff = 0.8744408010144724
+average abs diff in >2 = 1.449732957535152
+test_input/highcor_last2year_test.csv testing result, Tue Mar 12 17:19:07 2019
+average abs diff = 2012.5290285045717
+average abs diff in >2 = 2010.6031380666816
+average abs diff = 2012.5229982311341
+average abs diff in >2 = 2010.5984099911973
+average abs diff = 2012.5207304871776
+average abs diff in >2 = 2010.594314618178
+average abs diff = 2012.520332031252
+average abs diff in >2 = 2010.597870130942
+average abs diff = 2012.5210441848487
+average abs diff in >2 = 2010.5968987263425
+test_input/highcor_last2year_test.csv testing result, Tue Mar 12 17:21:51 2019
+average abs diff = 0.8864210537694531
+average abs diff in >2 = 1.417245695540603
+average abs diff = 0.8941194877984383
+average abs diff in >2 = 1.4388968435811325
+average abs diff = 0.888370910163195
+average abs diff in >2 = 1.4302879752407613
+average abs diff = 0.8947713959891838
+average abs diff in >2 = 1.4346455838478787
+average abs diff = 0.8977962613330691
+average abs diff in >2 = 1.4535822341979392
+test_input/highcor_last3year_test.csv testing result, Tue Mar 12 17:25:01 2019
+average abs diff = 0.9159087015491608
+average abs diff in >2 = 1.4447843155984221
+average abs diff = 0.9186633091771373
+average abs diff in >2 = 1.4270763747651003
+average abs diff = 0.9136244352696072
+average abs diff in >2 = 1.4422623516156756
+average abs diff = 0.9266409146898194
+average abs diff in >2 = 1.4478042865621632
+average abs diff = 0.9123505194232144
+average abs diff in >2 = 1.4332906382864918
+test_input/highcor_last4year_test.csv testing result, Tue Mar 12 17:27:28 2019
+average abs diff = 0.9190977332967053
+average abs diff in >2 = 1.4690474441895887
+average abs diff = 0.907084214921748
+average abs diff in >2 = 1.4461702690770233
+average abs diff = 0.9063007712029342
+average abs diff in >2 = 1.4518452962239587
+average abs diff = 0.9165592351656284
+average abs diff in >2 = 1.446422918265065
+average abs diff = 0.9184415343437304
+average abs diff in >2 = 1.465486679101984
+test_input/highcor_last5year_test.csv testing result, Tue Mar 12 17:29:52 2019
+average abs diff = 2009.5373200789736
+average abs diff in >2 = 2007.4472823660717
+average abs diff = 2009.543182107676
+average abs diff in >2 = 2007.4439062500003
+average abs diff = 2009.54115379444
+average abs diff in >2 = 2007.4446037946432
+average abs diff = 2009.5390166794039
+average abs diff in >2 = 2007.4403592354913
+average abs diff = 2009.5429255831064
+average abs diff in >2 = 2007.4479938616073
+test_input/highcor_last5year_test.csv testing result, Tue Mar 12 17:31:52 2019
+average abs diff = 0.8926554989987527
+average abs diff in >2 = 1.4361005655356816
+average abs diff = 0.8950899482205295
+average abs diff in >2 = 1.4966675494398392
+average abs diff = 0.8955941973389059
+average abs diff in >2 = 1.4389060403619494
+average abs diff = 0.9057994354894199
+average abs diff in >2 = 1.491486782687051
+average abs diff = 0.8931626360917438
+average abs diff in >2 = 1.4408594940389905
+test_input/last5year_test_bg2.csv testing result, Thu Mar 14 01:19:59 2019
+test_input/last1year_test_bg2.csv testing result, Thu Mar 14 01:20:20 2019
+average abs diff = 1.2143739826538984
+average abs diff in >2 = 1.0588169128998468
+average abs diff = 1.1915068432864022
+average abs diff in >2 = 1.0215781989304917
+average abs diff = 1.2068948515723736
+average abs diff in >2 = 1.0584318057350492
+average abs diff = 1.2094836737127865
+average abs diff in >2 = 1.059112165803495
+average abs diff = 1.2060906948762782
+average abs diff in >2 = 1.023601292008939
+test_input/last4year_test_bg2.csv testing result, Thu Mar 14 02:44:14 2019
+average abs diff = 1.319232749039272
+average abs diff in >2 = 1.2748306185007097
+average abs diff = 1.308972044710843
+average abs diff in >2 = 1.2711760193109514
+average abs diff = 1.3407995201506704
+average abs diff in >2 = 1.3005183950066568
+average abs diff = 1.2985416421350442
+average abs diff in >2 = 1.259549753367901
+average abs diff = 1.3063984587507427
+average abs diff in >2 = 1.2610445857048036
+test_input/last4year_test_bg2.csv testing result, Thu Mar 14 21:29:37 2019
+test_input/last4year_test_bg2.csv testing result, Thu Mar 14 21:30:50 2019
+test_input/last4year_test_bg2.csv testing result, Thu Mar 14 21:32:02 2019
+test_input/last4year_test_bg2.csv testing result, Thu Mar 14 21:34:16 2019
+test_input/last4year_test_bg2.csv testing result, Thu Mar 14 21:35:07 2019
+test_input/last4year_test_bg2.csv testing result, Thu Mar 14 21:37:45 2019
+test_input/last4year_test_bg2.csv testing result, Thu Mar 14 21:38:53 2019
+test_input/last4year_test_bg2.csv testing result, Thu Mar 14 21:39:40 2019
+test_input/last4year_test_bg2.csv testing result, Thu Mar 14 21:41:14 2019
+test_input/last4year_test_bg2.csv testing result, Thu Mar 14 21:42:26 2019
+average abs diff = 1.319232749039272
+average abs diff in >2 = 1.2748306185007097
+test_input/last4year_test_bg2.csv testing result, Thu Mar 14 21:43:08 2019
+average abs diff = 1.319232749039272
+average abs diff in >2 = 1.2748306185007097
+test_input/last4year_test_bg2.csv testing result, Thu Mar 14 21:44:01 2019
+average abs diff = 1.319232749039272
+average abs diff in >2 = 1.2748306185007097
+test_input/last4year_test_bg2.csv testing result, Thu Mar 14 21:45:49 2019
+test_input/last4year_test_bg2.csv testing result, Thu Mar 14 21:47:57 2019
+test_input/last4year_test_bg2.csv testing result, Thu Mar 14 21:48:57 2019
+test_input/last4year_test_bg2.csv testing result, Thu Mar 14 21:51:18 2019
+test_input/last4year_test_bg2.csv testing result, Thu Mar 14 21:52:33 2019
+test_input/last4year_test_bg2.csv testing result, Thu Mar 14 21:56:38 2019
+test_input/last4year_test_bg2.csv testing result, Thu Mar 14 21:57:40 2019
+test_input/last4year_test_bg2.csv testing result, Thu Mar 14 22:02:53 2019
+average abs diff = 5993.360377358493
+average abs diff in >2 = 5993.360377358493
+test_input/last4year_test_bg2.csv testing result, Thu Mar 14 22:05:53 2019
+test_input/last4year_test_bg2.csv testing result, Thu Mar 14 22:08:39 2019
+average abs diff = 5993.360377358493
+average abs diff in >2 = 5993.360377358493
+average abs diff = 5993.360377358493
+average abs diff in >2 = 5993.360377358493
+average abs diff = 5993.360377358493
+average abs diff in >2 = 5993.360377358493
+average abs diff = 5993.360377358493
+average abs diff in >2 = 5993.360377358493
+average abs diff = 5993.360377358493
+average abs diff in >2 = 5993.360377358493
+test_input/last4year_test_bg2.csv testing result, Thu Mar 14 22:14:17 2019
+average abs diff = 1.319232749039272
+average abs diff in >2 = 1.2748306185007097
+average abs diff = 1.308972044710843
+average abs diff in >2 = 1.2711760193109514
+average abs diff = 1.3407995201506704
+average abs diff in >2 = 1.3005183950066568
+average abs diff = 1.2985416421350442
+average abs diff in >2 = 1.259549753367901
+average abs diff = 1.3063984587507427
+average abs diff in >2 = 1.2610445857048036
+test_input/last4year_test_bg2.csv testing result, Thu Mar 14 22:25:15 2019
+average abs diff = 1.319232749039272
+average abs diff in >2 = 1.2748306185007097
+test_input/last4year_test_bg2.csv testing result, Thu Mar 14 22:26:05 2019
+average abs diff = 1.319232749039272
+average abs diff in >2 = 1.2748306185007097
+test_input/last4year_test_bg2.csv testing result, Thu Mar 14 22:28:29 2019
+average abs diff = 1.319232749039272
+average abs diff in >2 = 1.2748306185007097
+test_input/last4year_test_bg2.csv testing result, Thu Mar 14 22:29:06 2019
+average abs diff = 1.319232749039272
+average abs diff in >2 = 1.2748306185007097
+average abs diff = 1.308972044710843
+average abs diff in >2 = 1.2711760193109514
+average abs diff = 1.3407995201506704
+average abs diff in >2 = 1.3005183950066568
+average abs diff = 1.2985416421350442
+average abs diff in >2 = 1.259549753367901
+average abs diff = 1.3063984587507427
+average abs diff in >2 = 1.2610445857048036
+test_input/last1year_test_bg2.csv testing result, Thu Mar 14 22:32:53 2019
+test_input/last1year_test_bg2.csv testing result, Thu Mar 14 22:33:10 2019
+average abs diff = 1.2143739826538984
+average abs diff in >2 = 1.0588169128998468
+average abs diff = 1.1915068432864022
+average abs diff in >2 = 1.0215781989304917
+average abs diff = 1.2068948515723736
+average abs diff in >2 = 1.0584318057350492
+average abs diff = 1.2094836737127865
+average abs diff in >2 = 1.059112165803495
+average abs diff = 1.2060906948762782
+average abs diff in >2 = 1.023601292008939
+test_input/last1year_test.csv testing result, Thu Mar 14 22:35:38 2019
+average abs diff = 0.8616859510033495
+average abs diff in >2 = 1.2615507562703725
+average abs diff = 0.8672791455921375
+average abs diff in >2 = 1.2705847773370864
+average abs diff = 0.8683968014392327
+average abs diff in >2 = 1.264868101892592
+average abs diff = 0.8652443798702939
+average abs diff in >2 = 1.292652129221566
+average abs diff = 0.8549983958157226
+average abs diff in >2 = 1.2486250042915346
+test_input/last1year_test.csv testing result, Thu Mar 14 22:40:15 2019
+average abs diff = 0.8616859510033495
+average abs diff in >2 = 1.2615507562703725
+average abs diff = 0.8672791455921375
+average abs diff in >2 = 1.2705847773370864
+average abs diff = 0.8683968014392327
+average abs diff in >2 = 1.264868101892592
+average abs diff = 0.8652443798702939
+average abs diff in >2 = 1.292652129221566
+average abs diff = 0.8549983958157226
+average abs diff in >2 = 1.2486250042915346
+test_input/last1year_test_bg2.csv testing result, Thu Mar 14 22:43:15 2019
+average abs diff = 1.2143739826538984
+average abs diff in >2 = 1.0588169128998468
+average abs diff = 1.1915068432864022
+average abs diff in >2 = 1.0215781989304917
+average abs diff = 1.2068948515723736
+average abs diff in >2 = 1.0584318057350492
+average abs diff = 1.2094836737127865
+average abs diff in >2 = 1.059112165803495
+average abs diff = 1.2060906948762782
+average abs diff in >2 = 1.023601292008939
+test_input/last1year_test_bg2.csv testing result, Thu Mar 14 23:21:00 2019
+average abs diff = 1.2143739826538984
+average abs diff in >2 = 1.0588169128998468
+average abs diff = 1.1915068432864022
+average abs diff in >2 = 1.0215781989304917
+test_input/last1year_test.csv testing result, Thu Mar 14 23:25:50 2019
+average abs diff = 1.2239844554718051
+average abs diff in >2 = 1.0706156667274767
+average abs diff = 1.2470172546596339
+average abs diff in >2 = 1.0191551051562346
+average abs diff = 1.2675575553448195
+average abs diff in >2 = 1.0476882714259474
+average abs diff = 1.2333296979174884
+average abs diff in >2 = 1.0427074207535274
+average abs diff = 1.2323155922417286
+average abs diff in >2 = 1.0399578829354879

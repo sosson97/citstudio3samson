@@ -11,7 +11,7 @@ from trainer import Trainer
 from tester import Tester
 
 import time
-
+import env
 
 test_model = "XGB"
 
@@ -75,6 +75,9 @@ if __name__ == "__main__":
 		#3. creating model
 		#4. training
 		seed_list = [42, 56, 100, 3, 15]
+		f = open("xgb_result.txt", "a")
+		f.write(env.test_input_name + " testing result, " + time.ctime(time.time()) + "\n")
+		f.close()
 		for seed in seed_list:
 			print("\033[31m" + "#4. Training Model")
 			print("-------------" + "\033[0m")	
@@ -87,7 +90,7 @@ if __name__ == "__main__":
 			print("\033[31m" + "#5. Testing Model")
 			print("-------------" + "\033[0m")	
 			xgbm.test("paramerters", " ")	
-			
+			xgbm.dump_output("output", env.test_input_name[11:-4] + "_output_" + str(seed) + ".csv")	
 			print("\033[31m" + "-------------\n" + "\033[0m")	
 
 

@@ -101,31 +101,34 @@ class XGBoostModel():
 		test_feature_np = np.array([l[env.feature_start_index:env.feature_start_index + env.features_num] for l in test_data_np][1:])	
 		test_label_np = np.array([l[env.feature_start_index + env.features_num] for l in test_data_np][1:])	
 		dtest = xgb.DMatrix(test_feature_np, label=test_label_np)
-
-
-	
+		
+		pid = np.array([int(l[1]) for l in test_data_np[1:]])
 		true = np.array([float(l[-1]) for l in test_data_np][1:])
 		pred = self.model.predict(dtest)
 		
-		self.result = np.array(list(zip(true,pred)))
-		for tr, pr in self.result:
+		self.result = np.array(list(zip(pid,true,pred)))
+
+		for p, tr, pr in self.result:
+			print(int(p), end=" ") 
 			print("%.2f" % tr + " " + "%.2f" % pr)
 		absdiff = 0
 		absdiff_bg2 = 0
 		num_bg2 = 0
 		for line in self.result:
-			if line[0]-line[1] > 0:
-				absdiff += line[0]-line[1]
-				if line[0] >= 2:
-					absdiff_bg2 += line[0]-line[1]
+			if line[1]-line[2] > 0:
+				absdiff += line[1]-line[2]
+				if line[1] >= 2:
+					absdiff_bg2 += line[1]-line[2]
 					num_bg2 += 1
 			else:
-				absdiff += line[1]-line[0]
-				if line[0] >= 2:
-					absdiff_bg2 += line[1]-line[0]
+				absdiff += line[2]-line[1]
+				if line[1] >= 2:
+					absdiff_bg2 += line[2]-line[1]
 					num_bg2 += 1
 		absdiff = absdiff/len(self.result)
 		absdiff_bg2 = absdiff_bg2/num_bg2
+		print(str(len(self.result)))
+		print(str(num_bg2))
 		print("average abs diff = " + str(absdiff))
 		print("average abs diff in >2 = " + str(absdiff_bg2))  
 		f = open("xgb_result.txt", "a+")
@@ -133,10 +136,12 @@ class XGBoostModel():
 		f.write("average abs diff in >2 = " + str(absdiff_bg2) + "\n")
 		f.close()
 	
-	def dump_output(self, dirname_output):
-		f = open(dirname_output + "/output.txt", "w")
-		for line in self.result:
-			f.write(line + '\n')
+	def dump_output(self, dirname_output, output_name):
+		f = open(dirname_output + "/" + output_name, "w")
+		for p, tr, pr in self.result:
+			f.write(str(int(p)) + ", ") 
+			f.write("%.2f" % tr + ", " + "%.2f" % pr + "\n")
+		
 		f.close()
 
 		print("XGBoost dumped testing reuslt in " + dirname_output + "/output.txt")

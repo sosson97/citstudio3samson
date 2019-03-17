@@ -49,22 +49,55 @@ class LSTM(ABC):
 	def forward():
 		print("forwarding LSTM model...")
 
-#class: XGBoostModel
-#Note: rain, test API should work without knowing schema of input data as long as both have same format and label at last column.
 class XGBoostModel():
+	"""Class: XGBoostModel
+	
+	Description:
+		XGBoost is an optimized distributed gradient boosting library designed to be highly efficient, flexible and 
+		portable(excerpt from https://xgboost.readthedocs.io/en/latest/). This model provides functions generating XGBoost 
+		model, training XGBoost model, and testing trained-XGBoost model.  	
+	"""
+
 	#Internal
-	#self.output contatins the result line by line
-	def __init__(self, parameters):
-		#super.__init__()
+	def __init__(self):
+		"""Function: __init__
+
+			Description: 
+				create an empty XGBoost model
+				
+			Args:
+				None
+
+			Attributes:
+				model (XGBoost Model): XGBoost model that the class holds currently.
+				output (list): Testing output. Used for dumping out the output.
+
+			Returns:
+				None
+
+		"""
 		self.model = None
 		self.output = []
-		self.init_model_(parameters)
 	
-	def init_model_(self, parameters):
-		print("XGBoost model initiated")
 	
 	#API
-	def train(self, train_parameter, num_round, seed):
+	def train(self, input_path, train_parameter, num_round, seed=42):
+		"""Function: train
+
+			Description:
+				Train XGBoost model with data in given path.   
+
+			Args:
+				input_path (str): path to train input.
+				train_parameters (dic): a parameter dictionary for training.
+				num_round (int): the number of training round.
+				seed (int): random seed. Default is 42.
+
+			Returns:
+				None(self.model contains trained model after execution of this function though)
+
+		"""
+
 		print("XGBoost training starts")
 		import numpy as np
 		from numpy import genfromtxt
@@ -93,7 +126,24 @@ class XGBoostModel():
 		
 		print(self.model.get_score(importance_type='gain'))
 		print(self.model.get_score(importance_type='weight'))
-	def test(self, test_parameters, path_test_input):
+	
+	def test(self, input_path, test_parameters):
+		"""Function: test
+
+			Description:
+				Test XGBoost model with data in given path.   
+
+			Args:
+				input_path (str): Path to test data.
+				test_parameters (dic): A parameter dictionary for testing.
+
+			Returns:
+				None(self.output contains output line by line after execution of this function though. 
+						Furthermore, you can dump out the result by calling dump_output)
+
+		"""
+
+
 		print("XGBoost testing starts")
 		import numpy as np
 		from numpy import genfromtxt
@@ -137,6 +187,19 @@ class XGBoostModel():
 		f.close()
 	
 	def dump_output(self, dirname_output, output_name):
+		"""Function: dump_output
+
+			Description:
+				Dump out the result in self.result to the given path.
+
+			Args:
+				output_path (str): Relative or absolute path of output.
+		
+			Returns: 
+				None(dumped file)
+
+
+		"""
 		f = open(dirname_output + "/" + output_name, "w")
 		for p, tr, pr in self.result:
 			f.write(str(int(p)) + ", ") 

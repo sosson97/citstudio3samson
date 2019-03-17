@@ -1,7 +1,5 @@
 #trainer.py
 
-#Abstract Implementation
-from abc import ABC, abstractmethod
 import pickle
 import time
 import torch
@@ -10,18 +8,57 @@ import torch.optim as optim
 from torch.utils.data import Dataset, DataLoader
 import env
 
-#class: Trainer
 class Trainer():
+	"""Class: Trainer
+
+		Description: 
+			Neural net trainer. For given neural net model, this class trains that model with given data and 
+			provides a function dumping out trained model.
+
+	"""
+
 	#Internal
 	def __init__(self, parameters, optimizer, loss_function, model):
-		#super.__init__()
+		"""Function: __init__
+			
+			Description:
+				Initialize training parameter, optimizer, loss function, model that will be trained.	
+
+			Args:
+				parameters (dic): a dictionary containing training parameters. 
+				optimizer (PyTorch Optimizer): PyTorch optimizer for back-propagation such as Adam, SGD
+				loss_function (str): Type of a loss function for back-propagation. Options are "MSE", "L1"
+				model (NN Model): Neural net model such as CNN, LSTM. See models.py to know which options are availabel. Note: XGBoost, Prophet model should not be given as input.
+
+			Attributes:
+				parameters (dic): a dictionary containing training parameters. 
+				optimizer (PyTorch Optimizer): PyTorch optimizer for back-propagation such as Adam, SGD
+				loss_function (str): Type of a loss function for back-propagation. Options are "MSE", "L1"
+				model (NN Model): Neural net model such as CNN, LSTM. See models.py to know which options are availabel. Note: XGBoost, Prophet model should not be given as input.
+
+			Returns: 
+				None
+
+		"""
 		self.parameters = parameters
 		self.model = model
 		self.optimizer = optim.Adam(self.model.parameters(), lr=1e-3, weight_decay=0.1)
 		self.loss_function = nn.MSELoss()
 		self.loader_data = self.train_data_load_()
 
-	def train_data_load_(self):
+	def _train_data_load(self):
+		"""Function: _train_data_load
+
+			Description: 
+				load training data from given path and make it a form of Torch Tensor(it is a data structure like matrix).  
+
+			Args:
+				input_path (str): path to input data
+
+			Returns:
+				train_data (DataLoader): train data formatted as torch DataLoader
+		"""
+		
 		import numpy as np
 		from numpy import genfromtxt
 		train_data_np = genfromtxt(env.train_input_name, delimiter=',')	
@@ -45,6 +82,17 @@ class Trainer():
 
 	#API
 	def train(self, dirname_input, num_epochs):
+		"""Function: train
+
+			Description:
+				train self.model with self.optimizer, self.loss_function, and data in self.loaded_data	
+
+			Args:
+				num_epochs (int): the number of training epochs
+
+			Returns:
+				None but self.model now stores trained-model. You can use this model for testing.
+		"""
 		print(self.model.__class__.__name__ + " model training starts...")
 		
 		dtype = torch.FloatTensor
@@ -68,13 +116,19 @@ class Trainer():
 		print("training done!")
 
 	def dump_model(self, dirname_output, model_name):
+		"""Function: dump_model
+
+			Description:
+				dump out self.model as binary file using pickle
+			
+			Args: 
+				output_path (str): Relative or absolute path of output.
+
+			Returns:
+				None but the model is dumped out.
+
+		"""
 		print("Dumped trained model in " + dirname_output)
 		f = open(dirname_output + "/" + model_name, "wb")
 		pickle.dump(self.model, f)
 
-"""
-class TrainerDemo(Trainer):
-	def train(self, dirname_input):
-		super().train(dirname_input)
-"""
-	

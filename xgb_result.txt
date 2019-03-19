@@ -354,3 +354,6 @@ average abs diff = 1.2333296979174884
 average abs diff in >2 = 1.0427074207535274
 average abs diff = 1.2323155922417286
 average abs diff in >2 = 1.0399578829354879
+test_input/last1year_test.csv testing result, Tue Mar 19 15:31:25 2019
+average abs diff = 1.2239844554718051
+average abs diff in >2 = 1.0706156667274767

@@ -4,16 +4,16 @@
 
 
 from raw_crawl import CrawlerDemo
-from feature import FeatureExtractor, OutputType
-from feature import WAR2014to2016, join_with_2017
-from models import NN, XGBoostModel
+from feature_extractor import FeatureExtractor, OutputType
+from functions import WAR2014to2016, join_with_2017
+from models import NN, XGBoostModel, SVRModel
 from trainer import Trainer
 from tester import Tester
 
 import time
 import env
 
-test_model = "XGB"
+test_model = "SVR"
 
 if __name__ == "__main__":
     """
@@ -80,21 +80,64 @@ if __name__ == "__main__":
         for seed in seed_list:
             print("\033[31m" + "#4. Training Model")
             print("-------------" + "\033[0m")  
+            
+            
+            
             xgbm = XGBoostModel()
             param_map = {
-                                    "feature_start_index":env.feature_start_index,
-                                    "features_num":env.features_num,
-                                    "metric":"rmse"
-                                    }
-            xgbm.train(env.train_input_name, param_map, 1000, seed)
+                    "feature_start_index":env.feature_start_index,
+                    "features_num":env.features_num,
+                    "metric":"rmse"
+                    }
+            xgbm.train(env.train_input_name, param_map, 300, seed)
+            
+            
             print("\033[31m" + "-------------\n" + "\033[0m")
             time.sleep(1)
 
         #5. testing and get result
             print("\033[31m" + "#5. Testing Model")
             print("-------------" + "\033[0m")  
+            
+            
             xgbm.test(env.test_input_name, param_map)   
-            xgbm.dump_output("output", env.test_input_name[11:-4] + "_output_" + str(seed) + ".csv")    
+            xgbm.dump_output("output", env.test_input_name[11:-4] + "_output_" + str(seed) + "_" + 
+                                time.ctime(time.time()).replace(" ", "_") + ".csv")    
+            
+            
+            
             print("\033[31m" + "-------------\n" + "\033[0m")   
 
+    if(test_model == "SVR"):
+        #3. creating model
+        #4. training
+        
+        print("\033[31m" + "#4. Training Model")
+        print("-------------" + "\033[0m")  
+        
+        
+        
+        svrm = SVRModel()
+        param_map = {
+                "feature_start_index":env.feature_start_index,
+                "features_num":env.features_num,
+                }
+        svrm.train(env.train_input_name, param_map)
+        
+        
+        print("\033[31m" + "-------------\n" + "\033[0m")
+        time.sleep(1)
+
+        #5. testing and get result
+        print("\033[31m" + "#5. Testing Model")
+        print("-------------" + "\033[0m")  
+        
+        
+        svrm.test(env.test_input_name, param_map)   
+        #xgbm.dump_output("output", env.test_input_name[11:-4] + "_output_" + str(seed) + "_" + 
+        #                    time.ctime(time.time()).replace(" ", "_") + ".csv")    
+        
+        
+        
+        print("\033[31m" + "-------------\n" + "\033[0m")   
 

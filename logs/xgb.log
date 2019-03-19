@@ -1,1 +1,15 @@
 XGB trained with train_input/last1year_training_bg2.csv
+Tue Mar 19 16:27:01 2019
+XGB tested with test_input/last1year_test.csv
+average abs diff = 1.1323789931303199
+average abs diff in >2 = 1.168537531321562
+XGB trained with train_input/last1year_training_bg2.csv
+Tue Mar 19 16:36:34 2019
+XGB tested with test_input/last1year_test.csv
+average abs diff = 1.1323789931303199
+average abs diff in >2 = 1.168537531321562
+XGB trained with train_input/last1year_training_bg2.csv
+Tue Mar 19 16:40:05 2019
+XGB tested with test_input/last1year_test.csv
+average abs diff = 1.1323789931303199
+average abs diff in >2 = 1.168537531321562

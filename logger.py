@@ -45,7 +45,7 @@ class Logger():
             Returns:
                 None but log is updated.
         """
-        if time:
+        if write_time:
             self.logger.write(str(time.ctime(time.time())) + "\n")
         self.logger.write(text + "\n")
 

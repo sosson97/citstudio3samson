@@ -1,0 +1,45 @@
+SVR trained with train_input/last1year_training.csv
+Tue Mar 19 20:37:13 2019
+SVR tested with test_input/last1year_test.csv
+average abs diff = 1.0398307063628887
+average abs diff in >2 = 2.305878840414672
+SVR trained with train_input/last1year_training.csv
+Tue Mar 19 20:40:50 2019
+SVR tested with test_input/last1year_test.csv
+average abs diff = 0.8898851023252244
+average abs diff in >2 = 1.5311000908518726
+SVR trained with train_input/last1year_training.csv
+Tue Mar 19 20:46:11 2019
+SVR tested with test_input/last1year_test.csv
+average abs diff = 1.108919100413702
+average abs diff in >2 = 1.7320140093695853
+SVR trained with train_input/last1year_training.csv
+Tue Mar 19 20:48:03 2019
+SVR tested with test_input/last1year_test.csv
+average abs diff = 0.8819789247596613
+average abs diff in >2 = 1.4662134373948852
+SVR trained with train_input/last1year_training.csv
+Tue Mar 19 21:00:12 2019
+SVR tested with test_input/last1year_test.csv
+average abs diff = 0.8819222653614965
+average abs diff in >2 = 1.460449183260928
+SVR trained with train_input/last2year_training.csv
+Tue Mar 19 21:02:09 2019
+SVR tested with test_input/last2year_test.csv
+average abs diff = 0.9436251758886198
+average abs diff in >2 = 1.52857578545891
+SVR trained with train_input/last3year_training.csv
+Tue Mar 19 21:02:26 2019
+SVR tested with test_input/last3year_test.csv
+average abs diff = 0.9785607812902727
+average abs diff in >2 = 1.5087377594299316
+SVR trained with train_input/last4year_training.csv
+Tue Mar 19 21:02:57 2019
+SVR tested with test_input/last4year_test.csv
+average abs diff = 0.9911119204126798
+average abs diff in >2 = 1.6229553318003227
+SVR trained with train_input/last5year_training.csv
+Tue Mar 19 21:03:14 2019
+SVR tested with test_input/last5year_test.csv
+average abs diff = 1.0309009371071818
+average abs diff in >2 = 1.837455197503522

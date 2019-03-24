@@ -56,7 +56,7 @@ class FeatureExtractor():
         print("Converting raw data into dataframe...")
         self.df = self.spark.read.format("com.databricks.spark.csv").option("header", "true").option("inferSchema", "true").load(input_path)
     
-    def df_update(self, custom_function):
+    def df_update(self, custom_function, *args):
         """Function: df_update
             
             Description:
@@ -81,9 +81,9 @@ class FeatureExtractor():
                 None
         """
 
-        self.df = custom_function(self.spark, self.df)
+        self.df = custom_function(self.spark, self.df, *args)
 
-    def dump_df(self, output_path, split=False, split_function=None, output_path2 = None):
+    def dump_df(self, output_path, split=False, split_function=None, output_path2 = None, *args):
         """
         Warning: This function is not fully implemented yet!
         """
@@ -98,20 +98,23 @@ class FeatureExtractor():
                 split_function (fun): a function describing how test, training data should be splitted. split_function
                                     should takes self.spark, self.df as argument and returns train_df, test_df. 
                                     Here is the example custom function that follows the policy. 
-                                                        Example)*****************************************************************
+                                                        Example)------------------------------------------------------------------
                                                         def random_split(spark, df):
                                                             train_df, test_df = df.randomSplit([0.9, 0.1], seed=42)
                                                             return train_df, test_df
-                                                        **************************************************************************
-                output_path2 (str): Relative or absolute path of test ouput, use only when split is True
+                                                        --------------------------------------------------------------------------
+                output_path2 (str): list of relative or absolute path of outputs, use only when split is True.
+                                    output_path is not used when split is True
     
         """
         if split:
-            train_df, test_df = split_function(self.spark, self.df)
-            train_df.toPandas().to_csv(output_path, header=True, index=False)
-            test_df.toPandas().to_csv(output_path2, header=True, index=False)
-            print("Dumped processed train data.")
-            print("Dumped processed test data.")
+            dfs = split_function(self.spark, self.df, *args)
+            i = 0;
+            for adf in dfs:
+                adf.toPandas().to_csv(output_path2[i], header=True, index=False)
+                i += 1
+            
+            print("Dumped processed data.")
 
         else:
             self.df.toPandas().to_csv(output_path, header=True, index=False) 

@@ -375,3 +375,98 @@ class SVRModel():
     def dump_output(self):
         pass
 
+
+from sklearn.cluster import KMeans
+class Clusterer():
+    """class: Clusterer
+        
+        Description: Provides several clustering algorithms 
+    """
+    #Internal
+    def __init__(self):
+        """Function: __init__
+
+            Description: 
+                create an empty Clusterer class. This class just provides some algorithms so there is no attribute or
+                argument needed.
+                
+            Args:
+                None
+
+            Attributes:
+                None
+
+            Returns:
+                None
+
+        """ 
+
+    def _csv_to_nparr(self, input_path, feature_start_index, features_num, pid=False):
+        """Function: _df_to_nparr
+            
+            Description: 
+                read csv file and transfrom it to feature matrix, label matrix according to the given index.
+
+            Args:
+                input_path (str): Relative or absolute path to input csv file. Input file must have features on columns from
+                                (feature_start_index-th) columns to (feature_start_index-th + features_num - 1)-th
+                                column, and have label at the next column of the last feature.
+                feature_start_index (int): index where first feature resides.
+                features_num (int): the number of featues.
+                pid (bool): return numpy matrix of playerid if True, Default is False.
+
+            Returns: 
+                train_features_np (numpy matrix): sample_number * features_num, numpy matrix
+                train_label_np (numpy matrix): sample_number * 1, numpy matrix
+        """
+        train_data_np = genfromtxt(input_path, delimiter=',')   
+        
+        
+        train_feature_np = np.array([l[feature_start_index:feature_start_index + features_num] for l in train_data_np][1:])
+        train_label_np = np.array([l[feature_start_index + features_num] for l in train_data_np][1:])
+        if pid: 
+            pid_np = np.array([l[feature_start_index-1] for l in train_data_np][1:]) 
+            return pid_np, train_feature_np, train_label_np
+
+        else:
+            return train_feature_np, train_label_np 
+
+    #API
+    def kmeans(self, input_path, train_parameters, output_path):
+        """Function: kmeans
+
+            Description:
+                Clustering given input file using K-means algorithm. 
+
+            Args:
+                input_path (str): path to train input.
+                train_parameters (dic): a parameter dictionary for training.
+                                                                the dictionary must contain follow entries.
+                                                                1. feature_start_index
+                                                                2. features_num
+                                                                3. clusters_num
+
+            Returns:
+                None but clustered output is dumped though.
+
+        """
+        feature_np, label_np = self._csv_to_nparr(input_path, train_parameters["feature_start_index"],
+                                                            train_parameters["features_num"])
+        km = KMeans(n_clusters=train_parameters["clusters_num"], random_state=0).fit(feature_np)
+        result = np.array(list(zip(feature_np,label_np)))
+        
+        file_list = []
+        for i in range(train_parameters["clusters_num"]):
+            file_list.append(open(output_path+str(i), "a+"))
+        
+        i = 0;
+        for features, label in result:
+            for entry in features:
+                file_list[km.labels_[i]].write("%f" % entry + ", ")
+            file_list[km.labels_[i]].write("%f" % label + "\n")
+            i += 1
+            
+        for afile in file_list:
+            afile.close()
+        
+

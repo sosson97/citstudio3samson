@@ -13,7 +13,7 @@ from tester import Tester
 import time
 import env
 
-test_model = "SVR"
+test_model = "XGB"
 
 if __name__ == "__main__":
     """
@@ -24,18 +24,18 @@ if __name__ == "__main__":
     crd.crawl()
     crd.dump_output("raw")
     print("\033[31m" + "-------------\n" + "\033[0m")
-
+    """
     time.sleep(1)
     #2. cleaning, feature extarction
     print("\033[31m" + "#2. Cleaing, feature extraction")
     print("-------------" + "\033[0m")
-    fed = FeatureExtractorDemo("simple schema", "raw/crawled_data.txt")
+    fe = FeatureExtractor("simple schema", "raw/crawled_data.txt")
     fed.raw_to_df()
     fed.df_update(WAR2014to2016)
     fed.df_update(join_with_2017)
     fed.dump_output("train_input", "test_input")
     print("\033[31m" + "-------------\n" + "\033[0m")
-    """
+    
     #model by model
 
     if(test_model == "NN"):

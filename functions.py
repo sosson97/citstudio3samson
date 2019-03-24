@@ -54,22 +54,42 @@ def rescaling(spark, df):
     return df
         
     
-    
+def clustering(spark, df, cluster_num=3):
+    all_columns = df.columns
+    columns = df.columns[2:-1]
+    from pyspark.ml.feature import VectorAssembler
+    from pyspark.ml.clustering import KMeans
 
+    vecAssembler = VectorAssembler(inputCols=columns, outputCol="features")
+    vector_df = vecAssembler.transform(df)
+    kmeans = KMeans().setK(cluster_num).setSeed(42)
+    model = kmeans.fit(vector_df)
+    predictions = model.transform(vector_df)
+   
+    all_columns.append("prediction")
+    df = predictions.select(all_columns)
+    df.show(10) 
+    return df
 
 
 #################
 #Split Functions#
 #################
+from pyspark.sql.functions import col
+
 def random_split(spark, df):
     train_df, test_df = df.randomSplit([0.9, 0.1], seed=42)
-    return train_df, test_df
+    return [train_df, test_df]
 
 
 def test_2017_train_less2017_split(spark, df):
-    from pyspark.sql.functions import col
     test_df = df.where(col("1ySeason") == 1.0)
     train_df = df.where(col("1ySeason") < 1.0)
-    return train_df, test_df
+    return [train_df, test_df]
 
-
+def cluster_split(spark, df, cluster_num):
+    out = []
+    for i in range(cluster_num):
+        out.append(df.where(col("prediction") == i))
+    return out
+    

@@ -68,14 +68,13 @@ def clustering(spark, df, cluster_num=3):
    
     all_columns.append("prediction")
     df = predictions.select(all_columns)
-    df.show(10) 
     return df
 
 
 #################
 #Split Functions#
 #################
-from pyspark.sql.functions import col
+from pyspark.sql.functions import col,min,max
 
 def random_split(spark, df):
     train_df, test_df = df.randomSplit([0.9, 0.1], seed=42)
@@ -83,8 +82,10 @@ def random_split(spark, df):
 
 
 def test_2017_train_less2017_split(spark, df):
-    test_df = df.where(col("1ySeason") == 1.0)
-    train_df = df.where(col("1ySeason") < 1.0)
+    
+    col_max = df.agg(max(col("1ySeason"))).head()[0]
+    test_df = df.where(col("1ySeason") == col_max)
+    train_df = df.where(col("1ySeason") < col_max)
     return [train_df, test_df]
 
 def cluster_split(spark, df, cluster_num):

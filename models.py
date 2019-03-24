@@ -161,7 +161,7 @@ class XGBoostModel():
         dtest = xgb.DMatrix(test_feature_np, label=test_label_np)
         
         pid = np.array([int(l[1]) for l in test_data_np[1:]])
-        true = np.array([float(l[-1]) for l in test_data_np][1:])
+        true = np.array([float(l[test_parameters["feature_start_index"] + test_parameters["features_num"]]) for l in test_data_np][1:])
         pred = self.model.predict(dtest)
         
         self.result = np.array(list(zip(pid,true,pred)))
@@ -184,7 +184,10 @@ class XGBoostModel():
                     absdiff_bg2 += line[2]-line[1]
                     num_bg2 += 1
         absdiff = absdiff/len(self.result)
-        absdiff_bg2 = absdiff_bg2/num_bg2
+        if num_bg2 == 0:
+            absdiff_bg2 = -1
+        else:
+            absdiff_bg2 = absdiff_bg2/num_bg2
         
     
         #for instant check.
@@ -357,7 +360,11 @@ class SVRModel():
                     absdiff_bg2 += line[2]-line[1]
                     num_bg2 += 1
         absdiff = absdiff/len(self.result)
-        absdiff_bg2 = absdiff_bg2/num_bg2
+        
+        if num_bg2 == 0:
+            absdiff_bg2 = -1    
+        else:
+            absdiff_bg2 = absdiff_bg2/num_bg2
         
     
         #for instant check.

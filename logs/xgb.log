@@ -68,3 +68,250 @@ Sun Mar 24 15:30:09 2019
 XGB tested with test_input/scaled.csv
 average abs diff = 0.8705830747682615
 average abs diff in >2 = 1.2699816293354276
+XGB trained with train_input/clustered_last1year_train0.csv
+XGB trained with train_input/clustered_last1year_train0.csv
+XGB trained with train_input/clustered_last1year_train0.csv
+Sun Mar 24 20:59:03 2019
+XGB tested with test_input/clustered_last1year_test0.csv
+average abs diff = 2.0959921220336297
+average abs diff in >2 = -1
+XGB trained with train_input/clustered_last1year_train0.csv
+Sun Mar 24 21:01:03 2019
+XGB tested with test_input/clustered_last1year_test0.csv
+average abs diff = 2.0959921220336297
+average abs diff in >2 = -1
+XGB trained with train_input/clustered_last1year_train0.csv
+Sun Mar 24 21:02:20 2019
+XGB tested with test_input/clustered_last1year_test0.csv
+average abs diff = 2.0959921220336297
+average abs diff in >2 = -1
+XGB trained with train_input/clustered_last1year_train0.csv
+Sun Mar 24 21:02:26 2019
+XGB tested with test_input/clustered_last1year_test0.csv
+average abs diff = 2.1011731772109714
+average abs diff in >2 = -1
+XGB trained with train_input/clustered_last1year_train0.csv
+Sun Mar 24 21:02:32 2019
+XGB tested with test_input/clustered_last1year_test0.csv
+average abs diff = 2.1142743151597303
+average abs diff in >2 = -1
+XGB trained with train_input/clustered_last1year_train0.csv
+Sun Mar 24 21:02:38 2019
+XGB tested with test_input/clustered_last1year_test0.csv
+average abs diff = 2.0561151474413246
+average abs diff in >2 = -1
+XGB trained with train_input/clustered_last1year_train0.csv
+Sun Mar 24 21:02:44 2019
+XGB tested with test_input/clustered_last1year_test0.csv
+average abs diff = 2.0859688418080107
+average abs diff in >2 = -1
+XGB trained with train_input/clustered_last1year_train1.csv
+Sun Mar 24 21:02:52 2019
+XGB tested with test_input/clustered_last1year_test1.csv
+average abs diff = 0.4731303517307554
+average abs diff in >2 = -1
+XGB trained with train_input/clustered_last1year_train1.csv
+Sun Mar 24 21:02:59 2019
+XGB tested with test_input/clustered_last1year_test1.csv
+average abs diff = 0.4722697811467307
+average abs diff in >2 = -1
+XGB trained with train_input/clustered_last1year_train1.csv
+Sun Mar 24 21:03:05 2019
+XGB tested with test_input/clustered_last1year_test1.csv
+average abs diff = 0.4756329140492848
+average abs diff in >2 = -1
+XGB trained with train_input/clustered_last1year_train1.csv
+Sun Mar 24 21:03:11 2019
+XGB tested with test_input/clustered_last1year_test1.csv
+average abs diff = 0.4699126667210034
+average abs diff in >2 = -1
+XGB trained with train_input/clustered_last1year_train1.csv
+Sun Mar 24 21:03:18 2019
+XGB tested with test_input/clustered_last1year_test1.csv
+average abs diff = 0.4716810364808355
+average abs diff in >2 = -1
+XGB trained with train_input/clustered_last1year_train2.csv
+Sun Mar 24 21:03:25 2019
+XGB tested with test_input/clustered_last1year_test2.csv
+average abs diff = 1.0032626039215498
+average abs diff in >2 = 1.0032626039215498
+XGB trained with train_input/clustered_last1year_train2.csv
+Sun Mar 24 21:03:30 2019
+XGB tested with test_input/clustered_last1year_test2.csv
+average abs diff = 1.0010385009504499
+average abs diff in >2 = 1.0010385009504499
+XGB trained with train_input/clustered_last1year_train2.csv
+Sun Mar 24 21:03:36 2019
+XGB tested with test_input/clustered_last1year_test2.csv
+average abs diff = 1.0145218386536552
+average abs diff in >2 = 1.0145218386536552
+XGB trained with train_input/clustered_last1year_train2.csv
+Sun Mar 24 21:03:41 2019
+XGB tested with test_input/clustered_last1year_test2.csv
+average abs diff = 1.012730327390489
+average abs diff in >2 = 1.012730327390489
+XGB trained with train_input/clustered_last1year_train2.csv
+Sun Mar 24 21:03:47 2019
+XGB tested with test_input/clustered_last1year_test2.csv
+average abs diff = 0.9960395920844305
+average abs diff in >2 = 0.9960395920844305
+XGB trained with train_input/clustered_last1year_train0.csv
+Sun Mar 24 21:14:58 2019
+XGB tested with test_input/clustered_last1year_test0.csv
+average abs diff = 1.224416702203077
+average abs diff in >2 = 1.1373433492183687
+XGB trained with train_input/clustered_last1year_train0.csv
+Sun Mar 24 21:15:04 2019
+XGB tested with test_input/clustered_last1year_test0.csv
+average abs diff = 1.2296896064522296
+average abs diff in >2 = 1.147603504061699
+XGB trained with train_input/clustered_last1year_train0.csv
+Sun Mar 24 21:15:10 2019
+XGB tested with test_input/clustered_last1year_test0.csv
+average abs diff = 1.2373665681993125
+average abs diff in >2 = 1.1268276600837708
+XGB trained with train_input/clustered_last1year_train0.csv
+Sun Mar 24 21:15:17 2019
+XGB tested with test_input/clustered_last1year_test0.csv
+average abs diff = 1.2200938779898372
+average abs diff in >2 = 1.1543143236637117
+XGB trained with train_input/clustered_last1year_train0.csv
+Sun Mar 24 21:15:23 2019
+XGB tested with test_input/clustered_last1year_test0.csv
+average abs diff = 1.2050929851002168
+average abs diff in >2 = 1.1253765597343446
+XGB trained with train_input/clustered_last1year_train1.csv
+Sun Mar 24 21:15:30 2019
+XGB tested with test_input/clustered_last1year_test1.csv
+average abs diff = 0.6611104435580119
+average abs diff in >2 = 1.82493968972793
+XGB trained with train_input/clustered_last1year_train1.csv
+Sun Mar 24 21:15:37 2019
+XGB tested with test_input/clustered_last1year_test1.csv
+average abs diff = 0.6714412513801028
+average abs diff in >2 = 1.809152090549469
+XGB trained with train_input/clustered_last1year_train1.csv
+Sun Mar 24 21:15:43 2019
+XGB tested with test_input/clustered_last1year_test1.csv
+average abs diff = 0.6652337420838219
+average abs diff in >2 = 1.776653790473938
+XGB trained with train_input/clustered_last1year_train1.csv
+Sun Mar 24 21:15:50 2019
+XGB tested with test_input/clustered_last1year_test1.csv
+average abs diff = 0.6682776804055486
+average abs diff in >2 = 1.8329235920539269
+XGB trained with train_input/clustered_last1year_train1.csv
+Sun Mar 24 21:15:57 2019
+XGB tested with test_input/clustered_last1year_test1.csv
+average abs diff = 0.6756130928226879
+average abs diff in >2 = 1.8121091205340165
+XGB trained with train_input/clustered_last1year_train2.csv
+Sun Mar 24 21:16:03 2019
+XGB tested with test_input/clustered_last1year_test2.csv
+average abs diff = 0.7993320184804147
+average abs diff in >2 = 1.4342553243041039
+XGB trained with train_input/clustered_last1year_train2.csv
+Sun Mar 24 21:16:09 2019
+XGB tested with test_input/clustered_last1year_test2.csv
+average abs diff = 0.7848008340313322
+average abs diff in >2 = 1.421685041859746
+XGB trained with train_input/clustered_last1year_train2.csv
+Sun Mar 24 21:16:14 2019
+XGB tested with test_input/clustered_last1year_test2.csv
+average abs diff = 0.791144802740642
+average abs diff in >2 = 1.454479293897748
+XGB trained with train_input/clustered_last1year_train2.csv
+Sun Mar 24 21:16:20 2019
+XGB tested with test_input/clustered_last1year_test2.csv
+average abs diff = 0.7892526234899249
+average abs diff in >2 = 1.4167026933282614
+XGB trained with train_input/clustered_last1year_train2.csv
+Sun Mar 24 21:16:26 2019
+XGB tested with test_input/clustered_last1year_test2.csv
+average abs diff = 0.7984988970415936
+average abs diff in >2 = 1.474090427160263
+XGB trained with train_input/clustered_last1year_train0.csv
+Sun Mar 24 21:26:24 2019
+XGB tested with test_input/clustered_last1year_test0.csv
+average abs diff = 1.224416702203077
+average abs diff in >2 = 1.1373433492183687
+XGB trained with train_input/clustered_last1year_train1.csv
+Sun Mar 24 21:26:31 2019
+XGB tested with test_input/clustered_last1year_test1.csv
+average abs diff = 0.6611104435580119
+average abs diff in >2 = 1.82493968972793
+XGB trained with train_input/clustered_last1year_train2.csv
+Sun Mar 24 21:26:38 2019
+XGB tested with test_input/clustered_last1year_test2.csv
+average abs diff = 0.7993320184804147
+average abs diff in >2 = 1.4342553243041039
+XGB trained with train_input/clustered_last1year_train0of3.csv
+Sun Mar 24 21:30:01 2019
+XGB tested with test_input/clustered_last1year_test0of3.csv
+average abs diff = 1.224416702203077
+average abs diff in >2 = 1.1373433492183687
+XGB trained with train_input/clustered_last1year_train1of3.csv
+Sun Mar 24 21:30:09 2019
+XGB tested with test_input/clustered_last1year_test1of3.csv
+average abs diff = 0.6611104435580119
+average abs diff in >2 = 1.82493968972793
+XGB trained with train_input/clustered_last1year_train2of3.csv
+Sun Mar 24 21:30:15 2019
+XGB tested with test_input/clustered_last1year_test2of3.csv
+average abs diff = 0.7993320184804147
+average abs diff in >2 = 1.4342553243041039
+XGB trained with train_input/clustered_last1year_train0of2.csv
+Sun Mar 24 21:31:47 2019
+XGB tested with test_input/clustered_last1year_test0of2.csv
+average abs diff = 0.6933976381444011
+average abs diff in >2 = 1.656965684145689
+XGB trained with train_input/clustered_last1year_train1of2.csv
+Sun Mar 24 21:31:55 2019
+XGB tested with test_input/clustered_last1year_test1of2.csv
+average abs diff = 1.1974151066075207
+average abs diff in >2 = 1.141311539519917
+XGB trained with train_input/clustered_last1year_train0of4.csv
+Sun Mar 24 21:33:04 2019
+XGB tested with test_input/clustered_last1year_test0of4.csv
+average abs diff = 0.6829693614641827
+average abs diff in >2 = 1.728840385377407
+XGB trained with train_input/clustered_last1year_train1of4.csv
+Sun Mar 24 21:33:10 2019
+XGB tested with test_input/clustered_last1year_test1of4.csv
+average abs diff = 1.0366497783337612
+average abs diff in >2 = 1.059741547974673
+XGB trained with train_input/clustered_last1year_train2of4.csv
+Sun Mar 24 21:33:18 2019
+XGB tested with test_input/clustered_last1year_test2of4.csv
+average abs diff = 0.6830645131546518
+average abs diff in >2 = 1.9096131341023879
+XGB trained with train_input/clustered_last1year_train3of4.csv
+Sun Mar 24 21:33:25 2019
+XGB tested with test_input/clustered_last1year_test3of4.csv
+average abs diff = 1.250201694707613
+average abs diff in >2 = 1.2127510497444554
+XGB trained with train_input/clustered_last1year_train0of5.csv
+Sun Mar 24 21:44:21 2019
+XGB tested with test_input/clustered_last1year_test0of5.csv
+average abs diff = 1.103431704332089
+average abs diff in >2 = 1.2446036300875924
+XGB trained with train_input/clustered_last1year_train1of5.csv
+Sun Mar 24 21:44:27 2019
+XGB tested with test_input/clustered_last1year_test1of5.csv
+average abs diff = 0.6761887466150618
+average abs diff in >2 = 2.0917824435234067
+XGB trained with train_input/clustered_last1year_train2of5.csv
+Sun Mar 24 21:44:32 2019
+XGB tested with test_input/clustered_last1year_test2of5.csv
+average abs diff = 0.7432093703976045
+average abs diff in >2 = 1.8971231559912363
+XGB trained with train_input/clustered_last1year_train3of5.csv
+Sun Mar 24 21:44:38 2019
+XGB tested with test_input/clustered_last1year_test3of5.csv
+average abs diff = 0.7080464894895429
+average abs diff in >2 = 1.8122880982028111
+XGB trained with train_input/clustered_last1year_train4of5.csv
+Sun Mar 24 21:44:45 2019
+XGB tested with test_input/clustered_last1year_test4of5.csv
+average abs diff = 1.220222146053837
+average abs diff in >2 = 1.097534426482948

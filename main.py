@@ -75,8 +75,8 @@ if __name__ == "__main__":
         #3. creating model
         #4. training
         
-        #seed_list = [42, 56, 100, 3, 15]
-        seed_list = [42]
+        seed_list = [42, 56, 100, 3, 15]
+        #seed_list = [42]
         for seed in seed_list:
             print("\033[31m" + "#4. Training Model")
             print("-------------" + "\033[0m")  
@@ -89,7 +89,7 @@ if __name__ == "__main__":
                     "features_num":env.features_num,
                     "metric":"rmse"
                     }
-            xgbm.train(env.train_input_name, param_map, 300, seed)
+            xgbm.train(env.train_input_name, param_map, 1000, seed)
             
             
             print("\033[31m" + "-------------\n" + "\033[0m")

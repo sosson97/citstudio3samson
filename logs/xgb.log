@@ -13,3 +13,58 @@ Tue Mar 19 16:40:05 2019
 XGB tested with test_input/last1year_test.csv
 average abs diff = 1.1323789931303199
 average abs diff in >2 = 1.168537531321562
+XGB trained with train_input/scaled.csv
+Sun Mar 24 15:26:06 2019
+XGB tested with test_input/scaled.csv
+average abs diff = 0.8584099312131253
+average abs diff in >2 = 1.3324719638764104
+XGB trained with train_input/scaled.csv
+Sun Mar 24 15:28:15 2019
+XGB tested with test_input/scaled.csv
+average abs diff = 0.8584099312131253
+average abs diff in >2 = 1.3324719638764104
+XGB trained with train_input/scaled.csv
+Sun Mar 24 15:28:20 2019
+XGB tested with test_input/scaled.csv
+average abs diff = 0.8621322085429275
+average abs diff in >2 = 1.3329529643058777
+XGB trained with train_input/scaled.csv
+Sun Mar 24 15:28:25 2019
+XGB tested with test_input/scaled.csv
+average abs diff = 0.8599145939106544
+average abs diff in >2 = 1.3683925796913197
+XGB trained with train_input/scaled.csv
+Sun Mar 24 15:28:29 2019
+XGB tested with test_input/scaled.csv
+average abs diff = 0.8616861651740947
+average abs diff in >2 = 1.3592059764680984
+XGB trained with train_input/scaled.csv
+Sun Mar 24 15:28:34 2019
+XGB tested with test_input/scaled.csv
+average abs diff = 0.8695889530905262
+average abs diff in >2 = 1.358023421824733
+XGB trained with train_input/scaled.csv
+Sun Mar 24 15:29:22 2019
+XGB tested with test_input/scaled.csv
+average abs diff = 0.8577929071228576
+average abs diff in >2 = 1.2344203609454483
+XGB trained with train_input/scaled.csv
+Sun Mar 24 15:29:34 2019
+XGB tested with test_input/scaled.csv
+average abs diff = 0.8603494982970392
+average abs diff in >2 = 1.236981406996522
+XGB trained with train_input/scaled.csv
+Sun Mar 24 15:29:46 2019
+XGB tested with test_input/scaled.csv
+average abs diff = 0.8596146636887605
+average abs diff in >2 = 1.2690097154695779
+XGB trained with train_input/scaled.csv
+Sun Mar 24 15:29:57 2019
+XGB tested with test_input/scaled.csv
+average abs diff = 0.8611667180947107
+average abs diff in >2 = 1.2566550733167916
+XGB trained with train_input/scaled.csv
+Sun Mar 24 15:30:09 2019
+XGB tested with test_input/scaled.csv
+average abs diff = 0.8705830747682615
+average abs diff in >2 = 1.2699816293354276

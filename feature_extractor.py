@@ -64,23 +64,21 @@ class FeatureExtractor():
 
             Args:
                 custom_function (fun): custom_function should be a function that takes spark(SparkSession), df(Dataframe) as arguments and its contents should 
-                                                         describe the way of updating df using spark, then returns df. Here is the example custom function that follows the policy. 
-                                                         Example)*****************************************************************
-                                                         def WAR2014to2016(spark, df)
-                                                             df.createOrReplaceTempView('pitcher')
-                                                             df = spark.sql('''SELECT Name, playerid, 
-                                                                                        sum(CASE WHEN Season = "2014" THEN WAR ELSE 0 END) 2014WAR,
-                                                                                        sum(CASE WHEN Season = "2015" THEN WAR ELSE 0 END) 2015WAR,
-                                                                                        sum(CASE WHEN Season = "2016" THEN WAR ELSE 0 END) 2016WAR,
-                                                                                        avg(WAR) as last3WAR, max(Age) as Age
-                                                                                        FROM pitcher
-                                                                                        GROUP BY Name, playerid''')
-                                                         return df
-                                                        ***************************************************************************
+                                    describe the way of updating df using spark, then returns df. Here is the example custom function that follows the policy. 
+                                    Example)*****************************************************************
+                                    def WAR2014to2016(spark, df):
+                                        df.createOrReplaceTempView('pitcher')
+                                        df = spark.sql('''SELECT Name, playerid, 
+                                                        sum(CASE WHEN Season = "2014" THEN WAR ELSE 0 END) 2014WAR,
+                                                        sum(CASE WHEN Season = "2015" THEN WAR ELSE 0 END) 2015WAR,
+                                                        sum(CASE WHEN Season = "2016" THEN WAR ELSE 0 END) 2016WAR,
+                                                        avg(WAR) as last3WAR, max(Age) as Age
+                                                        FROM pitcher
+                                                        GROUP BY Name, playerid''')
+                                        return df
+                                    ***************************************************************************
             Returns:
                 None
-                
-    
         """
 
         self.df = custom_function(self.spark, self.df)
@@ -110,8 +108,8 @@ class FeatureExtractor():
         """
         if split:
             train_df, test_df = split_function(self.spark, self.df)
-            train_df.toPandas().to_csv(output_path, header=True)
-            test_df.toPandas().to_csv(output_path2, header=True)
+            train_df.toPandas().to_csv(output_path, header=True, index=False)
+            test_df.toPandas().to_csv(output_path2, header=True, index=False)
             print("Dumped processed train data.")
             print("Dumped processed test data.")
 

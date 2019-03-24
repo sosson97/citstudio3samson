@@ -306,7 +306,7 @@ class SVRModel():
         train_feature_np, train_label_np = self._csv_to_nparr(input_path, train_parameters["feature_start_index"],
                                                             train_parameters["features_num"])
         self.model = SVR(kernel='poly', gamma="scale", C=1.0, epsilon=0.2)
-        self.model.fit(train_feature_np, train_label_np)
+        self.model.fit(train_feature_np, train_label_np, sample_weight=train_label_np)
         self.logger.log("SVR trained with " + input_path)
 
     def test(self, input_path, test_parameters):

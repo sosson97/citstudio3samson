@@ -43,3 +43,13 @@ Tue Mar 19 21:03:14 2019
 SVR tested with test_input/last5year_test.csv
 average abs diff = 1.0309009371071818
 average abs diff in >2 = 1.837455197503522
+SVR trained with train_input/last5year_training.csv
+Tue Mar 19 21:53:10 2019
+SVR tested with test_input/last5year_test.csv
+average abs diff = 1.0309009371071818
+average abs diff in >2 = 1.837455197503522
+SVR trained with train_input/scaled.csv
+Sun Mar 24 16:10:55 2019
+SVR tested with test_input/scaled.csv
+average abs diff = 1.095159542443193
+average abs diff in >2 = 1.0863812849532664

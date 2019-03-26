@@ -309,7 +309,7 @@ class SVRModel():
         train_feature_np, train_label_np = self._csv_to_nparr(input_path, train_parameters["feature_start_index"],
                                                             train_parameters["features_num"])
         self.model = SVR(kernel='poly', gamma="scale", C=1.0, epsilon=0.2)
-        self.model.fit(train_feature_np, train_label_np, sample_weight=train_label_np)
+        self.model.fit(train_feature_np, train_label_np) #,sample_weight=train_label_np)
         self.logger.log("SVR trained with " + input_path)
 
     def test(self, input_path, test_parameters):
@@ -379,8 +379,31 @@ class SVRModel():
         self.logger.log("average abs diff in >2 = " + str(absdiff_bg2))
 
 
-    def dump_output(self):
-        pass
+    def dump_output(self, dirname_output, output_name):
+        """Function: dump_output
+
+            Description:
+                Dump out the result in self.result to the given path.
+
+            Args:
+                output_path (str): Relative or absolute path of output.
+        
+            Returns: 
+                None(dumped file)
+
+
+        """
+        f = open(dirname_output + "/" + output_name, "w")
+        f.write("playerid, trueWAR, predWAR \n")
+        for p, tr, pr in self.result:
+            f.write(str(int(p)) + ", ") 
+            f.write("%.2f" % tr + ", " + "%.2f" % pr + "\n")
+        
+        f.close()
+
+        print("XGBoost dumped testing reuslt in " + dirname_output + "/" + output_name)
+
+
 
 
 from sklearn.cluster import KMeans

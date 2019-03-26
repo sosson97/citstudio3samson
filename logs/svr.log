@@ -53,3 +53,68 @@ Sun Mar 24 16:10:55 2019
 SVR tested with test_input/scaled.csv
 average abs diff = 1.095159542443193
 average abs diff in >2 = 1.0863812849532664
+SVR trained with train_input/train_simple_1year.csv
+Tue Mar 26 21:56:58 2019
+SVR tested with test_input/test_simple_1year.csv
+average abs diff = 1.2218520149418965
+average abs diff in >2 = 0.9516355810122467
+SVR trained with train_input/Fangraphs_1980-2017_raw_train0of3.csv
+Tue Mar 26 22:11:49 2019
+SVR tested with train_input/Fangraphs_1980-2017_raw_train0of3.csv
+average abs diff = 1.1427956739552187
+average abs diff in >2 = 1.1099837541575572
+SVR trained with train_input/Fangraphs_1980-2017_raw_train0of3.csv
+Tue Mar 26 22:12:58 2019
+SVR tested with train_input/Fangraphs_1980-2017_raw_train0of3.csv
+average abs diff = 1.1427956739552187
+average abs diff in >2 = 1.1099837541575572
+SVR trained with train_input/Fangraphs_1980-2017_raw_train0of3.csv
+Tue Mar 26 22:13:53 2019
+SVR tested with train_input/Fangraphs_1980-2017_raw_train0of3.csv
+average abs diff = 1.1427956739552187
+average abs diff in >2 = 1.1099837541575572
+SVR trained with train_input/Fangraphs_1980-2017_raw_train0of3.csv
+Tue Mar 26 22:15:12 2019
+SVR tested with train_input/Fangraphs_1980-2017_raw_train0of3.csv
+average abs diff = 1.1427956739552187
+average abs diff in >2 = 1.1099837541575572
+SVR trained with train_input/Fangraphs_1980-2017_raw_train1of3.csv
+Tue Mar 26 22:15:15 2019
+SVR tested with train_input/Fangraphs_1980-2017_raw_train1of3.csv
+average abs diff = 1.405091756052247
+average abs diff in >2 = 0.8024263936750415
+SVR trained with train_input/Fangraphs_1980-2017_raw_train2of3.csv
+Tue Mar 26 22:15:16 2019
+SVR tested with train_input/Fangraphs_1980-2017_raw_train2of3.csv
+average abs diff = 1.562615073398189
+average abs diff in >2 = 1.200986883018479
+SVR trained with train_input/Fangraphs_1980-2017_raw_train0of3.csv
+Tue Mar 26 22:18:10 2019
+SVR tested with test_input/Fangraphs_1980-2017_raw_test0of3.csv
+average abs diff = 1.0369315577206464
+average abs diff in >2 = 1.079693453522507
+SVR trained with train_input/Fangraphs_1980-2017_raw_train1of3.csv
+Tue Mar 26 22:18:12 2019
+SVR tested with test_input/Fangraphs_1980-2017_raw_test1of3.csv
+average abs diff = 1.3992727634699045
+average abs diff in >2 = 0.6716145488964747
+SVR trained with train_input/Fangraphs_1980-2017_raw_train2of3.csv
+Tue Mar 26 22:18:14 2019
+SVR tested with test_input/Fangraphs_1980-2017_raw_test2of3.csv
+average abs diff = 2.1641688954492975
+average abs diff in >2 = 1.5738722472026947
+SVR trained with train_input/Fangraphs_1980-2017_raw_train0of3.csv
+Tue Mar 26 22:20:28 2019
+SVR tested with test_input/Fangraphs_1980-2017_raw_test0of3.csv
+average abs diff = 0.7277910731635923
+average abs diff in >2 = 2.1277896495283524
+SVR trained with train_input/Fangraphs_1980-2017_raw_train1of3.csv
+Tue Mar 26 22:20:31 2019
+SVR tested with test_input/Fangraphs_1980-2017_raw_test1of3.csv
+average abs diff = 1.093557404993364
+average abs diff in >2 = 1.28144645669311
+SVR trained with train_input/Fangraphs_1980-2017_raw_train2of3.csv
+Tue Mar 26 22:20:32 2019
+SVR tested with test_input/Fangraphs_1980-2017_raw_test2of3.csv
+average abs diff = 1.7583745729634002
+average abs diff in >2 = 1.4548578199218947

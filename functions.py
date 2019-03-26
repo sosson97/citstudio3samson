@@ -2,7 +2,7 @@
 """
 A collection of custom functions and split functions for FeatrueExtractor class
 """
-
+import env
 ##################
 #Custom Functions#
 ##################
@@ -54,9 +54,9 @@ def rescaling(spark, df):
     return df
         
     
-def clustering(spark, df, cluster_num=3):
+def WAR_clustering(spark, df, cluster_num=3):
     all_columns = df.columns
-    columns = df.columns[2:-1]
+    columns = ["WAR"]
     from pyspark.ml.feature import VectorAssembler
     from pyspark.ml.clustering import KMeans
 
@@ -70,6 +70,28 @@ def clustering(spark, df, cluster_num=3):
     df = predictions.select(all_columns)
     return df
 
+def clustering(spark, df, cluster_num=3):
+    all_columns = df.columns
+    columns = df.columns[env.feature_start_index:env.feature_start_index + env.features_num]
+    from pyspark.ml.feature import VectorAssembler
+    from pyspark.ml.clustering import KMeans
+
+    vecAssembler = VectorAssembler(inputCols=columns, outputCol="features")
+    vector_df = vecAssembler.transform(df)
+    kmeans = KMeans().setK(cluster_num).setSeed(42)
+    model = kmeans.fit(vector_df)
+    predictions = model.transform(vector_df)
+   
+    all_columns.append("prediction")
+    df = predictions.select(all_columns)
+    return df
+
+def null_remover(spark, df):
+    df.createOrReplaceTempView("df")
+    columns = df.columns
+    for column in columns:
+        df = df.filter(column + " is not null")
+    return df
 
 #################
 #Split Functions#

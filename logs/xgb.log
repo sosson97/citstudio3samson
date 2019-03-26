@@ -315,3 +315,123 @@ Sun Mar 24 21:44:45 2019
 XGB tested with test_input/clustered_last1year_test4of5.csv
 average abs diff = 1.220222146053837
 average abs diff in >2 = 1.097534426482948
+XGB trained with train_input/clustered_last1year_train0of5.csv
+Sun Mar 24 22:32:03 2019
+XGB tested with test_input/clustered_last1year_test0of5.csv
+average abs diff = 1.103431704332089
+average abs diff in >2 = 1.2446036300875924
+XGB trained with train_input/clustered_last1year_train1of5.csv
+Sun Mar 24 22:32:09 2019
+XGB tested with test_input/clustered_last1year_test1of5.csv
+average abs diff = 0.6761887466150618
+average abs diff in >2 = 2.0917824435234067
+XGB trained with train_input/clustered_last1year_train2of5.csv
+Sun Mar 24 22:32:15 2019
+XGB tested with test_input/clustered_last1year_test2of5.csv
+average abs diff = 0.7432093703976045
+average abs diff in >2 = 1.8971231559912363
+XGB trained with train_input/clustered_last1year_train3of5.csv
+Sun Mar 24 22:32:21 2019
+XGB tested with test_input/clustered_last1year_test3of5.csv
+average abs diff = 0.7080464894895429
+average abs diff in >2 = 1.8122880982028111
+XGB trained with train_input/clustered_last1year_train4of5.csv
+Sun Mar 24 22:32:28 2019
+XGB tested with test_input/clustered_last1year_test4of5.csv
+average abs diff = 1.220222146053837
+average abs diff in >2 = 1.097534426482948
+XGB trained with train_input/train_simple_1year.csv
+Tue Mar 26 20:46:18 2019
+XGB tested with test_input/test_simple_1year.csv
+average abs diff = 0.8567972203341794
+average abs diff in >2 = 1.206395249125324
+XGB trained with train_input/Fangraphs_1980-2017_raw_train0of3.csv
+Tue Mar 26 21:16:53 2019
+XGB tested with test_input/Fangraphs_1980-2017_raw_test0of3.csv
+average abs diff = 0.8817276765133938
+average abs diff in >2 = 1.261227477049526
+XGB trained with train_input/Fangraphs_1980-2017_raw_train1of3.csv
+Tue Mar 26 21:17:01 2019
+XGB tested with test_input/Fangraphs_1980-2017_raw_test1of3.csv
+average abs diff = 1.217728065782123
+average abs diff in >2 = -1
+XGB trained with train_input/Fangraphs_1980-2017_raw_train2of3.csv
+Tue Mar 26 21:17:09 2019
+XGB tested with test_input/Fangraphs_1980-2017_raw_test2of3.csv
+average abs diff = 0.8176371534665424
+average abs diff in >2 = 1.1085462808609008
+XGB trained with train_input/Fangraphs_1980-2017_raw_train0of3.csv
+Tue Mar 26 21:24:24 2019
+XGB tested with test_input/Fangraphs_1980-2017_raw_test0of3.csv
+average abs diff = 0.9015513167299073
+average abs diff in >2 = 1.3458027169108389
+XGB trained with train_input/Fangraphs_1980-2017_raw_train1of3.csv
+Tue Mar 26 21:24:36 2019
+XGB tested with test_input/Fangraphs_1980-2017_raw_test1of3.csv
+average abs diff = 0.893125429607573
+average abs diff in >2 = 1.1971308231353759
+XGB trained with train_input/Fangraphs_1980-2017_raw_train2of3.csv
+Tue Mar 26 21:24:44 2019
+XGB tested with test_input/Fangraphs_1980-2017_raw_test2of3.csv
+average abs diff = 0.8752630104452874
+average abs diff in >2 = 1.2261321366843534
+XGB trained with train_input/Fangraphs_1980-2017_raw_train0of5.csv
+Tue Mar 26 21:31:12 2019
+XGB tested with test_input/Fangraphs_1980-2017_raw_test0of5.csv
+average abs diff = 0.9015513167299073
+average abs diff in >2 = 1.3458027169108389
+XGB trained with train_input/Fangraphs_1980-2017_raw_train1of5.csv
+Tue Mar 26 21:31:19 2019
+XGB tested with test_input/Fangraphs_1980-2017_raw_test1of5.csv
+average abs diff = 0.80262893140316
+average abs diff in >2 = -1
+XGB trained with train_input/Fangraphs_1980-2017_raw_train2of5.csv
+Tue Mar 26 21:31:27 2019
+XGB tested with test_input/Fangraphs_1980-2017_raw_test2of5.csv
+average abs diff = 0.8752630104452874
+average abs diff in >2 = 1.2261321366843534
+XGB trained with train_input/Fangraphs_1980-2017_raw_train3of5.csv
+Tue Mar 26 21:31:34 2019
+XGB tested with test_input/Fangraphs_1980-2017_raw_test3of5.csv
+average abs diff = 0.6655488461256027
+average abs diff in >2 = 1.0251227855682372
+XGB trained with train_input/Fangraphs_1980-2017_raw_train4of5.csv
+Tue Mar 26 21:31:41 2019
+XGB tested with test_input/Fangraphs_1980-2017_raw_test4of5.csv
+average abs diff = 1.2428934523037503
+average abs diff in >2 = -1
+XGB trained with train_input/Fangraphs_1980-2017_raw_train0of3.csv
+Tue Mar 26 21:37:18 2019
+XGB tested with test_input/Fangraphs_1980-2017_raw_test0of3.csv
+average abs diff = 0.7264178534253285
+average abs diff in >2 = 1.739599894789549
+XGB trained with train_input/Fangraphs_1980-2017_raw_train1of3.csv
+Tue Mar 26 21:37:29 2019
+XGB tested with test_input/Fangraphs_1980-2017_raw_test1of3.csv
+average abs diff = 1.0433430961726868
+average abs diff in >2 = 1.0529237198829653
+XGB trained with train_input/Fangraphs_1980-2017_raw_train2of3.csv
+Tue Mar 26 21:37:36 2019
+XGB tested with test_input/Fangraphs_1980-2017_raw_test2of3.csv
+average abs diff = 1.5739945597118803
+average abs diff in >2 = 1.1682223503406233
+XGB trained with train_input/Fangraphs_1980-2017_raw_train0of4.csv
+Tue Mar 26 21:41:55 2019
+XGB tested with test_input/Fangraphs_1980-2017_raw_test0of4.csv
+average abs diff = 0.7435664608577888
+average abs diff in >2 = 1.4210145497322082
+XGB trained with train_input/Fangraphs_1980-2017_raw_train1of4.csv
+Tue Mar 26 21:42:18 2019
+XGB tested with test_input/Fangraphs_1980-2017_raw_test1of4.csv
+average abs diff = 1.1673831916191209
+average abs diff in >2 = 1.0886476205454936
+XGB trained with train_input/Fangraphs_1980-2017_raw_train2of4.csv
+Tue Mar 26 21:42:33 2019
+XGB tested with test_input/Fangraphs_1980-2017_raw_test2of4.csv
+average abs diff = 1.5445626088551114
+average abs diff in >2 = 1.1864132738113402
+XGB trained with train_input/Fangraphs_1980-2017_raw_train3of4.csv
+Tue Mar 26 21:43:04 2019
+XGB tested with test_input/Fangraphs_1980-2017_raw_test3of4.csv
+average abs diff = 0.7196583242234539
+average abs diff in >2 = 1.8647330728860998

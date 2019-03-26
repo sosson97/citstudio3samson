@@ -13,7 +13,7 @@ from tester import Tester
 import time
 import env
 
-test_model = "XGB"
+test_model = "SVR"
 
 if __name__ == "__main__":
     """
@@ -25,6 +25,7 @@ if __name__ == "__main__":
     crd.dump_output("raw")
     print("\033[31m" + "-------------\n" + "\033[0m")
     """
+    """
     time.sleep(1)
     #2. cleaning, feature extarction
     print("\033[31m" + "#2. Cleaing, feature extraction")
@@ -35,7 +36,7 @@ if __name__ == "__main__":
     fed.df_update(join_with_2017)
     fed.dump_output("train_input", "test_input")
     print("\033[31m" + "-------------\n" + "\033[0m")
-    
+    """
     #model by model
 
     if(test_model == "NN"):
@@ -75,8 +76,8 @@ if __name__ == "__main__":
         #3. creating model
         #4. training
         
-        seed_list = [42, 56, 100, 3, 15]
-        #seed_list = [42]
+        #seed_list = [42, 56, 100, 3, 15]
+        seed_list = [42]
         for seed in seed_list:
             print("\033[31m" + "#4. Training Model")
             print("-------------" + "\033[0m")  

@@ -34,6 +34,17 @@ def join_2014to2016_with_2017(spark, df):
     return df
 
 def join_with_2017(spark, df):
+    '''Custom Function: join_with_2017
+
+        Description: 
+            join given dataframe with 2017 raw data where player name matches.
+
+        Args: 
+
+        Return:
+    '''
+
+
     df_2017 = spark.read.format("com.databricks.spark.csv").option("header", "true").option("inferSchema",
                 "true").load("raw/2017_WAR.csv")
     df_2017.createOrReplaceTempView('w2017')
@@ -45,6 +56,17 @@ def join_with_2017(spark, df):
     return df
 
 def rescaling(spark, df):
+    '''Custom Function: rescaling
+
+        Description: 
+            Rescaling the range of all cloumns to [0,1] using max-min normalization.
+
+        Args: 
+
+        Return:
+
+    '''
+
     columns = df.columns[2:-1] # except label, name, playerid
     from pyspark.sql.functions import col,min,max
     for column in columns:
@@ -55,6 +77,18 @@ def rescaling(spark, df):
         
     
 def WAR_clustering(spark, df, cluster_num=3):
+    '''Custom Function: WAR_clustering
+
+        Description: 
+            Clustering given data frame along the distribution of WAR using K-Means
+
+        Args: 
+            cluster_num (int): the number of clusters that kmeans will make
+
+        Return:
+
+        Notes: Works poorly.
+    '''
     all_columns = df.columns
     columns = ["WAR"]
     from pyspark.ml.feature import VectorAssembler
@@ -71,6 +105,18 @@ def WAR_clustering(spark, df, cluster_num=3):
     return df
 
 def clustering(spark, df, cluster_num=3):
+    '''Custom Function: clustering
+
+        Description: 
+            Clustering given data frame using K-Means
+
+        Args: 
+            cluster_num (int): the number of clusters that kmeans will make
+
+        Return:
+
+        Notes: Works poorly.
+    '''
     all_columns = df.columns
     columns = df.columns[env.feature_start_index:env.feature_start_index + env.features_num]
     from pyspark.ml.feature import VectorAssembler
@@ -87,6 +133,17 @@ def clustering(spark, df, cluster_num=3):
     return df
 
 def null_remover(spark, df):
+    '''Custom Function: null_remover
+
+        Description: 
+            Remove all columns containing at least one null data
+
+        Args: 
+
+        Return:
+
+        Notes: Works poorly.
+    '''
     df.createOrReplaceTempView("df")
     columns = df.columns
     for column in columns:
@@ -99,12 +156,36 @@ def null_remover(spark, df):
 from pyspark.sql.functions import col,min,max
 
 def random_split(spark, df):
+    '''Split Function: random_split
+
+        Description: 
+            Randomly split data into train data, test data in the ratio of 9:1
+
+        Args: 
+
+        Return:
+
+    '''
+
     train_df, test_df = df.randomSplit([0.9, 0.1], seed=42)
     return [train_df, test_df]
 
 
 def test_2017_train_less2017_split(spark, df):
-    
+    '''Split Function: test_2017_train_less_2017_split
+
+        Note: Default split function
+
+        Description: 
+            Split data into train data, test data by the year of latest year contained in data.
+
+        Args: 
+
+        Return:
+
+    '''
+
+   
     col_max = df.agg(max(col("1ySeason"))).head()[0]
     test_df = df.where(col("1ySeason") == col_max)
     train_df = df.where(col("1ySeason") < col_max)

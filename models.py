@@ -407,8 +407,9 @@ class SVRModel():
 
 
 from sklearn.cluster import KMeans
-class Clusterer():
+class __Clusterer():
     """class: Clusterer
+        Warining: This class is not actively used!! Look at cluster function in functions.py to use clustering. 
         
         Description: Provides several clustering algorithms 
     """

@@ -1,14 +1,28 @@
 from feature_extractor import FeatureExtractor
-from functions import rescaling, test_2017_train_less2017_split, clustering,cluster_split,null_remover
+import functions
+
 fe = FeatureExtractor()
-fe.raw_to_df("raw/Fangraphs_1980-2017_raw.csv")
-fe.df_update(null_remover)
+
+col = ["Name", "playerid"]
+for i in range(1,16):
+    fe.raw_to_df("raw/1960-2018_WAR_enumerated.csv")
+    fe.df_update(functions.null_remover, ["WAR"+str(i)])
+    col.append("WAR"+str(i))
+    fe.df_update(functions.selection,col)
+    fe.dump_df("raw/players_until_career_" + str(i) + ".csv")
+
+
+#fe.raw_to_df("raw/1960-2018.csv")
+#fe.df_update(WAR_enumeration)
+#fe.dump_df("raw/1960-2018_WAR_enumerated.csv")
+#fe.df_update(null_remover)
 #fe.dump_df("nullrm.csv")
 
-path_list = ["train_input/train_simple_1year.csv", "test_input/test_simple_1year.csv"]
-fe.dump_df(None, True, test_2017_train_less2017_split, path_list)
+#path_list = ["train_input/train_simple_1year.csv", "test_input/test_simple_1year.csv"]
+#fe.dump_df(None, True, test_2017_train_less2017_split, path_list)
 
 
+#Trial 1
 """
 fe = FeatureExtractor()
 fe.raw_to_df("raw/last1year.csv")

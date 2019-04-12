@@ -6,6 +6,16 @@ import env
 ##################
 #Custom Functions#
 ##################
+def selection(spark, df, col=None):
+    if col==None:
+        columns = df.columns
+    else:
+        columns = col
+    df = df.select(columns)
+    return df
+
+
+
 def WAR2014to2016(spark, df):
     df.createOrReplaceTempView('pitcher')
     df = spark.sql('''SELECT Name, playerid, 
@@ -16,6 +26,29 @@ def WAR2014to2016(spark, df):
                                         FROM pitcher
                                         GROUP BY Name, playerid''')
     return df
+
+def WAR_enumeration(spark, df):
+    df.createOrReplaceTempView('pitcher')
+    df = spark.sql('''SELECT Name, playerid, 
+                                        sum(CASE WHEN ServiceTime = "1" THEN WAR ELSE NULL END) WAR1,
+                                        sum(CASE WHEN ServiceTime = "2" THEN WAR ELSE NULL END) WAR2,
+                                        sum(CASE WHEN ServiceTime = "3" THEN WAR ELSE NULL END) WAR3,
+                                        sum(CASE WHEN ServiceTime = "4" THEN WAR ELSE NULL END) WAR4,
+                                        sum(CASE WHEN ServiceTime = "5" THEN WAR ELSE NULL END) WAR5,
+                                        sum(CASE WHEN ServiceTime = "6" THEN WAR ELSE NULL END) WAR6,
+                                        sum(CASE WHEN ServiceTime = "7" THEN WAR ELSE NULL END) WAR7,
+                                        sum(CASE WHEN ServiceTime = "8" THEN WAR ELSE NULL END) WAR8,
+                                        sum(CASE WHEN ServiceTime = "9" THEN WAR ELSE NULL END) WAR9,
+                                        sum(CASE WHEN ServiceTime = "10" THEN WAR ELSE NULL END) WAR10,
+                                        sum(CASE WHEN ServiceTime = "11" THEN WAR ELSE NULL END) WAR11,
+                                        sum(CASE WHEN ServiceTime = "12" THEN WAR ELSE NULL END) WAR12,
+                                        sum(CASE WHEN ServiceTime = "13" THEN WAR ELSE NULL END) WAR13,
+                                        sum(CASE WHEN ServiceTime = "14" THEN WAR ELSE NULL END) WAR14,
+                                        sum(CASE WHEN ServiceTime = "15" THEN WAR ELSE NULL END) WAR15
+                                        FROM pitcher
+                                        GROUP BY Name, playerid''')
+    return df
+
 
 def join_2014to2016_with_2017(spark, df):
     df_2017 = spark.read.format("com.databricks.spark.csv").option("header", "true").option("inferSchema", "true").load("FanGraphs_Leaderboard_2017_Pitcher_Leader.csv")
@@ -132,7 +165,7 @@ def clustering(spark, df, cluster_num=3):
     df = predictions.select(all_columns)
     return df
 
-def null_remover(spark, df):
+def null_remover(spark, df, col=None):
     '''Custom Function: null_remover
 
         Description: 
@@ -142,13 +175,19 @@ def null_remover(spark, df):
 
         Return:
 
-        Notes: Works poorly.
     '''
     df.createOrReplaceTempView("df")
-    columns = df.columns
+    if col==None:
+        columns = df.columns
+    else:
+        columns = col
     for column in columns:
         df = df.filter(column + " is not null")
     return df
+
+
+
+
 
 #################
 #Split Functions#

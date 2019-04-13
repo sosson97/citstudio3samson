@@ -7,6 +7,18 @@ import env
 #Custom Functions#
 ##################
 def selection(spark, df, col=None):
+    '''Custom Function: selection
+
+        Description: 
+            select columns given by col argument. Default is all columsn of data frame
+
+        Args: 
+            col (string list): list of columns that you want to select.
+
+        Return:
+    '''
+
+
     if col==None:
         columns = df.columns
     else:
@@ -17,6 +29,20 @@ def selection(spark, df, col=None):
 
 
 def WAR2014to2016(spark, df):
+    '''Custom Function: WAR2014to2016
+
+        Description: 
+            Enumerate 2014, 2015, 2016 WAR of one player.
+
+        Args: 
+
+        Return:
+
+        Note: 
+            WAR enumeration do similar works for you.
+    '''
+
+
     df.createOrReplaceTempView('pitcher')
     df = spark.sql('''SELECT Name, playerid, 
                                         sum(CASE WHEN Season = "2014" THEN WAR ELSE 0 END) 2014WAR,
@@ -28,6 +54,20 @@ def WAR2014to2016(spark, df):
     return df
 
 def WAR_enumeration(spark, df):
+    '''Custom Function: join_with_2017
+
+        Description: 
+            Enumerate WAR of first service time to 15th service time.
+
+        Args: 
+
+        Return:
+        
+        Note:
+            Hard coded now. Need to be modified,
+    '''
+
+
     df.createOrReplaceTempView('pitcher')
     df = spark.sql('''SELECT Name, playerid, 
                                         sum(CASE WHEN ServiceTime = "1" THEN WAR ELSE NULL END) WAR1,

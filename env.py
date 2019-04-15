@@ -1,7 +1,7 @@
 #train_input_name = "train_input/last5year_training.csv"
 #test_input_name = "test_input/last5year_test.csv"
-train_input_name = "train_input/train_simple_1year.csv"
-test_input_name = "test_input/test_simple_1year.csv"
+train_input_name = "train_input/from_25_to_28_clusters_K_train.csv"
+test_input_name = "test_input/from_25_to_28_clusters_K_test.csv"
 
 #5 -> 265
 #4 -> 212
@@ -15,5 +15,5 @@ test_input_name = "test_input/test_simple_1year.csv"
 
 
 #1 -> 56
-features_num = 56
+features_num = 4
 feature_start_index = 2

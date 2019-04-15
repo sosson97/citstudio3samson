@@ -13,7 +13,7 @@ from tester import Tester
 import time
 import env
 
-test_model = "SVR"
+test_model = "XGB"
 
 if __name__ == "__main__":
     """
@@ -77,7 +77,7 @@ if __name__ == "__main__":
         #4. training
         
         #seed_list = [42, 56, 100, 3, 15]
-        seed_list = [42]
+        seed_list = [56]
         for seed in seed_list:
             print("\033[31m" + "#4. Training Model")
             print("-------------" + "\033[0m")  

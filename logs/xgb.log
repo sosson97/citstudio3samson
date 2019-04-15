@@ -435,3 +435,54 @@ Tue Mar 26 21:43:04 2019
 XGB tested with test_input/Fangraphs_1980-2017_raw_test3of4.csv
 average abs diff = 0.7196583242234539
 average abs diff in >2 = 1.8647330728860998
+XGB trained with train_input/OclusterTrain.csv
+Sun Apr 14 18:02:49 2019
+XGB tested with test_input/OclusterTest.csv
+average abs diff = 5.7
+average abs diff in >2 = 5.7
+XGB trained with train_input/OclusterTrain.csv
+Sun Apr 14 18:04:30 2019
+XGB tested with test_input/OclusterTest.csv
+average abs diff = 1.8299724578857424
+average abs diff in >2 = 1.8299724578857424
+XGB trained with train_input/OclusterTrain.csv
+Sun Apr 14 18:05:47 2019
+XGB tested with test_input/OclusterTest.csv
+average abs diff = 0.006221103668212713
+average abs diff in >2 = 0.006221103668212713
+XGB trained with train_input/OclusterTrain.csv
+XGB trained with train_input/OclusterTrain.csv
+Sun Apr 14 18:10:17 2019
+XGB tested with test_input/OclusterTest.csv
+average abs diff = 3.754823350906372
+average abs diff in >2 = 0.006221103668212713
+XGB trained with train_input/OclusterTrain.csv
+Sun Apr 14 18:12:49 2019
+XGB tested with test_input/OclusterTest.csv
+average abs diff = 3.9911447525024415
+average abs diff in >2 = 1.8395788192749025
+XGB trained with train_input/until7_clusters_cluster_K_train.csv
+Mon Apr 15 02:02:22 2019
+XGB tested with test_input/until7_clusters_cluster_K_test.csv
+average abs diff = 2.3447009563446044
+average abs diff in >2 = 2.3447009563446044
+XGB trained with train_input/until7_clusters_cluster_K_train.csv
+Mon Apr 15 02:10:42 2019
+XGB tested with test_input/until7_clusters_cluster_K_test.csv
+average abs diff = 1.9071630477905273
+average abs diff in >2 = 1.9071630477905273
+XGB trained with train_input/from_25_to_28_clusters_K_train.csv
+Mon Apr 15 19:56:59 2019
+XGB tested with test_input/from_25_to_28_clusters_K_test.csv
+average abs diff = 1.4609722137451173
+average abs diff in >2 = -1
+XGB trained with train_input/from_25_to_28_clusters_K_train.csv
+Mon Apr 15 20:37:29 2019
+XGB tested with test_input/from_25_to_28_clusters_K_test.csv
+average abs diff = 1.4846103727817537
+average abs diff in >2 = -1
+XGB trained with train_input/from_25_to_28_clusters_K_train.csv
+Mon Apr 15 20:46:34 2019
+XGB tested with test_input/from_25_to_28_clusters_K_test.csv
+average abs diff = 1.5898857712745664
+average abs diff in >2 = -1

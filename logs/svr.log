@@ -118,3 +118,13 @@ Tue Mar 26 22:20:32 2019
 SVR tested with test_input/Fangraphs_1980-2017_raw_test2of3.csv
 average abs diff = 1.7583745729634002
 average abs diff in >2 = 1.4548578199218947
+SVR trained with train_input/from_25_to_28_clusters_K_train.csv
+Mon Apr 15 20:36:31 2019
+SVR tested with test_input/from_25_to_28_clusters_K_test.csv
+average abs diff = 4.172591453621331
+average abs diff in >2 = -1
+SVR trained with train_input/from_25_to_28_clusters_K_train.csv
+Mon Apr 15 20:37:04 2019
+SVR tested with test_input/from_25_to_28_clusters_K_test.csv
+average abs diff = 4.172591453621331
+average abs diff in >2 = -1

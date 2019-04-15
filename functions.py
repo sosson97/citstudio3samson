@@ -53,8 +53,8 @@ def WAR2014to2016(spark, df):
                                         GROUP BY Name, playerid''')
     return df
 
-def WAR_enumeration(spark, df):
-    '''Custom Function: join_with_2017
+def WAR_enumeration_by_service_time(spark, df):
+    '''Custom Function: WAR_enumeration_by_service_time
 
         Description: 
             Enumerate WAR of first service time to 15th service time.
@@ -88,6 +88,56 @@ def WAR_enumeration(spark, df):
                                         FROM pitcher
                                         GROUP BY Name, playerid''')
     return df
+
+def WAR_enumeration_by_age(spark, df):
+    '''Custom Function: WAR_enumeration_by_service_time
+
+        Description: 
+            Enumerate WAR of first service time to 15th service time.
+
+        Args: 
+
+        Return:
+        
+        Note:
+            Hard coded now. Need to be modified,
+    '''
+
+
+    df.createOrReplaceTempView('pitcher')
+    df = spark.sql('''SELECT Name, playerid, 
+                                        sum(CASE WHEN Age = "20" THEN WAR ELSE NULL END) WAR20,
+                                        sum(CASE WHEN Age = "21" THEN WAR ELSE NULL END) WAR21,
+                                        sum(CASE WHEN Age = "22" THEN WAR ELSE NULL END) WAR22,
+                                        sum(CASE WHEN Age = "23" THEN WAR ELSE NULL END) WAR23,
+                                        sum(CASE WHEN Age = "24" THEN WAR ELSE NULL END) WAR24,
+                                        sum(CASE WHEN Age = "25" THEN WAR ELSE NULL END) WAR25,
+                                        sum(CASE WHEN Age = "26" THEN WAR ELSE NULL END) WAR26,
+                                        sum(CASE WHEN Age = "27" THEN WAR ELSE NULL END) WAR27,
+                                        sum(CASE WHEN Age = "28" THEN WAR ELSE NULL END) WAR28,
+                                        sum(CASE WHEN Age = "29" THEN WAR ELSE NULL END) WAR29,
+                                        sum(CASE WHEN Age = "30" THEN WAR ELSE NULL END) WAR30,
+                                        sum(CASE WHEN Age = "31" THEN WAR ELSE NULL END) WAR31,
+                                        sum(CASE WHEN Age = "32" THEN WAR ELSE NULL END) WAR32,
+                                        sum(CASE WHEN Age = "33" THEN WAR ELSE NULL END) WAR33,
+                                        sum(CASE WHEN Age = "34" THEN WAR ELSE NULL END) WAR34,
+                                        sum(CASE WHEN Age = "35" THEN WAR ELSE NULL END) WAR35,
+                                        sum(CASE WHEN Age = "36" THEN WAR ELSE NULL END) WAR36,
+                                        sum(CASE WHEN Age = "37" THEN WAR ELSE NULL END) WAR37,
+                                        sum(CASE WHEN Age = "38" THEN WAR ELSE NULL END) WAR38,
+                                        sum(CASE WHEN Age = "39" THEN WAR ELSE NULL END) WAR39,
+                                        sum(CASE WHEN Age = "40" THEN WAR ELSE NULL END) WAR40,
+                                        sum(CASE WHEN Age = "41" THEN WAR ELSE NULL END) WAR41,
+                                        sum(CASE WHEN Age = "42" THEN WAR ELSE NULL END) WAR42,
+                                        sum(CASE WHEN Age = "43" THEN WAR ELSE NULL END) WAR43,
+                                        sum(CASE WHEN Age = "44" THEN WAR ELSE NULL END) WAR44,
+                                        sum(CASE WHEN Age = "45" THEN WAR ELSE NULL END) WAR45,
+                                        sum(CASE WHEN Age = "46" THEN WAR ELSE NULL END) WAR46
+                                        FROM pitcher
+                                        GROUP BY Name, playerid''')
+    return df
+
+
 
 
 def join_2014to2016_with_2017(spark, df):
@@ -226,6 +276,24 @@ def null_remover(spark, df, col=None):
     return df
 
 
+def join_8th_WAR(spark, df):
+    df_1960_2018 = spark.read.format("com.databricks.spark.csv").option("header", "true").option("inferSchema",
+                "true").load("raw/1960-2018.csv")
+    df_1960_2018.createOrReplaceTempView("big_df")
+    df.createOrReplaceTempView("df")
+    df = spark.sql('''SELECT df.*, big_df.WAR as WAR8
+                 FROM df, big_df
+                 WHERE big_df.ServiceTime=8 AND df.playerid=big_df.playerid
+                ''')
+    return df
+
+def join_age_WAR(spark, df, age):
+    df_1960_2018 = spark.read.format("com.databricks.spark.csv").option("header", "true").option("inferSchema",
+                "true").load("raw/1960-2018.csv")
+    df_1960_2018.createOrReplaceTempView("big_df")
+    df.createOrReplaceTempView("df")
+    df = spark.sql("SELECT df.*, big_df.WAR as WAR" + str(age) + " FROM df, big_df WHERE big_df.AGE=" + str(age) + " AND df.playerid=big_df.playerid")
+    return df
 
 
 

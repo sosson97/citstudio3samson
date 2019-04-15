@@ -2,19 +2,34 @@ from feature_extractor import FeatureExtractor
 import functions
 
 fe = FeatureExtractor()
+fe.raw_to_df("raw/from_25_to_28_clusters_K.csv")
+fe.df_update(functions.join_age_WAR, 29)
+fe.dump_df("raw/from_25_to_28_clusters_K_test.csv")
 
+
+
+"""
 col = ["Name", "playerid"]
+fe.raw_to_df("raw/1960-2018_WAR_enumerated_by_age.csv")
+for i in range(25,29):
+    fe.df_update(functions.null_remover, ["WAR"+str(i)])
+    col.append("WAR"+str(i))
+fe.df_update(functions.selection,col)
+fe.dump_df("raw/players_from_25_to_28.csv")
+"""
+
+"""
 for i in range(1,16):
     fe.raw_to_df("raw/1960-2018_WAR_enumerated.csv")
     fe.df_update(functions.null_remover, ["WAR"+str(i)])
     col.append("WAR"+str(i))
     fe.df_update(functions.selection,col)
     fe.dump_df("raw/players_until_career_" + str(i) + ".csv")
-
+"""
 
 #fe.raw_to_df("raw/1960-2018.csv")
-#fe.df_update(WAR_enumeration)
-#fe.dump_df("raw/1960-2018_WAR_enumerated.csv")
+#fe.df_update(functions.WAR_enumeration_by_age)
+#fe.dump_df("raw/1960-2018_WAR_enumerated_by_age.csv")
 #fe.df_update(null_remover)
 #fe.dump_df("nullrm.csv")
 

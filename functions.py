@@ -296,6 +296,35 @@ def join_age_WAR(spark, df, age):
     return df
 
 
+def join_clusters(spark, df, start_year, end_year):
+    '''Custom Function: join_clusters
+
+        Description: 
+            join cluster information from clusters_until_start_year to clusters_until_end_year.
+
+        Args:
+            start_year (int): start year (1~15)
+            end_year (int): end year (1~15, start_year<)
+
+        Return:
+        
+    '''
+    df = df.select(["Name", "playerid"]).withColumnRenamed('Name', 'Name_df').withColumnRenamed('playerid', 'playerid_df')
+    for i in range(start_year, end_year + 1):
+        new = spark.read.format("com.databricks.spark.csv").option("header", "true").option("inferSchema",
+                "true").load("raw/clusters_players_until_career_" + str(i) + ".csv")
+        cols = df.columns
+        cols.append('Cluster')
+        print("****************************************************************************************")
+        print(cols)
+        print("****************************************************************************************")
+        df = df.join(new, df.playerid_df == new.playerid, 'inner').select(cols).withColumnRenamed('Cluster', 'Cluster'+str(i))
+
+    df = df.withColumnRenamed('Name_df', 'Name').withColumnRenamed('playerid_df', 'playerid')
+
+    return df
+
+
 
 #################
 #Split Functions#

@@ -2,9 +2,14 @@ from feature_extractor import FeatureExtractor
 import functions
 
 fe = FeatureExtractor()
-fe.raw_to_df("raw/from_25_to_28_clusters_K.csv")
-fe.df_update(functions.join_age_WAR, 29)
-fe.dump_df("raw/from_25_to_28_clusters_K_test.csv")
+fe.raw_to_df("raw/clusters_players_until_career_10.csv")
+fe.df_update(functions.join_clusters, 5, 10)
+fe.dump_df("raw/cluster_from_5_to_10.csv")
+
+
+#fe.raw_to_df("raw/from_25_to_28_clusters_K.csv")
+#fe.df_update(functions.join_age_WAR, 29)
+#fe.dump_df("raw/from_25_to_28_clusters_K_test.csv")
 
 
 

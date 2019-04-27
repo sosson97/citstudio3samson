@@ -26,6 +26,13 @@ def selection(spark, df, col=None):
     df = df.select(columns)
     return df
 
+def inner_join(spark, df, name, on): 
+    new_df = spark.read.format("com.databricks.spark.csv").option("header", "true").option("inferSchema",
+    "true").load(name)
+    df = df.join(new_df, df.on == new_df.on, "inner")
+    return df
+    
+
 
 
 def WAR2014to2016(spark, df):
@@ -106,6 +113,10 @@ def WAR_enumeration_by_age(spark, df):
 
     df.createOrReplaceTempView('pitcher')
     df = spark.sql('''SELECT Name, playerid, 
+                                        sum(CASE WHEN Age = "16" THEN WAR ELSE NULL END) WAR16, 
+                                        sum(CASE WHEN Age = "17" THEN WAR ELSE NULL END) WAR17,
+                                        sum(CASE WHEN Age = "18" THEN WAR ELSE NULL END) WAR18,
+                                        sum(CASE WHEN Age = "19" THEN WAR ELSE NULL END) WAR19,
                                         sum(CASE WHEN Age = "20" THEN WAR ELSE NULL END) WAR20,
                                         sum(CASE WHEN Age = "21" THEN WAR ELSE NULL END) WAR21,
                                         sum(CASE WHEN Age = "22" THEN WAR ELSE NULL END) WAR22,

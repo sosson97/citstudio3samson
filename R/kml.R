@@ -6,7 +6,7 @@ print(args)
 num <- as.integer(args[1])
 infile_name <- args[2]
 outfile_name <- args[3]
-cluster_num <- 15
+cluster_num <- as.integer(args[4])
 dat <- read.csv(infile_name)
 mat <- as.matrix(dat)
  

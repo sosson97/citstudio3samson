@@ -3,6 +3,8 @@
 A collection of custom functions and split functions for FeatrueExtractor class
 """
 import env
+from pyspark.sql.functions import col,min,max
+
 ##################
 #Custom Functions#
 ##################
@@ -26,10 +28,11 @@ def selection(spark, df, col=None):
     df = df.select(columns)
     return df
 
-def inner_join(spark, df, name, on): 
+def join(spark, df, name, on, how="inner"): 
     new_df = spark.read.format("com.databricks.spark.csv").option("header", "true").option("inferSchema",
     "true").load(name)
-    df = df.join(new_df, df.on == new_df.on, "inner")
+    new_df = new_df.withColumnRenamed(on, "new" + on)
+    df = df.join(new_df, col(on) == col("new" + on), how)
     return df
     
 
@@ -340,7 +343,6 @@ def join_clusters(spark, df, start_year, end_year):
 #################
 #Split Functions#
 #################
-from pyspark.sql.functions import col,min,max
 
 def random_split(spark, df):
     '''Split Function: random_split

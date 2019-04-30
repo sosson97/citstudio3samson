@@ -486,3 +486,2170 @@ Mon Apr 15 20:46:34 2019
 XGB tested with test_input/from_25_to_28_clusters_K_test.csv
 average abs diff = 1.5898857712745664
 average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+XGB trained with csv/tmp_train.csv
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 20:27:14 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 2.6
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 20:28:13 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 2.6
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 20:28:25 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.9053239941596984
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 20:28:33 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.721719378232956
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 20:28:38 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.9737425208091736
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 20:28:55 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.1287727475166321
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 20:31:49 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 2.6
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 20:31:56 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.370433759689331
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 20:32:01 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.8153155386447907
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 20:32:06 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 1.080484277009964
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 20:32:16 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.11050219535827638
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 20:32:37 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.5316712617874145
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 20:32:44 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.13205633163452146
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 20:33:15 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.13351069688796996
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 20:33:25 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 1.6645098209381102
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 20:33:40 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.12348945140838624
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 20:33:51 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.1952751338481903
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 20:34:00 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.48362812399864197
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 20:34:19 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 2.791310155391693
+average abs diff in >2 = 2.791310155391693
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 20:34:32 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 2.387032961845398
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 20:34:39 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.5961708664894104
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 20:34:51 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.45608394145965575
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 20:35:03 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 3.0972967624664305
+average abs diff in >2 = 3.0972967624664305
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 20:35:15 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.699794065952301
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 20:35:27 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 3.1009297490119936
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 20:35:33 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.21102562546730042
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 20:35:52 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 1.0031142234802246
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 20:36:04 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.08564493060112
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 20:36:15 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.6831112384796143
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 20:36:34 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.09699265956878661
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 20:36:43 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 1.318170142173767
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 20:36:54 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 3.246360421180725
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 20:37:08 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.27192785739898684
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 20:37:17 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.0008909225463867299
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 20:37:29 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 1.072632336616516
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 20:37:39 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 1.140238642692566
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 20:37:48 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 2.0250676929950715
+average abs diff in >2 = 2.0250676929950715
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 20:37:57 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.6671908974647522
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 20:38:05 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.29710609316825864
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 20:38:13 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.0046633362770080455
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 20:38:22 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 1.0458210229873657
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 20:38:35 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.38891573548316954
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 20:38:52 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.9210697650909423
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 20:39:00 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 3.1019770383834837
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 20:39:09 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.2576070308685303
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 20:39:28 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 1.654137980937958
+average abs diff in >2 = 1.654137980937958
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 20:39:40 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.9129621028900147
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 20:39:50 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.015733939409255993
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 20:40:01 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.671203100681305
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 20:40:09 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.9075678706169128
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 20:40:21 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 2.003402352333069
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 20:40:32 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 1.9066862106323241
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 20:40:40 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 1.5957484006881715
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 20:40:50 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.893464708328247
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 20:41:03 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.3851203680038452
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 20:41:15 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 2.6016738772392274
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 20:41:26 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 1.528910255432129
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 20:41:34 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 1.5080159068107606
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 20:41:47 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 1.7857230663299561
+average abs diff in >2 = 1.7857230663299561
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 20:41:57 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.09704921245574949
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 20:42:07 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 2.2769541263580324
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 20:42:33 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.008320426940917974
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 20:42:42 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.21038846969604497
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 20:42:51 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.5805187225341797
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 20:43:02 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.07099032402038574
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 20:43:12 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.2974049270153046
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 20:43:37 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 2.7268211603164674
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 20:43:59 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.0785733938217163
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 20:44:10 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 2.754458856582642
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 20:44:20 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.6368473112583161
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 20:44:50 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.9713961720466614
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 20:45:02 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.845540189743042
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 20:45:13 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 2.72391482591629
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 20:45:41 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.12148531079292296
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 20:45:49 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.6157252609729766
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 20:46:00 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 1.365598940849304
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 20:46:13 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 1.259631097316742
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 20:46:26 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.11222594976425171
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 20:46:38 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.07041959762573241
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 20:47:01 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 1.5711788058280944
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 20:47:12 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.6006461083889008
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 20:47:24 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.3203612089157104
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 20:47:36 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 2.568207824230194
+average abs diff in >2 = 2.568207824230194
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 20:47:49 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 1.6062078177928925
+average abs diff in >2 = 1.6062078177928925
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 20:48:11 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.08847000598907473
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 20:48:20 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 1.665982413291931
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 20:48:31 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 2.4677015066146852
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 20:48:40 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.29169970750808716
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 20:48:52 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.26297296285629274
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 20:49:02 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 2.7558504581451415
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 20:49:11 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.929318654537201
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 20:49:19 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.30332057476043706
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 20:49:25 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.5870961427688599
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 20:49:35 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 1.4234294712543487
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 20:49:46 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.28744688630104065
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 20:49:54 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.3278197288513184
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 20:50:04 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.26473398208618165
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 20:50:15 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 1.1335962057113647
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 20:50:26 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.5536537289619445
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 20:50:37 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 1.7486843109130858
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 20:50:47 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.5392103791236877
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 20:50:58 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 1.2048935770988465
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 20:51:06 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.6990497946739197
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 20:51:27 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.16682246923446656
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 20:51:39 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.8265530884265899
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 20:52:03 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 1.0637358188629151
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 20:52:14 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 1.1504022836685182
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 20:52:26 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 1.1226982355117798
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 20:52:36 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.2657918930053711
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 20:52:48 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.48917505145072937
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 20:52:58 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 1.3702917575836182
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 20:53:06 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.1411805212497711
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 20:53:18 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 1.2645492613315583
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 20:53:45 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.11359231472015385
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 20:53:53 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.40222060680389404
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 20:54:04 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.3540243864059448
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 20:54:15 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 1.3104640305042268
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 20:54:27 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 1.8656732141971588
+average abs diff in >2 = 1.8656732141971588
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 20:54:38 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 1.2554228723049163
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 20:54:43 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.010102033615112305
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 20:54:54 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.32768838405609135
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 20:55:03 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.6572131514549255
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 20:55:14 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.1871078372001648
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 20:55:38 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.13793339133262633
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 20:55:48 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.0037257790565490834
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 20:56:00 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.024417293071746837
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 20:56:08 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.08228658437728881
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 20:56:19 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 1.077909803390503
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 20:56:29 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.07438435554504394
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 20:56:41 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.893214201927185
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 20:56:52 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.32562763094902036
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 20:57:04 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 2.5874496936798095
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 20:57:20 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.9267361283302307
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 20:57:31 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.9812648057937623
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 20:57:44 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.6384122371673584
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 20:57:56 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 2.5411247968673707
+average abs diff in >2 = 2.5411247968673707
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 20:58:07 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 1.2784191012382506
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 20:58:27 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.8503737211227418
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 20:58:39 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.20843818187713625
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 20:58:56 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 1.0837501227855681
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 20:59:20 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.4215275883674622
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 20:59:31 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.17089057564735413
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 20:59:56 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.8561220407485961
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 21:00:04 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 2.8452787041664123
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 21:00:15 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 1.6299449443817138
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 21:00:24 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 1.1270926117897033
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 21:00:45 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 1.6803240776062012
+average abs diff in >2 = 1.6803240776062012
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 21:00:53 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.7564286470413208
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 21:01:02 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.16290194988250728
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 21:13:36 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 1.5515986442565919
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 21:13:44 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 1.7296287536621093
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 21:13:49 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.7976925909519196
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 21:13:55 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.42007640600204466
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 21:14:00 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = nan
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 21:14:08 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = nan
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 21:14:18 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.13597868680953978
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 21:14:30 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.7114107966423034
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 21:14:37 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.5449065804481507
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 21:32:26 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 1.6342944860458375
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 21:33:02 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 1.5730409383773805
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 21:33:10 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 1.7282071828842163
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 21:33:16 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.6662756443023682
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 21:33:21 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.5855127334594726
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 21:33:26 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = nan
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 21:33:34 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = nan
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 21:33:43 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.07011793851852416
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 21:33:55 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.6839933753013611
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 21:34:00 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.5636058688163758
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 21:34:21 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.48821817636489867
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 21:34:29 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = nan
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 21:34:36 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.399247533082962
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 21:34:46 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.3964471220970154
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 21:34:57 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 3.47804799079895
+average abs diff in >2 = 3.47804799079895
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 21:35:09 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.9228501081466676
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 21:35:17 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = nan
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 21:35:23 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = nan
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 21:35:36 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 2.307779598236084
+average abs diff in >2 = 2.307779598236084
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 21:36:07 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.8756907701492309
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 21:36:18 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 2.6091931581497194
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 21:36:29 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = nan
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 21:36:37 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.133711040019989
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 21:36:49 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.11190527677536011
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 21:37:01 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.24383917450904846
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 21:37:13 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 1.681067419052124
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 21:37:24 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.0412983477115631
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 21:37:35 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 1.7992740392684936
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 21:37:47 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 3.592053174972534
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 21:37:56 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.3427403211593628
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 21:38:06 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.2762510895729065
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 21:38:18 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 2.622549319267273
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 21:38:29 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 1.8251624703407288
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 21:38:38 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 2.006226247549057
+average abs diff in >2 = 2.006226247549057
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 21:38:48 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.2584735631942749
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 21:38:58 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.8475895881652832
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 21:39:08 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.4300585508346558
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 21:39:18 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = nan
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 21:39:28 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 1.4488073706626892
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 21:39:49 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 1.6219018578529358
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 21:40:00 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.045651984214782726
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 21:40:20 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.8924032688140868
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 21:40:33 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = nan
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 21:40:41 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 1.9045446395874022
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 21:41:08 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = nan
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 21:41:18 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.09187333583831792
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 21:41:31 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 1.1839349508285522
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 21:41:42 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.3352518558502197
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 21:41:53 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.7187321424484253
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 21:42:03 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 1.4315958738327026
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 21:42:13 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = nan
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 21:42:25 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 1.6966826915740967
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 21:42:37 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.47042510509490965
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 21:42:46 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 1.054551935195923
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 21:42:57 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 1.6229852080345153
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 21:43:09 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 2.7451346278190614
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 21:43:21 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = nan
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 21:43:32 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 1.2798633337020875
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 21:43:41 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 1.7370426416397096
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 21:43:52 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.06068750619888308
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 21:44:02 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = nan
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 21:44:13 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.7724953114986419
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 21:44:25 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.9237967610359192
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 21:44:34 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 1.8359624147415161
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 21:44:46 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.10846984386444092
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 21:45:00 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 3.7767838299274445
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 21:45:11 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 2.893801373243332
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 21:45:22 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.6039153873920441
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 21:45:46 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = nan
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 21:46:13 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = nan
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 21:46:22 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.6303969860076905
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 21:46:31 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 2.223229134082794
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 21:47:02 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.19839529395103456
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 21:47:10 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.8747440099716186
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 21:47:23 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.8419057369232177
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 21:47:35 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.3084285259246826
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 21:47:46 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = nan
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 21:47:57 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.2544035792350769
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 21:48:09 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.45539993047714233
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 21:48:20 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.6491224884986877
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 21:48:41 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 1.675807237625122
+average abs diff in >2 = 1.675807237625122
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 21:48:52 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.064518666267395
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 21:49:04 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = nan
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 21:49:16 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 3.928938788175583
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 21:49:23 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.3612636923789978
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 21:49:36 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.7855113267898559
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 21:49:47 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 2.322662377357483
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 21:49:57 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 1.1060451149940491
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 21:50:05 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.543123197555542
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 21:50:12 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.463084626197815
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 21:50:23 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = nan
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 21:50:35 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.1231362521648407
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 21:50:43 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.5570214033126831
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 21:50:55 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 1.0158733010292054
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 21:51:06 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 1.5449393033981322
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 21:51:18 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.32241968512535096
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 21:51:30 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.9610601305961608
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 21:51:38 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.4287973642349243
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 21:51:50 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.5417758107185364
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 21:51:58 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.9907512605190277
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 21:52:11 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.1912156105041504
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 21:52:21 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.15431556701660154
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 21:52:31 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 1.1671665489673615
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 21:52:44 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.9233047723770142
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 21:52:55 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.6238700926303864
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 21:53:07 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.32510775327682495
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 21:53:19 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.47464703321456914
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 21:53:27 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = nan
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 21:53:38 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.05848529338836672
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 21:53:48 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.07350897789001465
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 21:54:00 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 1.32647163271904
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 21:54:12 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 1.6605776846408844
+average abs diff in >2 = 1.6605776846408844
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 21:54:24 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = nan
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 21:54:36 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = nan
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 21:54:45 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.12860593795776368
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 21:54:54 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 2.591739773750305
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 21:54:58 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.2520748972892761
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 21:55:11 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.3656554698944092
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 21:55:20 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.410597026348114
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 21:55:33 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.1096668303012848
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 21:56:01 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.29402493238449096
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 21:56:12 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.1892536997795105
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 21:56:25 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.010255295038223255
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 21:56:37 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.3708531379699707
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 21:56:45 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.16356296539306642
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 21:56:57 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 1.0439964294433595
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 21:57:08 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.4385907709598541
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 21:57:18 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = nan
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 21:57:30 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.787308132648468
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 21:57:42 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 1.7867184817790984
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 21:57:54 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 1.6107626378536224
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 21:58:04 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 1.9835471272468568
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 21:58:16 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 1.3182140588760376
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 21:58:27 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 2.4780665397644044
+average abs diff in >2 = 2.4780665397644044
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 21:58:49 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.7061840057373047
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 21:59:17 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = nan
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 21:59:38 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 2.6367867827415465
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 21:59:50 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.6845248878002167
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 22:04:29 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 1.5573768377304078
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 22:04:36 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 1.7117089748382568
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 22:04:42 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.248530650138855
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 22:04:47 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.5353602528572082
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 22:04:53 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = nan
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 22:05:00 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = nan
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 22:05:10 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.1960105776786804
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 22:05:23 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.7197000741958618
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 22:05:27 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.6582073211669922
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 22:05:34 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.4126035153865814
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 22:05:42 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = nan
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 22:05:49 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.04416444301605224
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 22:05:59 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.17486250400543213
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 22:06:09 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 3.9536186695098876
+average abs diff in >2 = 3.9536186695098876
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 22:06:22 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 1.8510200142860413
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 22:06:30 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = nan
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 22:06:36 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = nan
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 22:06:48 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 2.624145138263702
+average abs diff in >2 = 2.624145138263702
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 22:07:00 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.9726866602897644
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 22:07:11 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 3.710857462882996
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 22:07:23 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = nan
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 22:07:30 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.143437922000885
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 22:07:43 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.1995653212070465
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 22:07:55 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.27090683579444885
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 22:08:07 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 1.6591284990310669
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 22:08:17 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.10898051857948304
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 22:08:28 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 1.754638385772705
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 22:08:40 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 3.904640793800354
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 22:08:48 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.03391983509063723
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 22:08:58 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.6046939611434936
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 22:09:11 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 1.9642645061016082
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 22:09:21 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 1.7033256888389587
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 22:09:31 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 1.8847284078598023
+average abs diff in >2 = 1.8847284078598023
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 22:09:41 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.4517283022403717
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 22:09:50 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.6557924509048462
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 22:10:00 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 1.3515918731689454
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 22:10:09 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = nan
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 22:10:19 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 1.4876855731010437
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 22:10:31 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 1.7069276452064515
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 22:10:42 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.002731192111968983
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 22:10:51 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 1.01434406042099
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 22:11:03 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = nan
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 22:11:11 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 2.173006761074066
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 22:11:22 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = nan
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 22:11:32 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.16445903778076176
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 22:11:45 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 1.570793056488037
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 22:11:56 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.2528510272502899
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 22:12:07 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.9150144696235657
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 22:12:17 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 1.4299048006534576
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 22:12:27 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = nan
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 22:12:39 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 1.6482220888137817
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 22:12:50 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.4470766544342041
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 22:12:59 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 1.3073837816715241
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 22:13:10 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 1.6096076905727386
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 22:13:22 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 2.9449652194976808
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 22:13:34 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = nan
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 22:13:45 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.2814175128936768
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 22:13:54 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.9888836205005647
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 22:14:06 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.1425801753997803
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 22:14:16 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = nan
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 22:14:27 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.7412783920764923
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 22:14:39 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 1.354818332195282
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 22:14:49 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 2.005172848701477
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 22:15:01 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.1742708683013916
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 22:15:14 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 2.919632411003113
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 22:15:25 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 2.9031735181808473
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 22:15:36 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.25405248403549197
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 22:15:46 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = nan
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 22:15:55 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = nan
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 22:16:04 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.5973812580108643
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 22:16:14 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 1.9396421551704406
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 22:16:26 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.1497065842151642
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 22:16:35 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.2877783060073853
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 22:16:47 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.8816727638244628
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 22:17:00 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.21894529461860657
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 22:17:11 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = nan
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 22:17:22 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.2590610861778259
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 22:17:34 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.4159683585166931
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 22:17:46 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.6902178645133972
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 22:17:58 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 1.7884258031845093
+average abs diff in >2 = 1.7884258031845093
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 22:18:09 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.06713769435882566
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 22:18:21 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = nan
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 22:18:33 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 4.068005752563477
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 22:18:41 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.08264154195785522
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 22:18:54 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.43712244629859925
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 22:19:04 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 2.598318362236023
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 22:19:15 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 1.0916740775108338
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 22:19:23 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.19244856834411617
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 22:19:30 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.47857456207275395
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 22:19:41 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = nan
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 22:19:53 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.21134576201438904
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 22:20:02 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.7128286600112915
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 22:20:13 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.7407764971256257
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 22:20:25 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 1.501818799972534
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 22:20:36 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.23480270504951478
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 22:20:49 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 1.0444891691207885
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 22:20:56 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.6508722603321075
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 22:21:08 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.3111776292324066
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 22:21:17 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.9644777417182923
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 22:21:29 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.23244551420211793
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 22:21:39 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.1816526412963867
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 22:21:49 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 1.2964850544929505
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 22:22:02 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.8829188704490663
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 22:22:14 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 1.2919951558113099
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 22:22:25 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.9729386866092682
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 22:22:37 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.5373410761356354
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 22:22:45 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = nan
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 22:22:55 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.1842437028884888
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 22:23:06 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.026371359825134277
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 22:23:17 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.8021701931953431
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 22:23:29 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 1.6679394245147705
+average abs diff in >2 = 1.6679394245147705
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 22:23:40 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = nan
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 22:23:53 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = nan
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 22:24:01 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.12136701345443726
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 22:24:11 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 1.7408457398414612
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 22:24:15 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.263255774974823
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 22:24:27 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.5148980796337128
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 22:24:37 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.4583362340927124
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 22:24:50 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.3809668183326721
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 22:25:01 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.361505913734436
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 22:25:12 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.1746835231781006
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 22:25:25 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.10893924236297609
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 22:25:37 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.14303762912750245
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 22:25:45 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.015518647432327282
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 22:25:57 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.9659108877182007
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 22:26:08 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.43457979559898374
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 22:26:18 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = nan
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 22:26:31 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 1.2519699096679688
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 22:26:42 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 1.3644991755485534
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 22:26:55 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.9608675956726074
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 22:27:04 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.9957417011260987
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 22:27:17 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 1.4937203526496887
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 22:27:28 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 2.3396824955940247
+average abs diff in >2 = 2.3396824955940247
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 22:27:43 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.4036731481552124
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 22:27:58 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = nan
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 22:28:14 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 2.3356091022491454
+average abs diff in >2 = -1
+XGB trained with csv/tmp_train.csv
+Tue Apr 30 22:28:26 2019
+XGB tested with csv/tmp_test.csv
+average abs diff = 0.7324828147888184
+average abs diff in >2 = -1

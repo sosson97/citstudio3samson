@@ -109,7 +109,7 @@ class XGBoostModel():
         print("XGBoost training starts")
         train_data_np = genfromtxt(input_path, delimiter=',')   
         train_feature_np = np.array([l[train_parameter["feature_start_index"]:train_parameter["feature_start_index"] + train_parameter["features_num"]] for l in train_data_np][1:])
-        train_label_np = np.array([l[train_parameter["feature_start_index"] + train_parameter["features_num"]] for l in train_data_np][1:])
+        train_label_np = np.array([l[train_parameter["label_index"]] for l in train_data_np][1:])
         
         dtrain = xgb.DMatrix(train_feature_np, label=train_label_np)
 
@@ -157,11 +157,11 @@ class XGBoostModel():
         
         test_data_np = genfromtxt(input_path, delimiter=',')    
         test_feature_np = np.array([l[test_parameters["feature_start_index"]:test_parameters["feature_start_index"] + test_parameters["features_num"]] for l in test_data_np][1:])  
-        test_label_np = np.array([l[test_parameters["feature_start_index"] + test_parameters["features_num"]] for l in test_data_np][1:])   
+        test_label_np = np.array([l[test_parameters["label_index"]] for l in test_data_np][1:])   
         dtest = xgb.DMatrix(test_feature_np, label=test_label_np)
         
-        pid = np.array([int(l[1]) for l in test_data_np[1:]])
-        true = np.array([float(l[test_parameters["feature_start_index"] + test_parameters["features_num"]]) for l in test_data_np][1:])
+        pid = np.array([int(l[test_parameters["id_index"]]) for l in test_data_np[1:]])
+        true = np.array([float(l[test_parameters["label_index"]]) for l in test_data_np][1:])
         pred = self.model.predict(dtest)
         
         self.result = np.array(list(zip(pid,true,pred)))
@@ -201,7 +201,7 @@ class XGBoostModel():
         self.logger.log("average abs diff = " + str(absdiff))
         self.logger.log("average abs diff in >2 = " + str(absdiff_bg2))
     
-    def dump_output(self, dirname_output, output_name):
+    def dump_output(self, output_path, mode="w", header=True):
         """Function: dump_output
 
             Description:
@@ -215,15 +215,16 @@ class XGBoostModel():
 
 
         """
-        f = open(dirname_output + "/" + output_name, "w")
-        f.write("playerid, trueWAR, predWAR \n")
+        f = open(output_path, mode)
+        if header==True:
+            f.write("playerid, trueWAR, predWAR \n")
         for p, tr, pr in self.result:
             f.write(str(int(p)) + ", ") 
             f.write("%.2f" % tr + ", " + "%.2f" % pr + "\n")
         
         f.close()
 
-        print("XGBoost dumped testing reuslt in " + dirname_output + "/" + output_name)
+        print("XGBoost dumped testing reuslt in " + output_path)
 
 
 

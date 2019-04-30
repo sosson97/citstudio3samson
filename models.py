@@ -124,7 +124,7 @@ class XGBoostModel():
                             'colsample_bytree':0.6,
                     'gamma':0.5,
                     'reg_alpha':0.5,
-                    'reg_lambda':1,
+                    'reg_lambda':0.5,
                     'seed':seed}
         self.model = xgb.train(param, dtrain, num_round,evals=evallist)
         

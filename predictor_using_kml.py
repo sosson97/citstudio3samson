@@ -23,7 +23,7 @@ def filter_by_membership(spark, df, col_name, l):
 
 
 #1. Prepare test / train data
-history_file_name = "raw/1960-2018_edited.csv"	
+history_file_name = "raw/1960-2018_edited2.csv"	
 """1-1. Test file configuraton, creation	
 Note: Test file must contain the column of Name, WAR, playerid, age, ServiceTime	
 """	
@@ -98,11 +98,11 @@ for row in test_csv_reader:
     print("")
     """2-1. Set age range from ServiceTime.	
     """	
-    age_high = test_age - 1	
+    age_high = test_age	
     if test_ServiceTime >= 4: 	
-        age_low = test_age - 4	
+        age_low = test_age - 3
     else:	
-        age_low = test_age - test_ServiceTime	
+        age_low = test_age - (test_ServiceTime-1)
 
     """2-2. Create proper WAR enumeration csv.	
     Note: data since test_year should be discarded.	
@@ -114,7 +114,6 @@ for row in test_csv_reader:
         fe.raw_to_df(train_file_name)	
         fe.df_update(functions.WAR_enumeration_by_age)	
         age_range = ["WAR" +  str(i) for i in range(age_low, age_high+1)]
-        print(age_range)
         cols = ["Name", "playerid"] + age_range 	
         fe.df_update(functions.selection, cols)
         fe.df_update(functions.null_remover)
@@ -179,7 +178,6 @@ for row in test_csv_reader:
         fe.raw_to_df(train_file_name)	
         fe.df_update(functions.WAR_enumeration_by_age)	
         age_range = ["WAR" +  str(i) for i in range(age_low+1, age_high+2)]#1 year shifted age!
-        print(age_range)
         cols = ["Name", "playerid"] + age_range 	
         fe.df_update(functions.selection, cols)
         fe.df_update(functions.null_remover)
@@ -231,7 +229,6 @@ for row in test_csv_reader:
             for row in csv_reader:
                 cluster_list.append(row[1])
         major_cluster = find_majority(cluster_list)[0]
-
         """5-0-4. Preparing train data with major_cluster
         """
         fe = FeatureExtractor()
@@ -253,6 +250,12 @@ for row in test_csv_reader:
         fe.raw_to_df(train_file_name)
         fe.df_update(filter_by_membership, "playerid", id_list)
         fe.df_update(filter_by_membership, "Age", age_high)
+        #IP ratio filtering!
+        def filter_by_IPratio(spark, df):
+            df = df.filter(df.ratioIP > 0.6)
+            df = df.filter(df.ratioIP < (1/0.6))
+            return df
+        fe.df_update(filter_by_IPratio)
         fe.dump_df("csv/tmp_train.csv")
         
         """5-0-5. Preparing test data
@@ -274,9 +277,9 @@ for row in test_csv_reader:
                 "metric":"rmse"
                 }
         from random import randint
-        xgbm.train("csv/tmp_train.csv", param_map, 100, randint(0,100))    
+        xgbm.train("csv/tmp_train.csv", param_map, 1000, randint(0,100))    
         xgbm.test("csv/tmp_test.csv", param_map)   
-        xgbm.dump_output("output/predictor_using_kml/second_test.csv" , mode="a", header=False)    
+        xgbm.dump_output("output/predictor_using_kml/fourth.csv" , mode="a", header=False)    
     
     
     #6. Report Result

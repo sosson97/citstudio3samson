@@ -166,7 +166,7 @@ for row in test_csv_reader:
     fe.dump_df("csv/tmp_same_cluster.csv")
 
     #5. Make prediction using multiple hypothesis!
-    hp_num = 0
+    hp_num = 2
     if hp_num == 0:
         """Scenario 0. Base hypothesis: Cluster prediction w/ majority voitng  
                                         Use last 1 year data
@@ -280,8 +280,178 @@ for row in test_csv_reader:
         xgbm.train("csv/tmp_train.csv", param_map, 1000, randint(0,100))    
         xgbm.test("csv/tmp_test.csv", param_map)   
         xgbm.dump_output("output/predictor_using_kml/fourth.csv" , mode="a", header=False)    
+    if hp_num==1:    
+        """Scenario 1. No voting
+        """
+ 
+        """5-1-1. Double Clustering
+        """
+        """
+        same_cluster_csv_file_name = "csv/tmp_same_cluster.csv"
+        double_cluster_csv_file_name = "csv/tmp_double_cluster.csv"
+        same_cluster_csv_file_name_abs = os.getcwd() + "/"  + same_cluster_csv_file_name	
+        double_cluster_csv_file_name_abs = os.getcwd() + "/"  + double_cluster_csv_file_name	
+         
+        lines = file_line_len(same_cluster_csv_file_name)
+        if lines > 35:
+            cluster_num = 7
+        elif lines > 5:
+            cluster_num = int(lines / 5)
+        else:
+            cluster_num  = 1
+        subprocess.call(["Rscript", "R/kml.R", str(age_high - age_low + 1), same_cluster_csv_file_name_abs,	
+                        double_cluster_csv_file_name_abs, str(cluster_num)], shell=False)	
+        """
+
+        """5-1-2. Preparing train data with major_cluster
+        """
+        fe = FeatureExtractor()
+        fe.raw_to_df("csv/tmp_same_cluster.csv")
+        #fe.raw_to_df(double_cluster_csv_file_name)
+        fe.df_update(functions.selection, "playerid")
+        fe.dump_df("csv/tmp_major_ids.csv")
+        
+        #Filtering test data by playerid(excerpted from cluser information) and age
+        with open("csv/tmp_major_ids.csv") as f:
+            csv_reader = reader(f)
+            next(csv_reader, None)
+            id_list = []
+            for row in csv_reader:
+                print(type(row[0]))
+                id_list.append(int(float(row[0])))
+        
+        id_list.remove(test_id)
+        fe = FeatureExtractor()
+        fe.raw_to_df(train_file_name)
+        fe.df_update(filter_by_membership, "playerid", id_list)
+        fe.df_update(filter_by_membership, "Age", age_high)
+        #IP ratio filtering!
+        def filter_by_IPratio(spark, df):
+            df = df.filter(df.ratioIP > 0.6)
+            df = df.filter(df.ratioIP < (1/0.6))
+            return df
+        fe.df_update(filter_by_IPratio)
+        fe.dump_df("csv/tmp_train.csv")
+        
+        """5-0-5. Preparing test data
+        """
+        fe = FeatureExtractor()
+        fe.raw_to_df(test_base_file_name)
+        fe.df_update(filter_by_membership, "playerid", test_id)
+        fe.dump_df("csv/tmp_test.csv")
+
+        """5-0-6. Run XGBoost
+        """
+        xgbm = XGBoostModel()
+        param_map = {
+                "feature_start_index":env.feature_start_index,
+                "features_num":env.features_num,
+                "label_index":env.label_index,
+                "id_index":env.id_index,
+                "WAR_index":env.WAR_index,
+                "metric":"rmse"
+                }
+        from random import randint
+        xgbm.train("csv/tmp_train.csv", param_map, 1000, randint(0,100))    
+        xgbm.test("csv/tmp_test.csv", param_map)   
+        xgbm.dump_output("output/predictor_using_kml/fourth.csv" , mode="a", header=False)    
+    if hp_num==2:
+        """5-2-1. Double Clustering
+        """
     
-    
+        same_cluster_csv_file_name = "csv/tmp_same_cluster.csv"
+        double_cluster_csv_file_name = "csv/tmp_double_cluster.csv"
+        same_cluster_csv_file_name_abs = os.getcwd() + "/"  + same_cluster_csv_file_name	
+        double_cluster_csv_file_name_abs = os.getcwd() + "/"  + double_cluster_csv_file_name	
+         
+        lines = file_line_len(same_cluster_csv_file_name)
+        if lines > 35:
+            cluster_num = 7
+        elif lines > 5:
+            cluster_num = int(lines / 5)
+        else:
+            cluster_num  = 1
+        subprocess.call(["Rscript", "R/kml.R", str(age_high - age_low + 1), same_cluster_csv_file_name_abs,	
+                        double_cluster_csv_file_name_abs, str(cluster_num)], shell=False)	
+
+        """5-2-2. get clutser of testing player	
+        """	
+
+        fe = FeatureExtractor()	
+        fe.raw_to_df(double_cluster_csv_file_name)	
+        fe.df_update(filter_by_membership, "playerid", test_id)	
+        fe.dump_df("csv/tmp.csv")	
+
+        test_cluster = 'A'	
+        with open("csv/tmp.csv") as f:	
+            csv_reader = reader(f, delimiter=',')	
+            next(csv_reader, None)#skip header	
+            row = next(csv_reader, None) 
+            if row==None:#missing data
+                print("Missing data. Player Name: " + test_name)
+                continue
+        test_cluster = row[-1]	
+   
+        """filter by cluster	
+        """	
+        fe = FeatureExtractor()	
+        fe.raw_to_df(double_cluster_csv_file_name)	
+        fe.df_update(filter_by_membership, "Cluster", test_cluster)	
+        fe.dump_df("csv/tmp_same_double_cluster.csv")
+
+
+        """5-2-3. Preparing train data with major_cluster
+        """
+        fe = FeatureExtractor()
+        fe.raw_to_df("csv/tmp_same_double_cluster.csv")
+        fe.df_update(functions.selection, "playerid")
+        fe.dump_df("csv/tmp_major_ids.csv")
+        
+        #Filtering test data by playerid(excerpted from cluser information) and age
+        with open("csv/tmp_major_ids.csv") as f:
+            csv_reader = reader(f)
+            next(csv_reader, None)
+            id_list = []
+            for row in csv_reader:
+                print(type(row[0]))
+                id_list.append(int(float(row[0])))
+        
+        id_list.remove(test_id)
+        fe = FeatureExtractor()
+        fe.raw_to_df(train_file_name)
+        fe.df_update(filter_by_membership, "playerid", id_list)
+        fe.df_update(filter_by_membership, "Age", age_high)
+        #IP ratio filtering!
+        def filter_by_IPratio(spark, df):
+            df = df.filter(df.ratioIP > 0.6)
+            df = df.filter(df.ratioIP < 1.4)
+            return df
+        fe.df_update(filter_by_IPratio)
+        fe.dump_df("csv/tmp_train.csv")
+        
+        """5-0-5. Preparing test data
+        """
+        fe = FeatureExtractor()
+        fe.raw_to_df(test_base_file_name)
+        fe.df_update(filter_by_membership, "playerid", test_id)
+        fe.dump_df("csv/tmp_test.csv")
+
+        """5-0-6. Run XGBoost
+        """
+        xgbm = XGBoostModel()
+        param_map = {
+                "feature_start_index":env.feature_start_index,
+                "features_num":env.features_num,
+                "label_index":env.label_index,
+                "id_index":env.id_index,
+                "WAR_index":env.WAR_index,
+                "metric":"rmse"
+                }
+        from random import randint
+        xgbm.train("csv/tmp_train.csv", param_map, 1000, randint(0,100))    
+        xgbm.test("csv/tmp_test.csv", param_map)   
+        xgbm.dump_output("output/predictor_using_kml/fourth.csv" , mode="a", header=False)    
+
     #6. Report Result
     """6-1. Raw Result"""
 

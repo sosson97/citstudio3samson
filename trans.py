@@ -1,11 +1,27 @@
 from feature_extractor import FeatureExtractor
 import functions
 
+def zips_join(spark, df):
+    name = "raw/zips_analysis.csv"
+    new_df = spark.read.format("com.databricks.spark.csv").option("header", "true").option("inferSchema","true").load(name)
+    df = df.filter(df.Season == 2016)
+    df = df.join(new_df, new_df.Player == df.Name, "inner")
+    return df
+
+fe = FeatureExtractor()
+fe.raw_to_df("raw/1960-2018_edited.csv")
+cols = ["Name", "Season", "ratioIP"]
+fe.df_update(functions.selection, cols)
+fe.df_update(zips_join)
+fe.dump_df("zips_joined_ratioIP")
+
+
+"""
 fe = FeatureExtractor()
 fe.raw_to_df("raw/2017_test_base_data.csv")
 fe.df_update(functions.join, "output/predictor_using_kml/third_bug_fixed.csv", "playerid", "left_outer")
 fe.dump_df("output/2017_joined_third_test.csv")
-
+"""
 
 #fe.raw_to_df("raw/from_25_to_28_clusters_K.csv")
 #fe.df_update(functions.join_age_WAR, 29)

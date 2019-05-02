@@ -99,11 +99,10 @@ for row in test_csv_reader:
     """2-1. Set age range from ServiceTime.	
     """	
     age_high = test_age	
-    if test_ServiceTime >= 4: 	
-        age_low = test_age - 3
+    if test_ServiceTime >= 2: 	
+        age_low = test_age - 1
     else:	
         age_low = test_age - (test_ServiceTime-1)
-
     """2-2. Create proper WAR enumeration csv.	
     Note: data since test_year should be discarded.	
     """
@@ -453,7 +452,7 @@ for row in test_csv_reader:
         from random import randint
         xgbm.train("csv/tmp_train.csv", param_map, 1000, randint(0,100))    
         xgbm.test("csv/tmp_test.csv", param_map)   
-        xgbm.dump_output("output/predictor_using_kml/dc_test.csv" , mode="a", header=False)    
+        xgbm.dump_output("output/predictor_using_kml/dc_test_recent2.csv" , mode="a", header=False)    
 
     #6. Report Result
     """6-1. Raw Result"""

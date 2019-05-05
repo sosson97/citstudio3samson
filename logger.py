@@ -1,7 +1,7 @@
 #logger.py
 
 import time
-
+import os
 class Logger():
     """Class: Logger
 
@@ -25,7 +25,7 @@ class Logger():
             Returns:
                 None
         """
-        self.logger = open("logs/" + model_name + ".log", "a+")
+        self.logger = open("/home/sam95/CD3/simple/logs/" + model_name + ".log", "a+")
         print("Logger has been created.")
 
     def __del__(self):

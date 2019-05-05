@@ -10983,3 +10983,108 @@ Thu May  2 23:13:01 2019
 XGB tested with csv/tmp_test.csv
 average abs diff = 0.6996039152145386
 average abs diff in >2 = -1
+XGB trained with /home/sam95/CD3/simple/internal/tmp_train.csv
+Sun May  5 17:23:32 2019
+XGB tested with /home/sam95/CD3/simple/internal/tmp_test.csv
+average abs diff = 0.93807954788208
+average abs diff in >2 = -1
+XGB trained with /home/sam95/CD3/simple/internal/tmp_train.csv
+Sun May  5 17:23:43 2019
+XGB tested with /home/sam95/CD3/simple/internal/tmp_test.csv
+average abs diff = 0.02603766918182382
+average abs diff in >2 = -1
+XGB trained with /home/sam95/CD3/simple/internal/tmp_train.csv
+Sun May  5 17:23:49 2019
+XGB tested with /home/sam95/CD3/simple/internal/tmp_test.csv
+average abs diff = 0.8
+average abs diff in >2 = -1
+XGB trained with /home/sam95/CD3/simple/internal/tmp_train.csv
+Sun May  5 17:24:04 2019
+XGB tested with /home/sam95/CD3/simple/internal/tmp_test.csv
+average abs diff = 1.798330307006836
+average abs diff in >2 = 1.798330307006836
+XGB trained with /home/sam95/CD3/simple/internal/tmp_train.csv
+Sun May  5 17:24:18 2019
+XGB tested with /home/sam95/CD3/simple/internal/tmp_test.csv
+average abs diff = 1.1201596677303314
+average abs diff in >2 = -1
+XGB trained with /home/sam95/CD3/simple/internal/tmp_train.csv
+Sun May  5 17:24:24 2019
+XGB tested with /home/sam95/CD3/simple/internal/tmp_test.csv
+average abs diff = 0.10335962772369389
+average abs diff in >2 = -1
+XGB trained with /home/sam95/CD3/simple/internal/tmp_train.csv
+Sun May  5 17:24:57 2019
+XGB tested with /home/sam95/CD3/simple/internal/tmp_test.csv
+average abs diff = 0.18493499159812926
+average abs diff in >2 = -1
+XGB trained with /home/sam95/CD3/simple/internal/tmp_train.csv
+Sun May  5 17:25:04 2019
+XGB tested with /home/sam95/CD3/simple/internal/tmp_test.csv
+average abs diff = 1.1872959375381469
+average abs diff in >2 = -1
+XGB trained with /home/sam95/CD3/simple/internal/tmp_train.csv
+Sun May  5 17:25:14 2019
+XGB tested with /home/sam95/CD3/simple/internal/tmp_test.csv
+average abs diff = 0.04354805350303648
+average abs diff in >2 = -1
+XGB trained with /home/sam95/CD3/simple/internal/tmp_train.csv
+Sun May  5 17:25:22 2019
+XGB tested with /home/sam95/CD3/simple/internal/tmp_test.csv
+average abs diff = 0.7296281814575195
+average abs diff in >2 = -1
+XGB trained with /home/sam95/CD3/simple/internal/tmp_train.csv
+Sun May  5 17:25:26 2019
+XGB tested with /home/sam95/CD3/simple/internal/tmp_test.csv
+average abs diff = 0.45072672963142396
+average abs diff in >2 = -1
+XGB trained with /home/sam95/CD3/simple/internal/tmp_train.csv
+Sun May  5 17:25:39 2019
+XGB tested with /home/sam95/CD3/simple/internal/tmp_test.csv
+average abs diff = 0.3182479858398439
+average abs diff in >2 = 0.3182479858398439
+XGB trained with /home/sam95/CD3/simple/internal/tmp_train.csv
+Sun May  5 17:25:43 2019
+XGB tested with /home/sam95/CD3/simple/internal/tmp_test.csv
+average abs diff = 2.2992646217346193
+average abs diff in >2 = 2.2992646217346193
+XGB trained with /home/sam95/CD3/simple/internal/tmp_train.csv
+Sun May  5 17:25:46 2019
+XGB tested with /home/sam95/CD3/simple/internal/tmp_test.csv
+average abs diff = 0.6991667151451111
+average abs diff in >2 = -1
+XGB trained with /home/sam95/CD3/simple/internal/tmp_train.csv
+Sun May  5 17:25:51 2019
+XGB tested with /home/sam95/CD3/simple/internal/tmp_test.csv
+average abs diff = 1.792759370803833
+average abs diff in >2 = -1
+XGB trained with /home/sam95/CD3/simple/internal/tmp_train.csv
+Sun May  5 17:53:12 2019
+XGB tested with /home/sam95/CD3/simple/internal/tmp_test.csv
+average abs diff = 0.9111051082611084
+average abs diff in >2 = -1
+XGB trained with /home/sam95/CD3/simple/internal/tmp_train.csv
+Sun May  5 17:53:21 2019
+XGB tested with /home/sam95/CD3/simple/internal/tmp_test.csv
+average abs diff = 0.09907994270324716
+average abs diff in >2 = -1
+XGB trained with /home/sam95/CD3/simple/internal/tmp_train.csv
+Sun May  5 17:53:28 2019
+XGB tested with /home/sam95/CD3/simple/internal/tmp_test.csv
+average abs diff = 0.8
+average abs diff in >2 = -1
+XGB trained with /home/sam95/CD3/simple/internal/tmp_train.csv
+Sun May  5 17:53:32 2019
+XGB tested with /home/sam95/CD3/simple/internal/tmp_test.csv
+average abs diff = 0.7761600375175476
+average abs diff in >2 = -1
+XGB trained with /home/sam95/CD3/simple/internal/tmp_train.csv
+Sun May  5 17:53:43 2019
+XGB tested with /home/sam95/CD3/simple/internal/tmp_test.csv
+average abs diff = 1.0517468452453613
+average abs diff in >2 = 1.0517468452453613
+XGB trained with /home/sam95/CD3/simple/internal/tmp_train.csv
+Sun May  5 17:53:57 2019
+XGB tested with /home/sam95/CD3/simple/internal/tmp_test.csv
+average abs diff = 0.9532795071601867
+average abs diff in >2 = -1

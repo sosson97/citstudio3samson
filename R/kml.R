@@ -17,6 +17,7 @@ class(wmat) <- "numeric"
 ###3. Create clusterLondData from matrix
 if (num == 1){
     wmat <- cbind(wmat, wmat)
+    colnames(wmat) <- c(colnames(mat)[3], "WARextra")
 }
 
 ld <- clusterLongData(wmat)

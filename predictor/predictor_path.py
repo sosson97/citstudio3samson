@@ -1,7 +1,7 @@
 import os 
 main_path = '/home/sam95/CD3/simple'
 raw_dir = 'raw'
-raw_file = '1960-2018_edited2.csv'
+raw_file = '1960-2018_allip3_cut.csv'
 internal_dir = 'internal'
 train_dir = 'internal/train' 
 test_dir = 'internal/test'

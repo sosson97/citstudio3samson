@@ -89,13 +89,18 @@ test_header, test_csv_reader = make_csv_reader_wo_header(test_file_path)
 Baseline Principle: If ServiceTime of one player in test_year is greater or equal than 4, make cluster information using recent 4 ages(X-3 ~ X).	
 Otherwise, use recent Y ages where Y is ServiceTime of one player in test_year	
 """	
-#Iteration starts 
+#output file setting
 if not os.path.exists(os.path.join(predictor_path.output_path, predictor_name)):
     os.mkdir(os.path.join(predictor_path.output_path, predictor_name))
     
 parsed_time = strptime(ctime())
 result_file_name = file_prefix + "_" + str(parsed_time.tm_year) + "_" + str(parsed_time.tm_mon) + "_" + str(parsed_time.tm_mday) + "_" + str(parsed_time.tm_hour) + "_" + str(parsed_time.tm_min) + ".csv"
 result_file_path = os.path.join(predictor_path.output_path, predictor_name, result_file_name)
+f = open(result_file_path, "w")
+f.write('id,real,pred\n')
+f.close()
+
+#Iteration starts 
 for row in test_csv_reader:	
     #2. Get cluster information	
     test_name = str(row[test_header.index("Name")])	
@@ -292,13 +297,18 @@ for row in test_csv_reader:
     xgbm.test(tmp_test_file_path, param_map)   
     xgbm.dump_output(result_file_path , mode="a", header=False)    
 
-    #6. Report Result
-    """6-1. Raw Result"""
+#6. Report Result
+"""6-1. Raw Result"""
+def join_result(spark, df):
+   new_df = spark.read.format("com.databricks.spark.csv").option("header","true").option("inferSchema","true").load(test_file_path).select(["Name","playerid"])
+   df = df.join(new_df, new_df.playerid == df.id).select(["Name", "playerid", "real", "pred"])
+   return df
 
-    """6-2. Distribution Similarity """
+fe = FeatureExtractor()
+fe.raw_to_df(result_file_path)
+fe.df_update(join_result)
+fe.dump_df(result_file_path)
+"""6-2. Distribution Similarity """
 
-    """6-3. Reference: ZiPs """
-    #End of Iteration
-
-test_file.close()	
-
+"""6-3. Reference: ZiPs """
+#End of Iteration

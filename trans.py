@@ -1,19 +1,43 @@
 from feature_extractor import FeatureExtractor
 import functions
 
-def zips_join(spark, df):
-    name = "raw/zips_analysis.csv"
-    new_df = spark.read.format("com.databricks.spark.csv").option("header", "true").option("inferSchema","true").load(name)
-    df = df.filter(df.Season == 2016)
-    df = df.join(new_df, new_df.Player == df.Name, "inner")
+"""
+def three_join(spark, df):
+    df1 = spark.read.format("com.databricks.spark.csv").option("header","true").option("inferSchema","true").load("output/kml2_strp/kml2_strp_2017_2019_5_6_19_11.csv").withColumnRenamed("pred", "kml2").drop("Name")
+    df2 = spark.read.format("com.databricks.spark.csv").option("header", "true").option("inferSchema","true").load("output/kml3_strp/kml3_strp_2017_2019_5_6_18_30.csv").withColumnRenamed("pred", "kml3").drop("Name")
+    df = df.join(df1, df.playerid == df1.playerid).join(df2, df.playerid==df2.playerid).select(["Name", df.playerid, df.real,"kml2", "kml3", "pred"])
     return df
 
 fe = FeatureExtractor()
-fe.raw_to_df("raw/1960-2018_edited.csv")
-cols = ["Name", "Season", "ratioIP"]
-fe.df_update(functions.selection, cols)
+fe.raw_to_df("output/kml4_strp/kml4_strp_2017_2019_5_6_17_49.csv")
+fe.df_update(three_join)
+fe.dump_df("output/kml_strp234_aggregated.csv")
+"""
+"""
+def zips_join(spark, df):
+    name = "raw/zips_2016.csv"
+    new_df = spark.read.format("com.databricks.spark.csv").option("header", "true").option("inferSchema","true").load(name)
+    df = df.join(new_df, new_df.Player == df.Name, "inner").select([df.Name, df.playerid, "zWAR", "real"])
+    return df
+
+fe = FeatureExtractor()
+fe.raw_to_df("output/allip3_kml234_strp_joined_2016.csv")
 fe.df_update(zips_join)
-fe.dump_df("zips_joined_ratioIP")
+fe.dump_df("zips_joined_2016.csv")
+"""
+
+def join_with_lastyear(spark, df, year):
+    df1 = df.filter(df.Season==year).withColumnRenamed("WAR", "real").withColumnRenamed("playerid","playerid1").select(["Name", "playerid1", "real"])
+    df2 = df.filter(df.Season==(year-1)).withColumnRenamed("WAR", "pred").withColumnRenamed("playerid","playerid2").select(["Name", "playerid2", "pred"])
+    new_df = spark.read.format("com.databricks.spark.csv").option("header","true").option("inferSchema","true").load("output/allip3_kml234_strp_joined_" + str(year) + ".csv").withColumnRenamed("playerid", "playerid3").select("playerid3")
+
+    df = df1.join(df2, df1.playerid1==df2.playerid2).join(new_df, df1.playerid1==new_df.playerid3)
+    return df
+
+fe = FeatureExtractor()
+fe.raw_to_df("raw/1960-2018_allip3.csv")
+fe.df_update(join_with_lastyear,2015)
+fe.dump_df("output/last_year_prediction_2015.csv")
 
 
 """

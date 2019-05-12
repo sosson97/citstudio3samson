@@ -16,7 +16,6 @@ test_input_name = "test_input/from_25_to_28_clusters_K_test.csv"
 
 #1 -> 56
 #allip3
-"""
 features_num = 32
 feature_start_index = 4
 
@@ -25,9 +24,9 @@ id_index = 36
 WAR_index = 35
 ServiceTime_index = 37
 Age_index = 3
-"""
-#allip3_cut
 
+#allip3_cut
+'''
 features_num = 21
 feature_start_index = 4
 label_index = 28 
@@ -35,3 +34,4 @@ id_index = 25
 WAR_index = 24
 ServiceTime_index = 26
 Age_index = 3
+'''

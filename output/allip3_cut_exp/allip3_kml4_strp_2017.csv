@@ -1,160 +1,354 @@
-id,real,pred
-18, -0.60, 0.28
-36, -0.90, 0.91
-375, 0.30, 1.19
-404, 1.90, 1.10
-521, -0.60, 0.25
-1118, 2.50, 1.89
-1157, 1.20, 0.30
-1245, 1.30, 1.25
-1247, 0.00, 0.32
-1437, 0.20, -0.03
-1507, 0.60, 2.65
-1514, 0.40, 0.04
-1581, 1.80, 0.24
-1642, -0.70, 0.35
-1837, 0.60, 0.40
-1890, 1.00, 3.19
-1994, 2.10, 1.94
-2036, 4.30, 7.14
-2170, 0.00, 0.50
-2233, 1.40, 8.27
-2391, 0.30, -0.05
-2660, 1.10, 0.10
-2717, 1.90, 5.13
-2873, 0.10, 0.30
-2882, 0.60, 0.58
-2895, 0.40, 0.77
-2929, 0.30, 1.20
-2951, -0.20, 0.13
-3096, 3.40, 0.50
-3132, 0.10, 0.35
-3137, 6.30, 4.72
-3184, 1.40, 6.77
-3192, 0.80, 0.51
-3200, 2.90, 2.26
-3201, 0.70, 2.19
-3237, 0.20, 0.18
-3240, 0.60, 1.06
-3254, 3.80, 2.71
-3281, 1.80, 0.41
-3284, 0.60, 0.50
-3299, 0.20, 0.37
-3321, 0.70, 0.58
-3340, 0.90, 0.70
-3397, 0.20, 0.00
-3542, 3.70, 2.20
-3548, 1.00, 0.88
-3656, 0.00, 0.71
-3815, -0.30, 0.44
-3830, 0.50, 1.09
-3840, -0.20, 0.20
-3926, -0.50, 0.00
-3990, 0.90, 0.40
-4020, 2.00, 0.40
-4064, 0.80, 0.50
-4070, 1.00, 1.20
-4079, -0.20, 0.46
-4090, -0.10, 0.72
-4141, -0.90, 0.50
-4153, 2.50, 3.26
-4264, 0.40, 0.63
-4300, 0.90, -0.10
-4301, 1.20, 0.84
-4363, 0.00, 1.82
-4371, 0.20, 2.14
-4505, 1.30, 3.45
-4662, 2.10, 0.50
-4676, 3.10, 0.50
-4682, 2.60, 0.00
-4696, 0.20, 1.03
-4759, -0.10, 0.19
-4776, 0.20, 1.79
-4806, 2.20, 4.08
-4869, 1.30, 0.29
-4878, 0.70, 0.98
-4930, 2.90, 3.84
-4971, 0.30, 0.02
-4972, 1.80, 3.01
-4994, 0.30, 0.01
-5003, 0.00, 0.54
-5070, 0.20, 0.83
-5114, 0.30, 0.50
-5203, -1.00, 0.50
-5279, -1.10, 1.55
-5358, 0.30, 0.67
-5401, 3.20, 0.13
-5420, 0.10, 0.55
-5448, 0.00, 0.50
-5524, 1.60, 4.65
-5525, 0.30, 0.55
-5640, 0.20, 0.95
-5702, -0.70, 1.64
-5746, -0.30, 0.16
-5867, 2.20, 2.33
-5985, 1.20, 0.56
-6033, 0.20, 1.13
-6216, 1.20, 2.63
-6249, 0.20, 0.65
-6283, 0.90, 0.50
-6316, 0.60, 0.13
-6324, 0.30, -0.00
-6345, 4.50, 3.54
-6397, 0.10, 1.99
-6435, 0.10, -0.05
-6483, 0.70, 0.19
-6499, -0.20, 0.55
-6570, -0.60, 1.10
-6612, 0.00, 0.26
-6627, 1.00, 1.11
-6632, 5.40, 1.36
-6655, 3.20, 0.50
-6661, 1.20, 0.94
-6785, 2.30, 1.19
-6797, 0.80, 2.56
-6819, 0.10, 0.53
-6832, 0.60, -0.01
-6893, 1.20, 4.46
-6895, 3.20, 1.20
-6902, 2.30, 2.28
-6941, 1.80, 0.57
-6983, -0.10, 0.11
-6984, 1.30, 0.19
-6986, 0.00, 0.96
-7005, 0.10, 1.16
-7024, 1.50, 0.50
-7059, -0.20, 0.20
-7293, 0.50, 0.25
-7312, -0.50, 0.35
-7385, 0.40, 0.70
-7396, 0.30, 0.53
-7407, 0.10, -0.34
-7410, 2.80, 1.98
-7441, 1.10, 0.82
-7448, 3.70, 3.08
-7466, 2.20, 0.10
-7501, 0.00, 0.17
-7525, -0.20, -0.05
-7531, 1.10, 0.75
-7550, 1.60, 0.49
-7555, 1.80, 0.03
-7593, -0.30, 0.10
-7608, -0.40, 0.30
-7624, -0.30, 0.95
-7677, -0.10, 0.35
-7731, 1.50, 1.57
-7738, 0.00, -0.59
-7773, -1.20, 0.91
-7836, 0.80, 0.17
-7841, 0.90, 0.37
-7872, -0.10, 1.26
-8007, 0.00, 0.07
-8041, -0.10, 0.51
-8044, 1.90, 0.50
-8073, -0.10, 0.49
-8110, 1.50, 0.47
-8137, 1.90, 0.94
-8180, 0.00, 0.25
-8185, -0.50, 1.06
-8241, 1.90, 1.51
-8245, -0.20, 0.22
+Name,playerid,real,pred
+Neftali Feliz,18,-0.6,0.28
+Xavier Cedeno,36,-0.9,0.91
+Bartolo Colon,375,0.3,1.19
+CC Sabathia,404,1.9,1.1
+Jason Grilli,521,-0.6,0.25
+Marco Estrada,1118,2.5,1.89
+Tommy Hunter,1157,1.2,0.3
+R.A. Dickey,1245,1.3,1.25
+Adam Ottavino,1247,0.0,0.32
+Joaquin Benoit,1437,0.2,-0.03
+John Lackey,1507,0.6,2.65
+Oliver Perez,1514,0.4,0.04
+Sean Doolittle,1581,1.8,0.24
+Francisco Rodriguez,1642,-0.7,0.35
+Matt Belisle,1837,0.6,0.4
+Matt Moore,1890,1.0,3.19
+Ivan Nova,1994,2.1,1.94
+Clayton Kershaw,2036,4.3,7.14
+Chad Qualls,2170,0.0,0.5
+Adam Wainwright,2233,1.4,8.27
+Hector Rondon,2391,0.3,-0.05
+Brett Cecil,2660,1.1,0.1
+Rick Porcello,2717,1.9,5.13
+Santiago Casilla,2873,0.1,0.3
+Luis Avilan,2882,0.6,0.58
+Zach McAllister,2895,0.4,0.77
+Jeff Locke,2929,0.3,1.2
+Josh Ravin,2951,-0.2,0.13
+Kenley Jansen,3096,3.4,0.5
+Tony Watson,3132,0.1,0.35
+Max Scherzer,3137,6.3,4.72
+David Price,3184,1.4,6.77
+Will Harris,3192,0.8,0.51
+Ervin Santana,3200,2.9,2.26
+Francisco Liriano,3201,0.7,2.19
+T.J. McFarland,3237,0.2,0.18
+Zack Britton,3240,0.6,1.06
+Jeff Samardzija,3254,3.8,2.71
+Joe Smith,3281,1.8,0.41
+Anibal Sanchez,3284,0.6,0.5
+Chris Hatcher,3299,0.2,0.37
+Darren O'Day,3321,0.7,0.58
+Matt Garza,3340,0.9,0.7
+Jumbo Diaz,3397,0.2,0.0
+Danny Duffy,3542,3.7,2.2
+Liam Hendriks,3548,1.0,0.88
+Jim Johnson,3656,0.0,0.71
+Mat Latos,3815,-0.3,0.44
+Ricky Nolasco,3830,0.5,1.09
+Zach Duke,3840,-0.2,0.2
+Casey Fien,3926,-0.5,0.0
+Edinson Volquez,3990,0.9,0.4
+Yusmeiro Petit,4020,2.0,0.4
+Brian Duensing,4064,0.8,0.5
+Pedro Strop,4070,1.0,1.2
+Junichi Tazawa,4079,-0.2,0.46
+Luke Gregerson,4090,-0.1,0.72
+Derek Holland,4141,-0.9,0.5
+Jake Arrieta,4153,2.5,3.26
+Mark Melancon,4264,0.4,0.63
+Matt Albers,4300,0.9,-0.1
+Justin Wilson,4301,1.2,0.84
+Craig Breslow,4363,0.0,1.82
+Jeremy Hellickson,4371,0.2,2.14
+Jordan Zimmermann,4505,1.3,3.45
+Brandon McCarthy,4662,2.1,0.5
+Charlie Morton,4676,3.1,0.5
+Pat Neshek,4682,2.6,0.0
+Nate Jones,4696,0.2,1.03
+Jonathan Broxton,4759,-0.1,0.19
+Matt Shoemaker,4776,0.2,1.79
+Rich Hill,4806,2.2,4.08
+Mike Montgomery,4869,1.3,0.29
+Brandon Maurer,4878,0.7,0.98
+Jon Lester,4930,2.9,3.84
+Fernando Salas,4971,0.3,0.02
+Cole Hamels,4972,1.8,3.01
+Fernando Abad,4994,0.3,0.01
+Jake Diekman,5003,0.0,0.54
+Josh Fields,5070,0.2,0.83
+Jeurys Familia,5114,0.3,0.5
+Mike Pelfrey,5203,-1.0,0.5
+Chris Tillman,5279,-1.1,1.55
+Jose Alvarez,5358,0.3,0.67
+Brad Peacock,5401,3.2,0.13
+Pedro Baez,5420,0.1,0.55
+Jesse Chavez,5448,0.0,0.5
+Madison Bumgarner,5524,1.6,4.65
+Boone Logan,5525,0.3,0.55
+Tyler Clippard,5640,0.2,0.95
+Junior Guerra,5702,-0.7,1.64
+Eric O'Flaherty,5746,-0.3,0.16
+Danny Salazar,5867,2.2,2.33
+Randall Delgado,5985,1.2,0.56
+Kelvin Herrera,6033,0.2,1.13
+Dellin Betances,6216,1.2,2.63
+Trevor Cahill,6249,0.2,0.65
+Scott Feldman,6283,0.9,0.5
+David Phelps,6316,0.6,0.13
+Al Alburquerque,6324,0.3,-0.0
+Chris Archer,6345,4.5,3.54
+Jake Odorizzi,6397,0.1,1.99
+Vance Worley,6435,0.1,-0.05
+Steve Cishek,6483,0.7,0.19
+Blaine Hardy,6499,-0.2,0.55
+Tom Koehler,6570,-0.6,1.1
+Marc Rzepczynski,6612,0.0,0.26
+Brad Brach,6627,1.0,1.11
+Carlos Carrasco,6632,5.4,1.36
+Craig Kimbrel,6655,3.2,0.5
+Alex Colome,6661,1.2,0.94
+Andrew Miller,6785,2.3,1.19
+Julio Teheran,6797,0.8,2.56
+Robbie Ross Jr.,6819,0.1,0.53
+Sam Freeman,6832,0.6,-0.01
+Johnny Cueto,6893,1.2,4.46
+Chase Anderson,6895,3.2,1.2
+Martin Perez,6902,2.3,2.28
+Joakim Soria,6941,1.8,0.57
+Drew Storen,6983,-0.1,0.11
+Luis Garcia,6984,1.3,0.19
+Ian Kennedy,6986,0.0,0.96
+Ryan Pressly,7005,0.1,1.16
+Miguel Gonzalez,7024,1.5,0.5
+James Shields,7059,-0.2,0.2
+Brad Ziegler,7293,0.5,0.25
+Josh Collmenter,7312,-0.5,0.35
+Dan Otero,7385,0.4,0.7
+Dillon Gee,7396,0.3,0.53
+Javy Guerra,7407,0.1,-0.34
+J.A. Happ,7410,2.8,1.98
+Wade Davis,7441,1.1,0.82
+Gio Gonzalez,7448,3.7,3.08
+Anthony Swarzak,7466,2.2,0.1
+Tommy Layne,7501,0.0,0.17
+Evan Scribner,7525,-0.2,-0.05
+Collin McHugh,7531,1.1,0.75
+Jake McGee,7550,1.6,0.49
+Nick Vincent,7555,1.8,0.03
+Jordan Lyles,7593,-0.3,0.1
+Tommy Milone,7608,-0.4,0.3
+Carlos Torres,7624,-0.3,0.95
+Neil Ramirez,7677,-0.1,0.35
+Juan Nicasio,7731,1.5,1.57
+Wily Peralta,7738,0.0,-0.59
+Shawn Kelley,7773,-1.2,0.91
+Hunter Strickland,7836,0.8,0.17
+Jerry Blevins,7841,0.9,0.37
+Tyson Ross,7872,-0.1,1.26
+Jason Gurka,8007,0.0,0.07
+Glen Perkins,8041,-0.1,0.51
+Jason Vargas,8044,1.9,0.5
+Dan Jennings,8073,-0.1,0.49
+Bryan Shaw,8110,1.5,0.47
+Jaime Garcia,8137,1.9,0.94
+Kevin Siegrist,8180,0.0,0.25
+Steven Wright,8185,-0.5,1.06
+David Robertson,8241,1.9,1.51
+J.P. Howell,8245,-0.2,0.22
+Huston Street,8258,0.1,0.03
+Tony Sipp,8280,-0.2,0.12
+AJ Ramos,8350,0.4,0.59
+Deolis Guerra,8410,-0.1,0.36
+Danny Farquhar,8501,0.4,0.07
+Dustin McGowan,8600,-0.3,0.5
+Justin Verlander,8700,4.3,2.18
+Tanner Roark,8753,2.7,2.38
+Wade Miley,8779,0.6,1.4
+Andrew Cashner,8782,2.4,0.98
+Oliver Drake,8823,0.5,0.16
+Antonio Bastardo,8844,-0.5,0.28
+Jeanmar Gomez,9033,-0.5,0.17
+J.J. Hoover,9037,-0.1,0.01
+John Axford,9059,-0.3,0.5
+Kirby Yates,9073,0.3,0.03
+Zach Putnam,9080,0.3,0.61
+Brad Hand,9111,1.6,0.55
+T.J. House,9121,0.0,0.26
+Koji Uehara,9227,0.6,0.9
+Alex Wilson,9239,0.5,0.16
+Rob Scahill,9286,-0.3,0.07
+Jared Hughes,9325,0.5,0.05
+Brandon Morrow,9346,1.6,0.18
+Josh Tomlin,9388,2.1,0.92
+Doug Fister,9425,1.3,0.1
+Dallas Keuchel,9434,2.3,2.09
+Dan Straily,9460,2.1,0.54
+George Kontos,9486,0.5,0.07
+Jeremy Jeffress,9490,-0.3,0.45
+Bud Norris,9492,0.5,2.07
+Vidal Nuno,9674,-0.5,0.32
+Joe Kelly,9761,0.6,0.35
+Garrett Richards,9784,0.9,1.2
+Sergio Romo,9817,0.3,0.37
+Chaz Roe,9866,0.1,0.45
+Travis Wood,9884,-0.6,1.16
+Chris Rusin,9895,1.2,0.99
+Brandon Kintzler,9939,1.0,0.36
+Mike Dunn,9948,0.2,0.24
+Tom Wilhelmsen,9975,-0.2,-0.03
+Ian Krol,10066,-0.3,0.99
+Kyle Gibson,10123,1.2,1.0
+Mike Leake,10130,3.0,2.18
+Stephen Strasburg,10131,5.8,3.42
+Brad Boxberger,10133,0.3,0.27
+Ryan Weber,10160,0.1,0.09
+Jose Ramirez,10171,-0.5,0.18
+Shelby Miller,10197,0.4,2.19
+Aroldis Chapman,10233,1.5,2.49
+Bryan Morris,10234,0.1,0.09
+Tanner Scheppers,10267,0.1,0.22
+Ryan Tepera,10291,1.0,-0.13
+Chris Heston,10302,-0.3,0.61
+Jarred Cosart,10304,0.2,0.5
+Erasmo Ramirez,10314,1.1,1.89
+Michael Tonkin,10315,-0.2,0.03
+Aaron Loup,10343,0.5,0.49
+Mychal Givens,10430,1.1,0.52
+Jake Petricka,10534,-0.1,0.17
+Jimmy Nelson,10547,4.8,0.55
+Addison Reed,10586,0.9,1.54
+Chad Bettis,10587,0.5,1.88
+Scott Alexander,10591,1.2,0.06
+Chris Sale,10603,7.5,6.03
+Adam Liberatore,10637,0.1,0.51
+Shane Greene,10756,0.8,0.87
+Mike Foltynewicz,10811,1.6,1.69
+Chasen Shreve,10855,0.2,0.29
+Christian Bergman,10925,-0.2,0.26
+Josh A. Smith,10946,0.1,-0.02
+Jacob deGrom,10954,4.1,1.68
+Jake Buchanan,10962,-0.1,0.08
+Chase Whitley,10982,0.7,0.11
+Vince Velasquez,11189,0.2,2.12
+Tyler Lyons,11334,1.0,0.17
+Tommy Kahnle,11384,2.2,0.1
+Jose Quintana,11423,4.1,5.71
+Drew Pomeranz,11426,2.9,1.89
+A.J. Schugel,11432,0.2,0.32
+Matt Grace,11449,0.3,0.14
+Sammy Solis,11457,0.0,0.28
+A.J. Cole,11467,0.1,0.3
+Bryan Mitchell,11479,0.2,0.33
+Robbie Ray,11486,3.2,1.78
+Aaron Sanchez,11490,-0.1,2.11
+Josh Osich,11528,-0.4,-0.11
+Jose Urena,11589,0.3,0.54
+Heath Hembree,11632,0.5,0.12
+Carlos Martinez,11682,3.2,3.31
+Sam Dyson,11710,-0.8,0.31
+Erik Goeddel,11712,-0.3,-0.02
+Justin Grimm,11720,-0.4,0.22
+Luke Jackson,11752,0.0,0.09
+Kyle Ryan,11753,-0.1,0.5
+Justin Nicolino,11754,-0.3,0.6
+Noah Syndergaard,11762,1.4,3.45
+Hansel Robles,11801,-0.4,0.61
+Hector Neris,11804,1.1,0.11
+James Paxton,11828,4.6,2.31
+Taijuan Walker,11836,2.4,1.18
+Michael Feliz,11903,0.4,0.09
+Matt Andriese,12022,0.5,1.49
+Kyle Hendricks,12049,2.5,2.91
+Felipe Vazquez,12076,2.2,0.35
+David Goforth,12166,0.0,-0.14
+Cody Martin,12182,0.0,0.57
+Cody Allen,12183,1.4,0.47
+Seth Maness,12235,-0.2,0.34
+Dan Winkler,12237,0.3,0.04
+Leonel Campos,12277,0.0,0.02
+Evan Marshall,12297,-0.1,0.06
+Kevin Quackenbush,12360,-0.3,0.28
+Tony Cingrani,12555,0.0,0.5
+Blake Treinen,12572,1.3,0.88
+Adam Morgan,12580,0.4,0.73
+Mike Wright Jr.,12586,0.0,0.5
+Nathan Karns,12638,0.5,2.74
+Jerad Eickhoff,12664,2.0,2.8
+Roenis Elias,12673,0.0,0.01
+Tyler Wilson,12691,-0.1,0.0
+Trevor Bauer,12703,2.8,2.53
+Nick Martinez,12730,0.3,0.02
+Rafael Montero,12760,1.2,0.07
+Chris Devenski,12763,1.3,1.59
+Sonny Gray,12768,2.8,1.67
+Sean Gilmartin,12781,-0.1,-0.04
+Noe Ramirez,12800,0.1,-0.08
+Matt Wisler,12804,-0.1,0.45
+Alex Meyer,12833,0.8,-0.03
+Shawn Armstrong,12857,-0.1,0.09
+Matt Barnes,12863,0.9,0.45
+Tony Zych,12876,0.4,0.31
+Alex Claudio,12890,1.8,0.39
+Logan Verrett,12905,-0.3,0.01
+Ken Giles,12910,1.8,1.36
+Archie Bradley,12918,2.0,1.94
+Joe Ross,12972,0.5,2.29
+Andrew Chafin,12988,0.6,0.68
+Hisashi Iwakuma,13048,-0.2,2.95
+Wei-Yin Chen,13071,0.5,2.06
+Gerrit Cole,13125,3.2,2.41
+Eduardo Rodriguez,13164,1.9,2.25
+Carson Smith,13172,0.2,0.5
+Zach Davies,13183,2.7,1.17
+Michael Fulmer,13218,3.7,2.02
+Jesse Hahn,13287,1.2,0.5
+Daniel Coulombe,13293,0.1,0.22
+James Pazos,13323,0.4,0.17
+Cam Bedrosian,13360,0.6,0.56
+Steven Matz,13361,0.3,1.52
+Chris Beck,13418,-1.2,0.23
+Drew VerHagen,13424,-0.4,0.1
+Marcus Stroman,13431,3.2,5.45
+Mike Morin,13442,0.0,0.65
+Daniel Norris,13475,1.4,0.31
+Alec Asher,13560,0.1,1.31
+Carl Edwards Jr.,13607,1.0,0.73
+Nick Goody,13685,0.7,0.14
+Kyle Barraclough,13713,0.7,0.61
+Tyler Duffey,13758,0.7,1.16
+Dominic Leone,13763,1.5,0.5
+Roberto Osuna,13764,2.9,0.5
+Alex Wood,13781,3.1,0.39
+Scott Oberg,13911,0.9,0.32
+Ryan Dull,13974,0.0,-0.06
+Michael Wacha,14078,3.1,2.14
+Kevin Gausman,14107,2.3,3.69
+Lance McCullers Jr.,14120,2.9,2.49
+Dario Alvarez,14239,0.1,0.25
+Jake Thompson,14371,-0.1,0.51
+Adam Conley,14457,-0.1,2.14
+Jose Valdez,14470,-0.5,0.02
+Keone Kela,14696,0.9,0.8
+Tyler Olson,14741,0.5,0.19
+Buck Farmer,14814,0.4,-0.04
+Michael Lorenzen,14843,0.8,0.28
+Zack Godley,14862,3.4,0.34
+Jon Gray,14916,3.5,2.32
+Aaron Blair,14934,-0.2,0.5
+Corey Knebel,15010,2.7,0.5
+Kyle Crockett,15033,0.0,0.23
+Trevor Gott,15046,-0.1,0.38
+Andrew Heaney,15423,-0.8,0.5
+Matthew Boyd,15440,2.2,0.33
+Kendall Graveman,15514,1.1,2.18
+Masahiro Tanaka,15764,2.7,4.65
+Odrisamer Despaigne,16017,0.7,-0.04
+Carlos Rodon,16137,0.6,2.79
+Aaron Nola,16149,4.6,2.9
+Brandon Finnegan,16208,0.1,0.5
+Raisel Iglesias,17130,1.9,1.14
+Brian Ellington,17233,-0.5,0.24
+Seunghwan Oh,18719,0.0,0.5

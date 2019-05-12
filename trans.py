@@ -14,18 +14,34 @@ fe.df_update(three_join)
 fe.dump_df("output/kml_strp234_aggregated.csv")
 """
 """
-def zips_join(spark, df):
-    name = "raw/zips_2016.csv"
+def zips_join(spark, df, year):
+    name = "raw/zips_"+str(year) +".csv"
     new_df = spark.read.format("com.databricks.spark.csv").option("header", "true").option("inferSchema","true").load(name)
     df = df.join(new_df, new_df.Player == df.Name, "inner").select([df.Name, df.playerid, "zWAR", "real"])
     return df
 
 fe = FeatureExtractor()
-fe.raw_to_df("output/allip3_kml234_strp_joined_2016.csv")
-fe.df_update(zips_join)
-fe.dump_df("zips_joined_2016.csv")
+for i in [2017]:
+    fe.raw_to_df("output/allip3_kml234_strp_joined_" + str(i) +".csv")
+    fe.df_update(zips_join, i)
+    fe.dump_df("zips_joined_" + str(i) + ".csv")
 """
 
+def last1_join(spark, df, year):
+    name = "output/last1ml_exp/last1ml_null_" +str(year) +".csv"
+    new_df = spark.read.format("com.databricks.spark.csv").option("header", "true").option("inferSchema","true").load(name)
+    df = df.select(["playerid"]).withColumnRenamed("playerid","id")
+    df = df.join(new_df, new_df.playerid == df.id, "inner")
+    return df
+
+fe = FeatureExtractor()
+for i in range(2013,2019):
+    fe.raw_to_df("output/allip3_kml234_strp_joined_" + str(i) +".csv")
+    fe.df_update(last1_join, i)
+    fe.dump_df("output/last1ml_null_joined_" + str(i) + ".csv")
+
+
+"""
 def join_with_lastyear(spark, df, year):
     df1 = df.filter(df.Season==year).withColumnRenamed("WAR", "real").withColumnRenamed("playerid","playerid1").select(["Name", "playerid1", "real"])
     df2 = df.filter(df.Season==(year-1)).withColumnRenamed("WAR", "pred").withColumnRenamed("playerid","playerid2").select(["Name", "playerid2", "pred"])
@@ -35,10 +51,11 @@ def join_with_lastyear(spark, df, year):
     return df
 
 fe = FeatureExtractor()
-fe.raw_to_df("raw/1960-2018_allip3.csv")
-fe.df_update(join_with_lastyear,2015)
-fe.dump_df("output/last_year_prediction_2015.csv")
-
+for i in [2018,2014,2013]:
+    fe.raw_to_df("raw/1960-2018_allip3.csv")
+    fe.df_update(join_with_lastyear,i)
+    fe.dump_df("output/last_year_prediction_"+str(i)+".csv")
+"""
 
 """
 fe = FeatureExtractor()

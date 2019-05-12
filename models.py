@@ -110,7 +110,7 @@ class XGBoostModel():
         train_data_np = genfromtxt(input_path, delimiter=',')   
         train_feature_np = np.array([l[train_parameter["feature_start_index"]:train_parameter["feature_start_index"] + train_parameter["features_num"]] for l in train_data_np][1:])
         train_label_np = np.array([l[train_parameter["label_index"]] for l in train_data_np][1:])
-        
+        print(train_label_np) 
         dtrain = xgb.DMatrix(train_feature_np, label=train_label_np)
 
 

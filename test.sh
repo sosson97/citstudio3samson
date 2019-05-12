@@ -1,3 +1,4 @@
 #!/bin/bash
-path12=abc
+i=3
+path12=abc$i
 echo $path12

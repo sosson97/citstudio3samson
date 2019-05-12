@@ -1,23 +1,7 @@
-Name,playerid,WAR29,WAR30,WAR31,WAR32,Cluster
-Tom Gorzelanny,6244.0,0.1,0.5,0.2,0.0,F
-Terry Mathews,1008241.0,0.3,0.7,0.0,-0.3,F
-Ken Brett,1001402.0,-0.3,0.5,0.1,-0.2,F
-Dennis Higgins,1005788.0,-0.2,0.5,0.2,0.0,F
-Huston Street,8258.0,-0.8,1.0,0.4,-0.6,F
-Jonathan Broxton,4759.0,-0.3,0.7,0.2,0.1,F
-Neal Heaton,1005568.0,0.4,0.9,-0.1,-0.3,F
-Gabe White,360.0,-0.8,1.3,0.4,-0.3,F
-Jorge Sosa,1228.0,-0.9,1.5,-0.3,-0.3,F
-Jared Fernandez,324.0,0.0,0.5,0.5,-0.1,F
-Pat Zachry,1014407.0,0.6,0.7,0.3,-0.2,F
-Chad Durbin,1442.0,-0.2,1.0,-0.4,0.2,F
-Brian Sanches,2739.0,-0.1,0.3,0.2,-0.2,F
-Jason Bulger,3915.0,-0.1,0.6,-0.1,-0.4,F
-Stan Belinda,1000792.0,-0.2,1.2,0.3,-0.4,F
-Mike DeJean,682.0,-0.1,0.8,0.4,-0.4,F
-Eddie Watt,1013684.0,0.1,0.8,-0.1,-0.1,F
-Yorkis Perez,1513.0,-0.2,0.5,0.1,-0.1,F
-Frank Wills,1014051.0,0.2,0.6,0.2,-0.3,F
-Juan Pizarro,1010382.0,-0.3,0.4,0.0,-0.1,F
-Peter Moylan,4891.0,-0.1,1.1,-0.5,0.2,F
-Matt Palmer,4457.0,-0.2,0.6,0.0,0.3,F
+Name,playerid,WAR21,WARextra,Cluster
+Wayne Simpson,1011999.0,1.7,1.7,B
+Huston Street,8258.0,1.7,1.7,B
+Jose Rijo,349.0,1.7,1.7,B
+Gary Nolan,1009616.0,1.7,1.7,B
+Jake Peavy,1051.0,1.7,1.7,B
+Pedro Martinez,200.0,1.7,1.7,B
